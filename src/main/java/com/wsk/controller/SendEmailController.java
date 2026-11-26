@@ -36,27 +36,30 @@ public class SendEmailController {
     public BaseResponse sendEmail(HttpServletRequest req, HttpServletResponse res,
                                   @RequestParam String phone, @RequestParam String action,
                                   @RequestParam String token) {
-        res.setContentType("text/html;charset=UTF-8");
+        res.setContentType("application/json;charset=UTF-8");
         //token，防止重复提交
         String sendCodeToken = (String) req.getSession().getAttribute("token");
         if (StringUtils.getInstance().isNullOrEmpty(sendCodeToken) || !sendCodeToken.equals(token)) {
-            return BaseResponse.fail();
+            return BaseResponse.fail("页面已过期，请刷新后重试");
         }
+        phone = phone == null ? "" : phone.trim();
         //判断手机号码是否为正确
         if (!StringUtils.getInstance().isPhone(phone)) {
-            return BaseResponse.fail();
+            return BaseResponse.fail("请输入正确的11位手机号码");
         }
         //如果是忘记密码提交的发送短信
         if ("forget".equals(action)) {
             if (!isUserPhoneExists(phone)) {
-                //失败
-                return BaseResponse.fail();
+                //失败：用户不存在
+                return BaseResponse.fail(-1, "该手机号码尚未注册");
             }
         } else if ("register".equals(action)) {
-            //失败
+            //失败：手机号已注册
             if (isUserPhoneExists(phone)) {
-                return BaseResponse.fail();
+                return BaseResponse.fail(-1, "该手机号码已经被注册了");
             }
+        } else {
+            return BaseResponse.fail("无效的操作类型");
         }
         //get the random num to phone which should check the phone to judge the phone is belong user
         getRandomForCodePhone(req);
@@ -75,14 +78,18 @@ public class SendEmailController {
 //            message.setRecipient(Message.RecipientType.TO, new InternetAddress(phone));
 //            message.setSubject("来自WSK的验证码");
 //            message.setContent(text, "text/html;charset=UTF-8");
-            //这里先不发生信息，以后要开启的
+            //这里先不发送邮件，后续配置SMTP后开启
 //            ts.sendMessage(message, message.getAllRecipients());
 //            ts.close();
             req.getSession().setAttribute("phone", realPhone);
-            return BaseResponse.success();
+            req.getSession().setAttribute("codeAction", action);
+            req.getSession().setAttribute("codePhoneTime", System.currentTimeMillis());
+            req.getSession().removeAttribute("codeVerified");
+            log.info("手机号 {} 验证码已生成: {} ({})", realPhone, ra, text);
+            return BaseResponse.success("验证码已发送（演示模式验证码：" + ra + "）", ra);
         } catch (Exception me) {
             me.printStackTrace();
-            return BaseResponse.fail();
+            return BaseResponse.fail("验证码发送失败，请稍后重试");
         }
     }
 

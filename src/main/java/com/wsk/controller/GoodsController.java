@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -40,10 +41,12 @@ public class GoodsController {
     private AllKindsService allKindsService;
     @Resource
     private UserWantService userWantService;
+    @Resource
+    private UserCollectionService userCollectionService;
 
     //进入到发布商品页面
     @RequestMapping(value = "/publish_product.do", method = RequestMethod.GET)
-    public String publish(HttpServletRequest request, Model model) {
+    public String publish(HttpServletRequest request, Model model, RedirectAttributes redirectAttributes) {
         //先判断用户有没有登录
         UserInformation userInformation = (UserInformation) request.getSession().getAttribute("userInformation");
         if (StringUtils.getInstance().isNullOrEmpty(userInformation)) {
@@ -59,12 +62,20 @@ public class GoodsController {
             String dormitory = userInformation.getDormitory();
             if (StringUtils.getInstance().isNullOrEmpty(realName) || StringUtils.getInstance().isNullOrEmpty(sno) || StringUtils.getInstance().isNullOrEmpty(dormitory)) {
                 //没有
-                model.addAttribute("message", "请先认证真实信息");
-                return "redirect:personal_info.do";
+                redirectAttributes.addFlashAttribute("message", "请先认证真实信息（真实姓名、学号、宿舍号）");
+                return "redirect:/personal_info.do";
             }
         } catch (Exception e) {
             e.printStackTrace();
             return "redirect:/login.do";
+        }
+        String error = request.getParameter("error");
+        if (!StringUtils.getInstance().isNullOrEmpty(error)) {
+            if ("1".equals(error)) {
+                model.addAttribute("message", "表单已过期或重复提交，请重新填写提交");
+            } else {
+                model.addAttribute("message", error);
+            }
         }
         String goodsToken = TokenProccessor.getInstance().makeToken();
         request.getSession().setAttribute("goodsToken", goodsToken);
@@ -77,16 +88,18 @@ public class GoodsController {
     //模糊查询商品
     @RequestMapping(value = "/findShopByName.do")
     public String findByName(HttpServletRequest request, Model model,
-                             @RequestParam String name) {
+                             @RequestParam(defaultValue = "") String name) {
         try {
+            if (StringUtils.getInstance().isNullOrEmpty(name == null ? "" : name.trim())) {
+                return "redirect:/mall_page.do";
+            }
+            name = name.trim();
             List<ShopInformation> shopInformations = shopInformationService.selectByName(name);
             UserInformation userInformation = (UserInformation) request.getSession().getAttribute("userInformation");
             if (StringUtils.getInstance().isNullOrEmpty(userInformation)) {
                 userInformation = new UserInformation();
-                model.addAttribute("userInformation", userInformation);
-            } else {
-                model.addAttribute("userInformation", userInformation);
             }
+            model.addAttribute("userInformation", userInformation);
             List<ShopInformationBean> shopInformationBeans = new ArrayList<>();
             String sortName;
             for (ShopInformation shopInformation : shopInformations) {
@@ -102,13 +115,15 @@ public class GoodsController {
                 shopInformationBean.setTransaction(shopInformation.getTransaction());
                 shopInformationBean.setSort(sortName);
                 shopInformationBean.setUid(shopInformation.getUid());
-                shopInformationBean.setImage(shopInformation.getImage());
+                shopInformationBean.setImage(StringUtils.getInstance().normalizeImagePath(shopInformation.getImage()));
                 shopInformationBeans.add(shopInformationBean);
             }
             model.addAttribute("shopInformationBean", shopInformationBeans);
+            model.addAttribute("searchKeyword", name);
+            model.addAttribute("totalPages", 1);
         } catch (Exception e) {
             e.printStackTrace();
-            return "redirect:mall_page.do";
+            return "redirect:/mall_page.do";
         }
         return "page/mall_page";
     }
@@ -118,12 +133,22 @@ public class GoodsController {
     public String selectById(@RequestParam int id,
                              HttpServletRequest request, Model model) {
         UserInformation userInformation = (UserInformation) request.getSession().getAttribute("userInformation");
-        if (StringUtils.getInstance().isNullOrEmpty(userInformation)) {
+        boolean isLogin = !StringUtils.getInstance().isNullOrEmpty(userInformation);
+        if (!isLogin) {
             userInformation = new UserInformation();
             model.addAttribute("userInformation", userInformation);
         }
         try {
             ShopInformation shopInformation = shopInformationService.selectByPrimaryKey(id);
+            if (shopInformation == null) {
+                return "redirect:/mall_page.do";
+            }
+            if (shopInformation.getDisplay() != null && shopInformation.getDisplay() == 0) {
+                if (!isLogin || !userInformation.getId().equals(shopInformation.getUid())) {
+                    return "redirect:/mall_page.do";
+                }
+            }
+            shopInformation.setImage(StringUtils.getInstance().normalizeImagePath(shopInformation.getImage()));
             model.addAttribute("shopInformation", shopInformation);
             List<ShopContext> shopContexts = shopContextService.selectById(id);
             List<ShopContextBean> shopContextBeans = new ArrayList<>();
@@ -133,9 +158,18 @@ public class GoodsController {
                 shopContextBean.setContext(s.getContext());
                 shopContextBean.setId(s.getId());
                 shopContextBean.setModified(s.getModified());
-                shopContextBean.setUid(u.getId());
-                shopContextBean.setUsername(u.getUsername());
+                shopContextBean.setUid(u != null ? u.getId() : s.getUid());
+                shopContextBean.setUsername(u != null ? u.getUsername() : "匿名用户");
                 shopContextBeans.add(shopContextBean);
+            }
+            boolean collected = false;
+            Integer collectionId = null;
+            if (isLogin && userInformation.getId() != null) {
+                UserCollection uc = userCollectionService.selectByUidAndSid(userInformation.getId(), id);
+                if (uc != null && uc.getDisplay() != null && uc.getDisplay() == 1) {
+                    collected = true;
+                    collectionId = uc.getId();
+                }
             }
             String sort = getSort(shopInformation.getSort());
             String goodsToken = TokenProccessor.getInstance().makeToken();
@@ -144,6 +178,8 @@ public class GoodsController {
             model.addAttribute("sort", sort);
             model.addAttribute("userInformation", userInformation);
             model.addAttribute("shopContextBeans", shopContextBeans);
+            model.addAttribute("collected", collected);
+            model.addAttribute("collectionId", collectionId);
             return "page/product_info";
         } catch (Exception e) {
             e.printStackTrace();
@@ -153,16 +189,92 @@ public class GoodsController {
 
     //进入到求购商城
     @RequestMapping(value = "/require_mall.do")
-    public String requireMall(HttpServletRequest request, Model model) {
+    public String requireMall(HttpServletRequest request, Model model,
+                              @RequestParam(defaultValue = "1") int page) {
         UserInformation userInformation = (UserInformation) request.getSession().getAttribute("userInformation");
         if (StringUtils.getInstance().isNullOrEmpty(userInformation)) {
             userInformation = new UserInformation();
-            model.addAttribute("userInformation", userInformation);
-        } else {
-            model.addAttribute("userInformation", userInformation);
         }
-        List<UserWant> userWants = userWantService.selectAll();
+        model.addAttribute("userInformation", userInformation);
+        if (page < 1) {
+            page = 1;
+        }
+        int pageSize = 12;
+        int totalCounts = userWantService.getAllCounts();
+        int totalPages = Math.max(1, (totalCounts + pageSize - 1) / pageSize);
+        if (page > totalPages) {
+            page = totalPages;
+        }
+        List<UserWant> userWants = userWantService.selectPage((page - 1) * pageSize, pageSize);
+        List<UserWantBean> list = convertUserWants(userWants);
+        model.addAttribute("list", list);
+        model.addAttribute("currentPage", page);
+        model.addAttribute("totalPages", totalPages);
+        model.addAttribute("totalCounts", totalCounts);
+        return "page/require_mall";
+    }
+
+    //通过分类筛选求购信息
+    @RequestMapping(value = "/selectWantBySort.do")
+    @ResponseBody
+    public List<UserWantBean> selectWantBySort(@RequestParam int sort) {
+        return convertUserWants(userWantService.selectBySort(sort));
+    }
+
+    //求购商城分页查询
+    @RequestMapping(value = "/selectWantByCounts.do")
+    @ResponseBody
+    public List<UserWantBean> selectWantByCounts(@RequestParam(defaultValue = "1") int counts) {
+        if (counts < 1) {
+            counts = 1;
+        }
+        return convertUserWants(userWantService.selectPage((counts - 1) * 12, 12));
+    }
+
+    //通过id查看商品的详情
+    @RequestMapping(value = "/findShopById.do")
+    @ResponseBody
+    public ShopInformation findShopById(@RequestParam int id) {
+        ShopInformation s = shopInformationService.selectByPrimaryKey(id);
+        if (s != null) {
+            s.setImage(StringUtils.getInstance().normalizeImagePath(s.getImage()));
+        }
+        return s;
+    }
+
+    //通过分类选择商品
+    @RequestMapping(value = "/selectBySort.do")
+    @ResponseBody
+    public List<ShopInformation> selectBySort(@RequestParam int sort) {
+        List<ShopInformation> list = shopInformationService.selectBySort(sort);
+        for (ShopInformation s : list) {
+            s.setImage(StringUtils.getInstance().normalizeImagePath(s.getImage()));
+        }
+        return list;
+    }
+
+    //分页查询
+    @RequestMapping(value = "/selectByCounts.do")
+    @ResponseBody
+    public List<ShopInformation> selectByCounts(@RequestParam(defaultValue = "1") int counts) {
+        if (counts < 1) {
+            counts = 1;
+        }
+        Map<String, Integer> map = new HashMap<>();
+        map.put("start", (counts - 1) * 12);
+        map.put("end", 12);
+        List<ShopInformation> list = shopInformationService.selectTen(map);
+        for (ShopInformation s : list) {
+            s.setImage(StringUtils.getInstance().normalizeImagePath(s.getImage()));
+        }
+        return list;
+    }
+
+    private List<UserWantBean> convertUserWants(List<UserWant> userWants) {
         List<UserWantBean> list = new ArrayList<>();
+        if (userWants == null) {
+            return list;
+        }
         for (UserWant userWant : userWants) {
             UserWantBean u = new UserWantBean();
             u.setSort(getSort(userWant.getSort()));
@@ -175,38 +287,8 @@ public class GoodsController {
             u.setName(userWant.getName());
             list.add(u);
         }
-        model.addAttribute("list", list);
-        return "page/require_mall";
+        return list;
     }
-
-    //通过id查看商品的详情
-    @RequestMapping(value = "/findShopById.do")
-    @ResponseBody
-    public ShopInformation findShopById(@RequestParam int id) {
-        return shopInformationService.selectByPrimaryKey(id);
-    }
-
-    //通过分类选择商品
-    @RequestMapping(value = "/selectBySort.do")
-    @ResponseBody
-    public List<ShopInformation> selectBySort(@RequestParam int sort) {
-        return shopInformationService.selectBySort(sort);
-    }
-
-    //分页查询
-    @RequestMapping(value = "/selectByCounts.do")
-    @ResponseBody
-    public List<ShopInformation> selectByCounts(@RequestParam int counts) {
-        Map<String, Integer> map = new HashMap<>();
-        map.put("start", (counts - 1) * 12);
-        map.put("end", 12);
-        return shopInformationService.selectTen(map);
-    }
-//    //通过id查看商品详情
-//    @RequestMapping(value = "/showShop")
-//    public String showShop(@RequestParam int id, HttpServletRequest request, Model model) {
-//        ShopInformation shopInformation =
-//    }
 
     //获取最详细的分类，第三层
     private Specific selectSpecificBySort(int sort) {
@@ -224,19 +306,19 @@ public class GoodsController {
     }
 
     private String getSort(int sort) {
-        StringBuilder sb = new StringBuilder();
         Specific specific = selectSpecificBySort(sort);
-        int cid = specific.getCid();
-        Classification classification = selectClassificationByCid(cid);
-        int aid = classification.getAid();
-        AllKinds allKinds = selectAllKindsByAid(aid);
-        String allName = allKinds.getName();
-        sb.append(allName);
-        sb.append("-");
-        sb.append(classification.getName());
-        sb.append("-");
-        sb.append(specific.getName());
-        return sb.toString();
+        if (specific == null) {
+            return "其他";
+        }
+        Classification classification = selectClassificationByCid(specific.getCid());
+        if (classification == null) {
+            return specific.getName();
+        }
+        AllKinds allKinds = selectAllKindsByAid(classification.getAid());
+        if (allKinds == null) {
+            return classification.getName() + "-" + specific.getName();
+        }
+        return allKinds.getName() + "-" + classification.getName() + "-" + specific.getName();
     }
 
 }

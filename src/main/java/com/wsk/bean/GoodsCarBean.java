@@ -18,6 +18,7 @@ public class GoodsCarBean implements Serializable{
     private String sort;
     private String image;
     private double price;
+    private int stock;
 
     public int getId() {
         return id;
@@ -105,5 +106,13 @@ public class GoodsCarBean implements Serializable{
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public int getStock() {
+        return stock;
+    }
+
+    public void setStock(int stock) {
+        this.stock = stock;
     }
 }

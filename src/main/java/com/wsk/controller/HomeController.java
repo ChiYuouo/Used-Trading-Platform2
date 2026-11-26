@@ -64,7 +64,7 @@ public class HomeController {
                 shopInformationBean.setQuantity(shopInformation.getQuantity());
                 shopInformationBean.setUid(shopInformation.getUid());
                 shopInformationBean.setTransaction(shopInformation.getTransaction());
-                shopInformationBean.setImage(shopInformation.getImage());
+                shopInformationBean.setImage(StringUtils.getInstance().normalizeImagePath(shopInformation.getImage()));
                 list.add(shopInformationBean);
             }
             model.addAttribute("shopInformationBean", list);
@@ -89,7 +89,9 @@ public class HomeController {
             List<ShopInformation> shopInformations = selectTen(1, 12);
             List<ShopInformationBean> list = new ArrayList<>();
             int counts = getShopCounts();
+            int totalPages = Math.max(1, (counts + 11) / 12);
             model.addAttribute("shopInformationCounts", counts);
+            model.addAttribute("totalPages", totalPages);
             String sortName;
             for (ShopInformation shopInformation : shopInformations) {
                 int sort = shopInformation.getSort();
@@ -104,7 +106,7 @@ public class HomeController {
                 shopInformationBean.setQuantity(shopInformation.getQuantity());
                 shopInformationBean.setTransaction(shopInformation.getTransaction());
                 shopInformationBean.setUid(shopInformation.getUid());
-                shopInformationBean.setImage(shopInformation.getImage());
+                shopInformationBean.setImage(StringUtils.getInstance().normalizeImagePath(shopInformation.getImage()));
                 list.add(shopInformationBean);
             }
             model.addAttribute("shopInformationBean", list);
@@ -117,19 +119,19 @@ public class HomeController {
 
     //通过分类的第三层id获取全名
     private String getSortName(int sort) {
-        StringBuilder stringBuffer = new StringBuilder();
         Specific specific = selectSpecificBySort(sort);
-        int cid = specific.getCid();
-        Classification classification = selectClassificationByCid(cid);
-        int aid = classification.getAid();
-        AllKinds allKinds = selectAllKindsByAid(aid);
-        stringBuffer.append(allKinds.getName());
-        stringBuffer.append("-");
-        stringBuffer.append(classification.getName());
-        stringBuffer.append("-");
-        stringBuffer.append(specific.getName());
-//        System.out.println(sort);
-        return stringBuffer.toString();
+        if (specific == null) {
+            return "其他";
+        }
+        Classification classification = selectClassificationByCid(specific.getCid());
+        if (classification == null) {
+            return specific.getName();
+        }
+        AllKinds allKinds = selectAllKindsByAid(classification.getAid());
+        if (allKinds == null) {
+            return classification.getName() + "-" + specific.getName();
+        }
+        return allKinds.getName() + "-" + classification.getName() + "-" + specific.getName();
     }
 
     //获得分类中的第一层
@@ -172,11 +174,17 @@ public class HomeController {
 
     @RequestMapping(value = "/getShops.do")
     @ResponseBody
-    public List getShops(@RequestParam int start) {
+    public List<ShopInformation> getShops(@RequestParam(defaultValue = "1") int start) {
         List<ShopInformation> list = new ArrayList<>();
         try {
+            if (start < 1) {
+                start = 1;
+            }
             int end = 12;
             list = selectTen(start, end);
+            for (ShopInformation s : list) {
+                s.setImage(StringUtils.getInstance().normalizeImagePath(s.getImage()));
+            }
         } catch (Exception e) {
             e.printStackTrace();
             return list;
