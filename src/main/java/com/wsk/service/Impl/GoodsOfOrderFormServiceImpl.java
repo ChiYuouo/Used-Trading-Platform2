@@ -18,7 +18,7 @@ public class GoodsOfOrderFormServiceImpl implements GoodsOfOrderFormService {
 
     @Override
     public int deleteByPrimaryKey(Integer id) {
-        return 0;
+        return goodsOfOrderFormMapper.deleteByPrimaryKey(id);
     }
 
     @Override

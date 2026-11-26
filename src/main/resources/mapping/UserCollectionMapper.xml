@@ -32,8 +32,16 @@
     SELECT
     <include refid="all" />
     from <include refid="table"/>
-    where uid =#{0} and display =1
-    limit #{1},10
+    where uid = #{uid,jdbcType=INTEGER} and display = 1 order by id DESC
+    limit #{start},10
+  </select>
+  <select id="selectByUidAndSid" resultMap="BaseResultMap">
+    SELECT
+    <include refid="all" />
+    from <include refid="table"/>
+    where uid = #{uid,jdbcType=INTEGER} and sid = #{sid,jdbcType=INTEGER}
+    order by id DESC
+    limit 1
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from <include refid="table"/>

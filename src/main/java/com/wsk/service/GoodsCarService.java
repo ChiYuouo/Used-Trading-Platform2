@@ -21,4 +21,8 @@ public interface GoodsCarService {
     int updateByPrimaryKey(GoodsCar record);
 
     List<GoodsCar> selectByUid(int uid);
+
+    GoodsCar selectByUidAndSid(int uid, int sid);
+
+    int getCounts(int uid);
 }

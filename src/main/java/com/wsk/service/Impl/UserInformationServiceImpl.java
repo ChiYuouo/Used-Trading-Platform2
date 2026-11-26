@@ -18,7 +18,7 @@ public class UserInformationServiceImpl implements UserInformationService {
 
     @Override
     public int deleteByPrimaryKey(Integer id) {
-        return 0;
+        return this.userInformationMapper.deleteByPrimaryKey(id);
     }
 
     @Override
@@ -49,7 +49,8 @@ public class UserInformationServiceImpl implements UserInformationService {
     @Override
     public int selectIdByPhone(String phone) {
         try {
-            return this.userInformationMapper.selectIdByPhone(phone);
+            Integer id = this.userInformationMapper.selectIdByPhone(phone);
+            return id == null ? 0 : id;
         } catch (Exception e) {
             return 0;
         }

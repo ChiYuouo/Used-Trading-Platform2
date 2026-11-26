@@ -1,6 +1,7 @@
 package com.wsk.dao;
 
 import com.wsk.pojo.OrderForm;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -19,5 +20,5 @@ public interface OrderFormMapper {
 
     int getCounts(int uid);
 
-    List<OrderForm> selectByUid(int uid, int start);
+    List<OrderForm> selectByUid(@Param("uid") int uid, @Param("start") int start);
 }

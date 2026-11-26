@@ -18,7 +18,7 @@ public class ClassificationServiceImpl implements ClassificationService {
     private ClassificationMapper classificationMapper;
     @Override
     public int deleteByPrimaryKey(Integer id) {
-        return 0;
+        return classificationMapper.deleteByPrimaryKey(id);
     }
 
     @Override

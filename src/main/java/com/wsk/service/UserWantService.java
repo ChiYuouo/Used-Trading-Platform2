@@ -27,4 +27,10 @@ public interface UserWantService {
     List<UserWant> selectMineByUid(int id);
 
     List<UserWant> selectAll();
+
+    List<UserWant> selectPage(int start, int end);
+
+    List<UserWant> selectBySort(int sort);
+
+    int getAllCounts();
 }

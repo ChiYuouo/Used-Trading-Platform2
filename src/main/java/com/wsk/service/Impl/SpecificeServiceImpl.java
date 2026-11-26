@@ -18,7 +18,7 @@ public class SpecificeServiceImpl implements SpecificeService {
 
     @Override
     public int deleteByPrimaryKey(Integer id) {
-        return 0;
+        return specificMapper.deleteByPrimaryKey(id);
     }
 
     @Override

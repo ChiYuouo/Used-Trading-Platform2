@@ -36,4 +36,8 @@ public interface ShopInformationService {
     List<ShopInformation> selectBySort(int sort);
 
     List<ShopInformation> selectUserReleaseByUid(int uid);
+
+    List<ShopInformation> selectUserReleaseByUidPage(int uid, int start, int end);
+
+    int getUserReleaseCounts(int uid);
 }

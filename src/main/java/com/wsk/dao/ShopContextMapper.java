@@ -1,6 +1,7 @@
 package com.wsk.dao;
 
 import com.wsk.pojo.ShopContext;
+import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
@@ -20,8 +21,8 @@ public interface ShopContextMapper {
 
     int getCounts(int sid);
 
-    List<ShopContext> findById(int sid, int start);
+    List<ShopContext> findById(@Param("sid") int sid, @Param("start") int start);
 
-    @Select("select * from shopcontext where sid=#{id,jdbcType=INTEGER} and display=1")
+    @Select("select * from shopcontext where sid=#{id,jdbcType=INTEGER} and display=1 order by id desc")
     List<ShopContext> selectBySid(int id);
 }

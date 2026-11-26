@@ -15,9 +15,17 @@ public class BaseResponse {
 
     private String msg;
 
+    private Object data;
+
     public BaseResponse(int result, String msg) {
         this.result = result;
         this.msg = msg;
+    }
+
+    public BaseResponse(int result, String msg, Object data) {
+        this.result = result;
+        this.msg = msg;
+        this.data = data;
     }
 
     public BaseResponse(int result) {
@@ -36,11 +44,19 @@ public class BaseResponse {
         return new BaseResponse(result);
     }
 
+    public static BaseResponse fail(int result, String msg) {
+        return new BaseResponse(result, msg);
+    }
+
     public static BaseResponse success() {
         return new BaseResponse(1, "success");
     }
 
     public static BaseResponse success(String msg) {
         return new BaseResponse(1, msg);
+    }
+
+    public static BaseResponse success(String msg, Object data) {
+        return new BaseResponse(1, msg, data);
     }
 }

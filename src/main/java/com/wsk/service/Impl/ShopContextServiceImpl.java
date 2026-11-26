@@ -17,7 +17,7 @@ public class ShopContextServiceImpl implements ShopContextService {
     private ShopContextMapper shopContextMapper;
     @Override
     public int deleteByPrimaryKey(Integer id) {
-        return 0;
+        return shopContextMapper.deleteByPrimaryKey(id);
     }
 
     @Override

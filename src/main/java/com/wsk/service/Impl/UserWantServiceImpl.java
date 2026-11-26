@@ -18,7 +18,7 @@ public class UserWantServiceImpl implements UserWantService {
 
     @Override
     public int deleteByPrimaryKey(Integer id) {
-        return 0;
+        return userWantMapper.deleteByPrimaryKey(id);
     }
 
     @Override
@@ -64,5 +64,20 @@ public class UserWantServiceImpl implements UserWantService {
     @Override
     public List<UserWant> selectAll() {
         return userWantMapper.selectAll();
+    }
+
+    @Override
+    public List<UserWant> selectPage(int start, int end) {
+        return userWantMapper.selectPage(start, end);
+    }
+
+    @Override
+    public List<UserWant> selectBySort(int sort) {
+        return userWantMapper.selectBySort(sort);
+    }
+
+    @Override
+    public int getAllCounts() {
+        return userWantMapper.getAllCounts();
     }
 }

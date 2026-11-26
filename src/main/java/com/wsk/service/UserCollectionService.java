@@ -23,4 +23,6 @@ public interface UserCollectionService {
     int getCounts(int uid);
 
     List<UserCollection> selectByUid(int uid, int start);
+
+    UserCollection selectByUidAndSid(int uid, int sid);
 }

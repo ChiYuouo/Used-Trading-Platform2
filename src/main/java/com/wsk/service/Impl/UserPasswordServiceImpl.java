@@ -18,7 +18,7 @@ public class UserPasswordServiceImpl implements UserPasswordService{
 
     @Override
     public int deleteByPrimaryKey(Integer id) {
-        return 0;
+        return userPasswordMapper.deleteByPrimaryKey(id);
     }
 
     @Override

@@ -17,7 +17,7 @@ public interface UserInformationMapper {
 
     int updateByPrimaryKey(UserInformation record);
 
-    int selectIdByPhone(String phone);
+    Integer selectIdByPhone(String phone);
 
     List<UserInformation> getAllForeach(List<Integer> list);
 }

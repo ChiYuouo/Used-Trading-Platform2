@@ -17,7 +17,7 @@ public class UserStateServiceImpl implements UserStateService {
 
     @Override
     public int deleteByPrimaryKey(Integer id) {
-        return 0;
+        return userStateMapper.deleteByPrimaryKey(id);
     }
 
     @Override

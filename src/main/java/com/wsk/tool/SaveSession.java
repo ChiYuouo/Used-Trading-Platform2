@@ -34,9 +34,7 @@ public class SaveSession {
                 return false;
             } else {
                 long m_1_Time = map1.get(phone);
-//                long m_2_Time = map2.get(phone);
-                if (time<(m_1_Time)) {
-                    map1.put(phone, time);
+                if (time < m_1_Time) {
                     return true;
                 } else {
                     return false;

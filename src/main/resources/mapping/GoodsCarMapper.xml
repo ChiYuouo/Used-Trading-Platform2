@@ -30,7 +30,22 @@
         from
         <include refid="table"/>
         where uid = #{uid,jdbcType=INTEGER} and display=1 order by id DESC
-        limit 12
+        limit 100
+    </select>
+    <select id="selectByUidAndSid" resultMap="BaseResultMap">
+        select
+        <include refid="all"/>
+        from
+        <include refid="table"/>
+        where uid = #{uid,jdbcType=INTEGER} and sid = #{sid,jdbcType=INTEGER} and display=1
+        order by id DESC
+        limit 1
+    </select>
+    <select id="getCounts" resultType="java.lang.Integer" parameterType="java.lang.Integer">
+        select count(id)
+        from
+        <include refid="table"/>
+        where uid = #{uid,jdbcType=INTEGER} and display=1
     </select>
     <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
         delete from

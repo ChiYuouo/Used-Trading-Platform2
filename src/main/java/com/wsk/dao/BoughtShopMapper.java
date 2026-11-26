@@ -1,6 +1,7 @@
 package com.wsk.dao;
 
 import com.wsk.pojo.BoughtShop;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -19,5 +20,5 @@ public interface BoughtShopMapper {
 
     int getCounts(int uid);
 
-    List<BoughtShop> selectByUid(int uid, int start);
+    List<BoughtShop> selectByUid(@Param("uid") int uid, @Param("start") int start);
 }

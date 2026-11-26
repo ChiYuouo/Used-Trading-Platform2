@@ -32,8 +32,8 @@
     select
     <include refid="all"/>
     from <include refid="table"/>
-    where uid = #{0} and display = 1 order by id DESC
-    limit #{1},10
+    where uid = #{uid,jdbcType=INTEGER} and display = 1 order by id DESC
+    limit #{start},10
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from <include refid="table"/>
@@ -47,7 +47,7 @@
       #{uid,jdbcType=INTEGER}, #{address,jdbcType=VARCHAR}, #{context,jdbcType=VARCHAR}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.wsk.pojo.OrderForm" >
+  <insert id="insertSelective" parameterType="com.wsk.pojo.OrderForm" useGeneratedKeys="true" keyProperty="id" >
     insert into <include refid="table"/>
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >

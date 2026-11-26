@@ -17,7 +17,7 @@ public class AllKindsServiceImpl implements AllKindsService {
     private AllKindsMapper allKindsMapper;
     @Override
     public int deleteByPrimaryKey(Integer id) {
-        return 0;
+        return allKindsMapper.deleteByPrimaryKey(id);
     }
 
     @Override

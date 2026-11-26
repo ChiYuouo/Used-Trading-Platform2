@@ -18,7 +18,7 @@ public class WantContextServiceImpl implements WantContextService {
 
     @Override
     public int deleteByPrimaryKey(Integer id) {
-        return 0;
+        return wantContextMapper.deleteByPrimaryKey(id);
     }
 
     @Override

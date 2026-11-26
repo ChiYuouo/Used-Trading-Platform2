@@ -18,7 +18,7 @@ public class UserCollectionServiceImpl implements UserCollectionService {
 
     @Override
     public int deleteByPrimaryKey(Integer id) {
-        return 0;
+        return userCollectionMapper.deleteByPrimaryKey(id);
     }
 
     @Override
@@ -54,5 +54,10 @@ public class UserCollectionServiceImpl implements UserCollectionService {
     @Override
     public List<UserCollection> selectByUid(int uid, int start) {
         return userCollectionMapper.selectByUid(uid, start);
+    }
+
+    @Override
+    public UserCollection selectByUidAndSid(int uid, int sid) {
+        return userCollectionMapper.selectByUidAndSid(uid, sid);
     }
 }

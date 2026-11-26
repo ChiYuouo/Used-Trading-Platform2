@@ -17,7 +17,7 @@ public class GoodsCarServiceImpl implements GoodsCarService {
     private GoodsCarMapper goodsCarMapper;
     @Override
     public int deleteByPrimaryKey(Integer id) {
-        return 0;
+        return goodsCarMapper.deleteByPrimaryKey(id);
     }
 
     @Override
@@ -48,5 +48,15 @@ public class GoodsCarServiceImpl implements GoodsCarService {
     @Override
     public List<GoodsCar> selectByUid(int scid) {
         return goodsCarMapper.selectByUid(scid);
+    }
+
+    @Override
+    public GoodsCar selectByUidAndSid(int uid, int sid) {
+        return goodsCarMapper.selectByUidAndSid(uid, sid);
+    }
+
+    @Override
+    public int getCounts(int uid) {
+        return goodsCarMapper.getCounts(uid);
     }
 }

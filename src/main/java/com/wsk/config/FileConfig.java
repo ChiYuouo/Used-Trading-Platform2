@@ -24,9 +24,15 @@ public class FileConfig {
 
     @PostConstruct
     public void init() {
-        String si = "file:" + fileSave + ":" + saveImage;
-        FileUtil.mkdir(si);
-        String st = "file:" + fileSave + ":" + saveThumbnails;
-        FileUtil.mkdir(st);
+        FileUtil.mkdir(getImageDirPath());
+        FileUtil.mkdir(getThumbnailsDirPath());
+    }
+
+    public String getImageDirPath() {
+        return fileSave + ":" + saveImage;
+    }
+
+    public String getThumbnailsDirPath() {
+        return fileSave + ":" + saveThumbnails;
     }
 }

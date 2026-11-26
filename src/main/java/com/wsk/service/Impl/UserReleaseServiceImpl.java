@@ -18,7 +18,7 @@ public class UserReleaseServiceImpl implements UserReleaseService {
 
     @Override
     public int deleteByPrimaryKey(Integer id) {
-        return 0;
+        return userReleaseMapper.deleteByPrimaryKey(id);
     }
 
     @Override

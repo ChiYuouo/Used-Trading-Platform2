@@ -17,7 +17,7 @@ public class OrderFormServiceImpl implements OrderFormService {
     private OrderFormMapper orderFormMapper;
     @Override
     public int deleteByPrimaryKey(Integer id) {
-        return 0;
+        return orderFormMapper.deleteByPrimaryKey(id);
     }
 
     @Override

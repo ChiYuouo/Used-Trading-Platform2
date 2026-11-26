@@ -33,8 +33,8 @@
     select
     <include refid="all" />
     from <include refid="table"/>
-    where sid = #{0} and display =1
-    limit #{1},10
+    where sid = #{sid,jdbcType=INTEGER} and display = 1 order by id DESC
+    limit #{start},10
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from <include refid="table"/>

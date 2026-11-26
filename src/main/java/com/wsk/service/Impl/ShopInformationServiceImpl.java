@@ -19,7 +19,7 @@ public class ShopInformationServiceImpl implements ShopInformationService{
     private ShopInformationMapper shopInformationMapper;
     @Override
     public int deleteByPrimaryKey(Integer id) {
-        return 0;
+        return shopInformationMapper.deleteByPrimaryKey(id);
     }
 
     @Override
@@ -69,7 +69,8 @@ public class ShopInformationServiceImpl implements ShopInformationService{
 
     @Override
     public int selectIdByImage(String image) {
-        return shopInformationMapper.selectIdByImage(image);
+        Integer id = shopInformationMapper.selectIdByImage(image);
+        return id == null ? 0 : id;
     }
 
     @Override
@@ -85,5 +86,15 @@ public class ShopInformationServiceImpl implements ShopInformationService{
     @Override
     public List<ShopInformation> selectUserReleaseByUid(int uid) {
         return shopInformationMapper.selectUserReleaseByUid(uid);
+    }
+
+    @Override
+    public List<ShopInformation> selectUserReleaseByUidPage(int uid, int start, int end) {
+        return shopInformationMapper.selectUserReleaseByUidPage(uid, start, end);
+    }
+
+    @Override
+    public int getUserReleaseCounts(int uid) {
+        return shopInformationMapper.getUserReleaseCounts(uid);
     }
 }

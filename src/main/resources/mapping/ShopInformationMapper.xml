@@ -43,31 +43,32 @@
     select
     <include refid="all" />
     from <include refid="table"/>
-    where uid = #{0} and display = 0 order by id desc
-    limit #{1},10
+    where uid = #{uid,jdbcType=INTEGER} and display = 0 order by id desc
+    limit #{start},10
   </select>
-  <select id="getCountsOfShelf" resultType="java.lang.Integer" >
+  <select id="getCountsOffShelf" resultType="java.lang.Integer" >
     select count(id)
     from <include refid="table"/>
-    where uid = #{uid,jdbcType=INTEGER} and display =0 order by id DESC
+    where uid = #{uid,jdbcType=INTEGER} and display = 0
   </select>
   <select id="getCounts" resultType="java.lang.Integer">
     select count(id)
     from <include refid="table"/>
-    where display =1
+    where display = 1
   </select>
   <select id="selectIdByImage" resultType="java.lang.Integer">
     select id
     from <include refid="table"/>
     where image = #{image,jdbcType=VARCHAR}
+    order by id desc
     limit 1
   </select>
   <select id="selectByName" resultMap="BaseResultMap">
     select
     <include refid="all" />
     from <include refid="table"/>
-    where name LIKE CONCAT('%',#{name},'%') order by id desc
-    limit 12
+    where display = 1 and (name LIKE CONCAT('%',#{name},'%') or remark LIKE CONCAT('%',#{name},'%')) order by id desc
+    limit 48
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from <include refid="table"/>
@@ -83,9 +84,9 @@
       #{level,jdbcType=INTEGER}, #{remark,jdbcType=VARCHAR}, #{price,jdbcType=DECIMAL},
       #{sort,jdbcType=INTEGER}, #{display,jdbcType=INTEGER}, #{quantity,jdbcType=INTEGER},
       #{transaction,jdbcType=INTEGER}, #{sales,jdbcType=INTEGER}, #{uid,jdbcType=INTEGER},
-      #{image,jdbcType=VARCHAR}),#{thumbnails,jdbcType=VARCHAR}
+      #{image,jdbcType=VARCHAR}, #{thumbnails,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.wsk.pojo.ShopInformation" >
+  <insert id="insertSelective" parameterType="com.wsk.pojo.ShopInformation" useGeneratedKeys="true" keyProperty="id" >
     insert into <include refid="table"/>
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >

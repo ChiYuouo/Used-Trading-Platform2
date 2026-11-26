@@ -38,13 +38,30 @@
         from userwant
         where display=1 order by id desc limit 12
     </select>
+    <select id="selectPage" resultMap="BaseResultMap">
+        SELECT
+        <include refid="all"/>
+        from userwant
+        where display=1 order by id desc limit #{start}, #{end}
+    </select>
+    <select id="selectBySort" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+        SELECT
+        <include refid="all"/>
+        from userwant
+        where sort = #{sort,jdbcType=INTEGER} and display=1 order by id desc limit 24
+    </select>
+    <select id="getAllCounts" resultType="java.lang.Integer">
+        select count(id)
+        from userwant
+        where display = 1
+    </select>
     <select id="selectByUid" resultMap="BaseResultMap">
         select
         <include refid="all"/>
         from
         userwant
-        where uid = #{0} and display = 1
-        limit #{1},10
+        where uid = #{uid,jdbcType=INTEGER} and display = 1 order by id desc
+        limit #{start},10
     </select>
     <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
         delete
@@ -60,10 +77,10 @@
                 #{sort,jdbcType=INTEGER},
                 #{quantity,jdbcType=INTEGER},
                 #{price,jdbcType=DECIMAL},
-                #{remark,jdbcType=VARCHAR}),
-               #{uid,jdbcType=INTEGER}
+                #{remark,jdbcType=VARCHAR},
+                #{uid,jdbcType=INTEGER})
     </insert>
-    <insert id="insertSelective" parameterType="com.wsk.pojo.UserWant">
+    <insert id="insertSelective" parameterType="com.wsk.pojo.UserWant" useGeneratedKeys="true" keyProperty="id">
         insert into userwant
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="id != null">
@@ -162,8 +179,8 @@
             sort     = #{sort,jdbcType=INTEGER},
             quantity = #{quantity,jdbcType=INTEGER},
             price    = #{price,jdbcType=DECIMAL},
-            remark   = #{remark,jdbcType=VARCHAR}
-                uid = #{uid,jdbcType=INTEGER},
-                where id = #{id,jdbcType=INTEGER}
+            remark   = #{remark,jdbcType=VARCHAR},
+            uid      = #{uid,jdbcType=INTEGER}
+        where id = #{id,jdbcType=INTEGER}
     </update>
 </mapper>

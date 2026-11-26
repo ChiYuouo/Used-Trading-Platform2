@@ -18,7 +18,7 @@ public class BoughtShopServiceImpl implements BoughtShopService {
 
     @Override
     public int deleteByPrimaryKey(Integer id) {
-        return 0;
+        return boughtShopMapper.deleteByPrimaryKey(id);
     }
 
     @Override

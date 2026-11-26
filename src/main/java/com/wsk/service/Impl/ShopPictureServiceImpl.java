@@ -17,7 +17,7 @@ public class ShopPictureServiceImpl implements ShopPictureService {
     private ShopPictureMapper shopPictureMapper;
     @Override
     public int deleteByPrimaryKey(Integer id) {
-        return 0;
+        return shopPictureMapper.deleteByPrimaryKey(id);
     }
 
     @Override

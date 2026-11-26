@@ -53,9 +53,26 @@ public class StringUtils {
     }
 
     public boolean isPhone(String phone) {
-        Pattern p = Pattern.compile("^((13[0-9])|(15[^4,\\D])|(18[0,5-9]))\\d{8}$");
+        if (phone == null) {
+            return false;
+        }
+        Pattern p = Pattern.compile("^1[3-9]\\d{9}$");
         Matcher m = p.matcher(phone);
         return m.matches();
+    }
+
+    public String normalizeImagePath(String path) {
+        if (isNullOrEmpty(path)) {
+            return "/img/home/feature_prodects/cont1.jpg";
+        }
+        String normalized = path.trim().replace("\\", "/");
+        if (normalized.startsWith("http://") || normalized.startsWith("https://")) {
+            return normalized;
+        }
+        if (!normalized.startsWith("/")) {
+            normalized = "/" + normalized;
+        }
+        return normalized;
     }
 
     public String getMD5(String str) {
@@ -98,43 +115,51 @@ public class StringUtils {
         return false;
     }
 
-    public ArrayList readTxt() throws IOException {
+    public ArrayList<String> readTxt() throws IOException {
         ArrayList<String> list = new ArrayList<>();
-        String encoding = "GBK";
-        File file = new File("D:\\image\\txt\\all.txt");
-        InputStreamReader reader = new InputStreamReader(new FileInputStream(file), encoding);
-        BufferedReader bufferedReader = new BufferedReader(reader);
-        String txt;
-        while ((txt = bufferedReader.readLine()) != null) {
-            list.add(txt);
+        File file = new File("txt/all.txt");
+        if (!file.exists()) {
+            file = new File("D:\\image\\txt\\all.txt");
         }
-        reader.close();
+        if (!file.exists()) {
+            return list;
+        }
+        String encoding = "GBK";
+        try (InputStreamReader reader = new InputStreamReader(new FileInputStream(file), encoding);
+             BufferedReader bufferedReader = new BufferedReader(reader)) {
+            String txt;
+            while ((txt = bufferedReader.readLine()) != null) {
+                if (!txt.trim().isEmpty()) {
+                    list.add(txt.trim());
+                }
+            }
+        }
         return list;
     }
 
     public String txtReplace(String test) {
+        if (test == null) {
+            return null;
+        }
         try {
             ArrayList<String> list = readTxt();
-            test = test.replaceAll("\\s*|\t|\r|\n", "");
             for (String aList : list) {
-                test = test.replaceAll(aList, "**");
+                test = test.replace(aList, "**");
             }
         } catch (IOException e) {
             e.printStackTrace();
-            return null;
+            return test;
         }
         return test;
     }
 
     public boolean thumbnails(String path, String save) {
-//        String random = getRandom();
-//        StringBuilder stringBuilder = new StringBuilder();
-//        stringBuilder.append("D:/image/cc/");
-//        stringBuilder.append(random);
-//        stringBuilder.append(new Date().getTime());
-//        stringBuilder.append(".jpg");
         try {
-            Thumbnails.of(path).size(215, 229).toFile(save);
+            File saveFile = new File(save);
+            if (saveFile.getParentFile() != null && !saveFile.getParentFile().exists()) {
+                saveFile.getParentFile().mkdirs();
+            }
+            Thumbnails.of(path).size(215, 229).toFile(saveFile);
             return true;
         } catch (Exception e) {
             e.printStackTrace();

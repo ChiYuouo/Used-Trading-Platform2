@@ -26,8 +26,8 @@
     select
     <include refid="all"/>
     from <include refid="table"/>
-    where uwid = #{0} order by id DESC
-    limit #{1},10
+    where uwid = #{uwid,jdbcType=INTEGER} and display = 1 order by id DESC
+    limit #{start},10
   </select>
   <select id="getCounts" resultType="java.lang.Integer">
     select count(id)

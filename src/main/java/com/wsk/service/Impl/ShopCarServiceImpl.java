@@ -17,7 +17,7 @@ public class ShopCarServiceImpl implements ShopCarService {
 
     @Override
     public int deleteByPrimaryKey(Integer id) {
-        return 0;
+        return shopCarMapper.deleteByPrimaryKey(id);
     }
 
     @Override

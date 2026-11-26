@@ -1,6 +1,7 @@
 package com.wsk.dao;
 
 import com.wsk.pojo.UserCollection;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -19,5 +20,7 @@ public interface UserCollectionMapper {
 
     int getCounts(int uid);
 
-    List<UserCollection> selectByUid(int uid, int start);
+    List<UserCollection> selectByUid(@Param("uid") int uid, @Param("start") int start);
+
+    UserCollection selectByUidAndSid(@Param("uid") int uid, @Param("sid") int sid);
 }
