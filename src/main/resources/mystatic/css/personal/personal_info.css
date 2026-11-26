@@ -1,72 +1,110 @@
 .top_content {
-    width: 99%;
-    height: auto;
-    /*background-color: aquamarine;*/
-    position: absolute;
-    display: block;
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 132px 20px 24px 20px;
 }
+
 .publish_product_div {
-    width: 60%;
-    height: auto;
-    margin-left: 20%;
-    margin-top: 12%;
-    /*background-color: red;*/
-    background-color: white;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    box-shadow: 0 6px 24px rgba(15, 23, 42, 0.06);
+    padding: 28px 32px;
+}
+
+.profile_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.profile_header h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #0f172a;
+}
+
+#accordion .ui-icon {
+    background-image: none !important;
+    display: none !important;
+}
+
+#accordion .ui-accordion-header {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
     border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    display: inline-block;
-}
-#accordion {
-    width: 100%;
-}
-.first_info {
-    margin-top: 2%;
-    margin-bottom: 2%;
-    margin-left: 30%;
-}
-.first_info span {
-    color: slateblue;
+    padding: 12px 18px;
+    margin-top: 10px;
+    font-size: 15px;
     font-weight: 600;
+    color: #1e293b;
 }
-.first_info input {
-    border: 1px solid slateblue;
-    border-radius: 5px;
-    padding: 0.3em;
-    font-size: 1.1em;
+
+#accordion .ui-accordion-header-active {
+    background: #eef2ff;
+    border-color: #c7d2fe;
+    color: #4338ca;
 }
-.update_button {
-    margin: 5% 40%;
-    width: 15%;
-    height: 20%;
+
+#accordion .ui-accordion-content {
+    border: 1px solid #e2e8f0;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    padding: 20px 24px;
+    background: #ffffff;
+}
+
+.first_info {
+    margin-bottom: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.first_info span {
+    color: #334155;
+    font-weight: 600;
+    font-size: 14px;
+    min-width: 78px;
+}
+
+.first_info input[type="text"],
+.first_info input[type="password"] {
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 14px;
+    width: 260px;
+    outline: none;
+}
+
+.first_info input:focus {
+    border-color: #4f46e5;
+}
+
+.update_button,
+.update_password_button {
+    padding: 8px 22px;
     border: none;
-    background-color: slateblue;
-    border-radius: 5px;
-    color: white;
-}
-.sex_info{
-    margin-top: 2%;
-    margin-bottom: 2%;
-    margin-left: 38%;
-}
-.update_button:hover {
+    background: #4f46e5;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
     cursor: pointer;
 }
+
+.update_button:hover,
+.update_password_button:hover {
+    background: #4338ca;
+}
+
 span.reqiure_enter {
     display: none;
-}
-footer {
-    margin-top: 10%;
-    width: 96%;
-    background-color: slateblue;
-    box-shadow: 4px 2px 10px #888888;
-    border-radius: 10px;
-    height: 80px;
-    margin-left: 2%;
-}
-footer p {
-    padding-top: 35px;
-    vertical-align: middle;
-    text-align: center;
-    color: white;
-    font-size: 1.2em;
+    color: #ef4444;
+    font-size: 12px;
 }

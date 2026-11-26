@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>我的订单 - 校园二手交易平台</title>
+    <link rel="icon" href="/img/page_icon.png"/>
+    <link rel="stylesheet" href="/css/home_page/header_and_nav.css"/>
+    <link rel="stylesheet" href="/css/personal/my_publish_product.css"/>
+    <script src="/js/jquery-1.12.4.js"></script>
+    <script src="/js/home/header_model_js.js"></script>
+    <script>
+        $(function () {
+            $('.delete_order_btn').click(function () {
+                if (!confirm('确定删除该订单记录吗？')) return;
+                $.ajax({
+                    url: '/deleteOrder.do',
+                    type: 'post',
+                    dataType: 'JSON',
+                    data: {id: $(this).attr('data-id')},
+                    success: function (data) {
+                        if (data.result === 1) {
+                            alert('订单已删除');
+                            window.location.reload();
+                        } else {
+                            alert(data.msg || '删除失败');
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+    <style>
+        .order_card {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 14px;
+            box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05);
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .order_header {
+            background: #f8fafc;
+            border-bottom: 1px solid #e5e7eb;
+            padding: 13px 22px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 12px;
+            font-size: 13px;
+            color: #475569;
+        }
+        .order_body {
+            padding: 8px 22px;
+        }
+        .order_item {
+            display: flex;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px dashed #e2e8f0;
+            gap: 16px;
+        }
+        .order_item:last-child {
+            border-bottom: none;
+        }
+        .order_item img {
+            width: 68px;
+            height: 68px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+        }
+        .order_footer {
+            background: #f8fafc;
+            border-top: 1px solid #f1f5f9;
+            padding: 13px 22px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+        }
+        .delete_order_btn {
+            background: #fef2f2;
+            color: #ef4444;
+            border: 1px solid #fecaca;
+            border-radius: 8px;
+            padding: 6px 14px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .delete_order_btn:hover {
+            background: #ef4444;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+<header th:include="header :: copy"></header>
+<div th:include="short_nav_show :: short_nav_show" class="short_nav_show"></div>
+<nav th:include="my_nav :: my_nav" class="my_nav"></nav>
+<div th:include="personal_nav :: personal_nav" class="personal_nav"></div>
+
+<div class="temp_content" style="max-width:1040px;">
+    <div class="page_banner_bar">
+        <h2>我的交易订单</h2>
+        <a href="/shopping_cart.do" class="primary_btn">返回购物车</a>
+    </div>
+
+    <div th:if="${#lists.isEmpty(orders)}"
+         style="background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:60px;text-align:center;color:#64748b;">
+        暂无订单记录，去<a href="/mall_page.do" style="color:#4f46e5;font-weight:600;text-decoration:none;">二手商城</a>选购吧！
+    </div>
+
+    <div class="order_card" th:each="order : ${orders}">
+        <div class="order_header">
+            <span>订单编号：<strong style="color:#0f172a;" th:text="'#' + ${order.id}">#1</strong></span>
+            <span>下单时间：<span th:text="${#dates.format(order.modified, 'yyyy-MM-dd HH:mm:ss')}"></span></span>
+            <span>收货地址：<strong style="color:#0f172a;" th:text="${order.address}"></strong></span>
+            <span style="color:#10b981;font-weight:600;">已下单</span>
+        </div>
+        <div class="order_body">
+            <div class="order_item" th:each="item : ${order.items}">
+                <img th:src="${item.image}" src="/img/home/feature_prodects/cont1.jpg"
+                     onerror="this.onerror=null;this.src='/img/home/feature_prodects/cont1.jpg'"/>
+                <div style="flex:1;">
+                    <a th:href="'/selectById.do?id=' + ${item.sid}"
+                       style="color:#0f172a;font-weight:600;font-size:15px;text-decoration:none;"
+                       th:text="${item.name}">商品名</a>
+                </div>
+                <div style="width:120px;color:#475569;">单价：￥<span th:text="${item.price}">0</span></div>
+                <div style="width:80px;color:#475569;">× <span th:text="${item.quantity}">1</span></div>
+                <div style="width:130px;text-align:right;color:#ef4444;font-weight:700;">￥<span th:text="${item.subtotal}">0</span></div>
+            </div>
+        </div>
+        <div class="order_footer">
+            <span style="color:#64748b;">备注：<span th:text="${order.context != null and order.context != '' ? order.context : '无'}"></span></span>
+            <div style="display:flex;align-items:center;gap:16px;">
+                <span>订单总额：<strong style="color:#ef4444;font-size:18px;" th:text="'￥' + ${order.totalPrice}"></strong></span>
+                <button class="delete_order_btn" th:attr="data-id=${order.id}">删除订单</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="pagination_div" th:if="${totalPages > 1}">
+        <ul>
+            <li th:each="p : ${#numbers.sequence(1, totalPages)}" th:classappend="${p == currentPage} ? 'current_page'">
+                <a th:href="@{/my_orders.do(page=${p})}" th:text="${p}">1</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <p>Copyright © 2026 校园二手交易平台（Used-Trading-Platform）· 基于 Spring Boot 与 MyBatis</p>
+</footer>
+</body>
+</html>
