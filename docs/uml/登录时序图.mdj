@@ -1,0 +1,1937 @@
+{
+  "_type": "Project",
+  "_id": "C2CS000305",
+  "name": "校园二手交易平台－登录时序图",
+  "ownedElements": [
+    {
+      "_type": "UMLModel",
+      "_id": "C2CS000306",
+      "_parent": {
+        "$ref": "C2CS000305"
+      },
+      "name": "登录时序图",
+      "ownedElements": [
+        {
+          "_type": "UMLCollaboration",
+          "_id": "C2CS000004",
+          "_parent": {
+            "$ref": "C2CS000306"
+          },
+          "name": "登录时序图",
+          "documentation": "",
+          "ownedElements": [
+            {
+              "_type": "UMLInteraction",
+              "_id": "C2CS000005",
+              "_parent": {
+                "$ref": "C2CS000004"
+              },
+              "name": "登录时序图",
+              "participants": [
+                {
+                  "_type": "UMLLifeline",
+                  "_id": "C2CS000007",
+                  "_parent": {
+                    "$ref": "C2CS000005"
+                  },
+                  "name": "用户 / 登录页"
+                },
+                {
+                  "_type": "UMLLifeline",
+                  "_id": "C2CS000015",
+                  "_parent": {
+                    "$ref": "C2CS000005"
+                  },
+                  "name": "UserController"
+                },
+                {
+                  "_type": "UMLLifeline",
+                  "_id": "C2CS000023",
+                  "_parent": {
+                    "$ref": "C2CS000005"
+                  },
+                  "name": "HttpSession"
+                },
+                {
+                  "_type": "UMLLifeline",
+                  "_id": "C2CS000031",
+                  "_parent": {
+                    "$ref": "C2CS000005"
+                  },
+                  "name": "用户资料服务"
+                },
+                {
+                  "_type": "UMLLifeline",
+                  "_id": "C2CS000039",
+                  "_parent": {
+                    "$ref": "C2CS000005"
+                  },
+                  "name": "密码服务 / StringUtils"
+                },
+                {
+                  "_type": "UMLLifeline",
+                  "_id": "C2CS000047",
+                  "_parent": {
+                    "$ref": "C2CS000005"
+                  },
+                  "name": "SaveSession"
+                }
+              ],
+              "messages": [
+                {
+                  "_type": "UMLMessage",
+                  "_id": "C2CS000055",
+                  "_parent": {
+                    "$ref": "C2CS000005"
+                  },
+                  "name": "1 POST /login.do(phone,password,token)",
+                  "source": {
+                    "$ref": "C2CS000007"
+                  },
+                  "target": {
+                    "$ref": "C2CS000015"
+                  },
+                  "messageSort": "synchCall"
+                },
+                {
+                  "_type": "UMLMessage",
+                  "_id": "C2CS000059",
+                  "_parent": {
+                    "$ref": "C2CS000005"
+                  },
+                  "name": "2 读取 token",
+                  "source": {
+                    "$ref": "C2CS000015"
+                  },
+                  "target": {
+                    "$ref": "C2CS000023"
+                  },
+                  "messageSort": "synchCall"
+                },
+                {
+                  "_type": "UMLMessage",
+                  "_id": "C2CS000063",
+                  "_parent": {
+                    "$ref": "C2CS000005"
+                  },
+                  "name": "3 返回会话 token",
+                  "source": {
+                    "$ref": "C2CS000023"
+                  },
+                  "target": {
+                    "$ref": "C2CS000015"
+                  },
+                  "messageSort": "reply"
+                },
+                {
+                  "_type": "UMLMessage",
+                  "_id": "C2CS000067",
+                  "_parent": {
+                    "$ref": "C2CS000005"
+                  },
+                  "name": "4 校验参数与 token",
+                  "source": {
+                    "$ref": "C2CS000015"
+                  },
+                  "target": {
+                    "$ref": "C2CS000015"
+                  },
+                  "messageSort": "synchCall"
+                },
+                {
+                  "_type": "UMLMessage",
+                  "_id": "C2CS000071",
+                  "_parent": {
+                    "$ref": "C2CS000005"
+                  },
+                  "name": "5 selectIdByPhone(phone)",
+                  "source": {
+                    "$ref": "C2CS000015"
+                  },
+                  "target": {
+                    "$ref": "C2CS000031"
+                  },
+                  "messageSort": "synchCall"
+                },
+                {
+                  "_type": "UMLMessage",
+                  "_id": "C2CS000075",
+                  "_parent": {
+                    "$ref": "C2CS000005"
+                  },
+                  "name": "6 返回 uid",
+                  "source": {
+                    "$ref": "C2CS000031"
+                  },
+                  "target": {
+                    "$ref": "C2CS000015"
+                  },
+                  "messageSort": "reply"
+                },
+                {
+                  "_type": "UMLMessage",
+                  "_id": "C2CS000079",
+                  "_parent": {
+                    "$ref": "C2CS000005"
+                  },
+                  "name": "7 selectByPrimaryKey(uid)",
+                  "source": {
+                    "$ref": "C2CS000015"
+                  },
+                  "target": {
+                    "$ref": "C2CS000031"
+                  },
+                  "messageSort": "synchCall"
+                },
+                {
+                  "_type": "UMLMessage",
+                  "_id": "C2CS000083",
+                  "_parent": {
+                    "$ref": "C2CS000005"
+                  },
+                  "name": "8 getMD5(password) / selectByUid(uid)",
+                  "source": {
+                    "$ref": "C2CS000015"
+                  },
+                  "target": {
+                    "$ref": "C2CS000039"
+                  },
+                  "messageSort": "synchCall"
+                },
+                {
+                  "_type": "UMLMessage",
+                  "_id": "C2CS000087",
+                  "_parent": {
+                    "$ref": "C2CS000005"
+                  },
+                  "name": "9 返回计算值与存储值",
+                  "source": {
+                    "$ref": "C2CS000039"
+                  },
+                  "target": {
+                    "$ref": "C2CS000015"
+                  },
+                  "messageSort": "reply"
+                },
+                {
+                  "_type": "UMLMessage",
+                  "_id": "C2CS000091",
+                  "_parent": {
+                    "$ref": "C2CS000005"
+                  },
+                  "name": "10 比较密码摘要",
+                  "source": {
+                    "$ref": "C2CS000015"
+                  },
+                  "target": {
+                    "$ref": "C2CS000015"
+                  },
+                  "messageSort": "synchCall"
+                },
+                {
+                  "_type": "UMLMessage",
+                  "_id": "C2CS000095",
+                  "_parent": {
+                    "$ref": "C2CS000005"
+                  },
+                  "name": "11 写入 userInformation、uid",
+                  "source": {
+                    "$ref": "C2CS000015"
+                  },
+                  "target": {
+                    "$ref": "C2CS000023"
+                  },
+                  "messageSort": "synchCall"
+                },
+                {
+                  "_type": "UMLMessage",
+                  "_id": "C2CS000099",
+                  "_parent": {
+                    "$ref": "C2CS000005"
+                  },
+                  "name": "12 save(phone, 当前毫秒)",
+                  "source": {
+                    "$ref": "C2CS000015"
+                  },
+                  "target": {
+                    "$ref": "C2CS000047"
+                  },
+                  "messageSort": "synchCall"
+                },
+                {
+                  "_type": "UMLMessage",
+                  "_id": "C2CS000103",
+                  "_parent": {
+                    "$ref": "C2CS000005"
+                  },
+                  "name": "13 redirect:/",
+                  "source": {
+                    "$ref": "C2CS000015"
+                  },
+                  "target": {
+                    "$ref": "C2CS000007"
+                  },
+                  "messageSort": "reply"
+                }
+              ],
+              "ownedElements": [
+                {
+                  "_type": "UMLSequenceDiagram",
+                  "_id": "C2CS000006",
+                  "_parent": {
+                    "$ref": "C2CS000005"
+                  },
+                  "name": "登录时序图",
+                  "documentation": "",
+                  "ownedViews": [
+                    {
+                      "_type": "UMLSeqLifelineView",
+                      "_id": "C2CS000008",
+                      "_parent": {
+                        "$ref": "C2CS000006"
+                      },
+                      "model": {
+                        "$ref": "C2CS000007"
+                      },
+                      "font": "Microsoft YaHei;12;0",
+                      "left": 30,
+                      "top": 35,
+                      "width": 245,
+                      "height": 977,
+                      "fillColor": "#E3F2FD",
+                      "subViews": [
+                        {
+                          "_type": "UMLNameCompartmentView",
+                          "_id": "C2CS000009",
+                          "_parent": {
+                            "$ref": "C2CS000008"
+                          },
+                          "model": {
+                            "$ref": "C2CS000007"
+                          },
+                          "subViews": [
+                            {
+                              "_type": "LabelView",
+                              "_id": "C2CS000010",
+                              "_parent": {
+                                "$ref": "C2CS000009"
+                              },
+                              "font": "Microsoft YaHei;12;0",
+                              "left": 35,
+                              "top": 40,
+                              "width": 235,
+                              "height": 20,
+                              "text": "",
+                              "horizontalAlignment": 2,
+                              "visible": false
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "C2CS000011",
+                              "_parent": {
+                                "$ref": "C2CS000009"
+                              },
+                              "font": "Microsoft YaHei;12;0",
+                              "left": 35,
+                              "top": 40,
+                              "width": 235,
+                              "height": 20,
+                              "text": "用户 / 登录页",
+                              "horizontalAlignment": 2,
+                              "visible": true
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "C2CS000012",
+                              "_parent": {
+                                "$ref": "C2CS000009"
+                              },
+                              "font": "Microsoft YaHei;12;0",
+                              "left": 35,
+                              "top": 40,
+                              "width": 235,
+                              "height": 20,
+                              "text": "",
+                              "horizontalAlignment": 2,
+                              "visible": false
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "C2CS000013",
+                              "_parent": {
+                                "$ref": "C2CS000009"
+                              },
+                              "font": "Microsoft YaHei;12;0",
+                              "left": 35,
+                              "top": 40,
+                              "width": 235,
+                              "height": 20,
+                              "text": "",
+                              "horizontalAlignment": 2,
+                              "visible": false
+                            }
+                          ],
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 30,
+                          "top": 35,
+                          "width": 245,
+                          "height": 32,
+                          "stereotypeLabel": {
+                            "$ref": "C2CS000010"
+                          },
+                          "nameLabel": {
+                            "$ref": "C2CS000011"
+                          },
+                          "namespaceLabel": {
+                            "$ref": "C2CS000012"
+                          },
+                          "propertyLabel": {
+                            "$ref": "C2CS000013"
+                          }
+                        },
+                        {
+                          "_type": "UMLLinePartView",
+                          "_id": "C2CS000014",
+                          "_parent": {
+                            "$ref": "C2CS000008"
+                          },
+                          "model": {
+                            "$ref": "C2CS000007"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 152.5,
+                          "top": 77,
+                          "width": 1,
+                          "height": 935
+                        }
+                      ],
+                      "nameCompartment": {
+                        "$ref": "C2CS000009"
+                      },
+                      "linePart": {
+                        "$ref": "C2CS000014"
+                      }
+                    },
+                    {
+                      "_type": "UMLSeqLifelineView",
+                      "_id": "C2CS000016",
+                      "_parent": {
+                        "$ref": "C2CS000006"
+                      },
+                      "model": {
+                        "$ref": "C2CS000015"
+                      },
+                      "font": "Microsoft YaHei;12;0",
+                      "left": 325,
+                      "top": 35,
+                      "width": 245,
+                      "height": 977,
+                      "fillColor": "#E3F2FD",
+                      "subViews": [
+                        {
+                          "_type": "UMLNameCompartmentView",
+                          "_id": "C2CS000017",
+                          "_parent": {
+                            "$ref": "C2CS000016"
+                          },
+                          "model": {
+                            "$ref": "C2CS000015"
+                          },
+                          "subViews": [
+                            {
+                              "_type": "LabelView",
+                              "_id": "C2CS000018",
+                              "_parent": {
+                                "$ref": "C2CS000017"
+                              },
+                              "font": "Microsoft YaHei;12;0",
+                              "left": 330,
+                              "top": 40,
+                              "width": 235,
+                              "height": 20,
+                              "text": "",
+                              "horizontalAlignment": 2,
+                              "visible": false
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "C2CS000019",
+                              "_parent": {
+                                "$ref": "C2CS000017"
+                              },
+                              "font": "Microsoft YaHei;12;0",
+                              "left": 330,
+                              "top": 40,
+                              "width": 235,
+                              "height": 20,
+                              "text": "UserController",
+                              "horizontalAlignment": 2,
+                              "visible": true
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "C2CS000020",
+                              "_parent": {
+                                "$ref": "C2CS000017"
+                              },
+                              "font": "Microsoft YaHei;12;0",
+                              "left": 330,
+                              "top": 40,
+                              "width": 235,
+                              "height": 20,
+                              "text": "",
+                              "horizontalAlignment": 2,
+                              "visible": false
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "C2CS000021",
+                              "_parent": {
+                                "$ref": "C2CS000017"
+                              },
+                              "font": "Microsoft YaHei;12;0",
+                              "left": 330,
+                              "top": 40,
+                              "width": 235,
+                              "height": 20,
+                              "text": "",
+                              "horizontalAlignment": 2,
+                              "visible": false
+                            }
+                          ],
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 325,
+                          "top": 35,
+                          "width": 245,
+                          "height": 32,
+                          "stereotypeLabel": {
+                            "$ref": "C2CS000018"
+                          },
+                          "nameLabel": {
+                            "$ref": "C2CS000019"
+                          },
+                          "namespaceLabel": {
+                            "$ref": "C2CS000020"
+                          },
+                          "propertyLabel": {
+                            "$ref": "C2CS000021"
+                          }
+                        },
+                        {
+                          "_type": "UMLLinePartView",
+                          "_id": "C2CS000022",
+                          "_parent": {
+                            "$ref": "C2CS000016"
+                          },
+                          "model": {
+                            "$ref": "C2CS000015"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 447.5,
+                          "top": 77,
+                          "width": 1,
+                          "height": 935
+                        }
+                      ],
+                      "nameCompartment": {
+                        "$ref": "C2CS000017"
+                      },
+                      "linePart": {
+                        "$ref": "C2CS000022"
+                      }
+                    },
+                    {
+                      "_type": "UMLSeqLifelineView",
+                      "_id": "C2CS000024",
+                      "_parent": {
+                        "$ref": "C2CS000006"
+                      },
+                      "model": {
+                        "$ref": "C2CS000023"
+                      },
+                      "font": "Microsoft YaHei;12;0",
+                      "left": 620,
+                      "top": 35,
+                      "width": 245,
+                      "height": 977,
+                      "fillColor": "#E3F2FD",
+                      "subViews": [
+                        {
+                          "_type": "UMLNameCompartmentView",
+                          "_id": "C2CS000025",
+                          "_parent": {
+                            "$ref": "C2CS000024"
+                          },
+                          "model": {
+                            "$ref": "C2CS000023"
+                          },
+                          "subViews": [
+                            {
+                              "_type": "LabelView",
+                              "_id": "C2CS000026",
+                              "_parent": {
+                                "$ref": "C2CS000025"
+                              },
+                              "font": "Microsoft YaHei;12;0",
+                              "left": 625,
+                              "top": 40,
+                              "width": 235,
+                              "height": 20,
+                              "text": "",
+                              "horizontalAlignment": 2,
+                              "visible": false
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "C2CS000027",
+                              "_parent": {
+                                "$ref": "C2CS000025"
+                              },
+                              "font": "Microsoft YaHei;12;0",
+                              "left": 625,
+                              "top": 40,
+                              "width": 235,
+                              "height": 20,
+                              "text": "HttpSession",
+                              "horizontalAlignment": 2,
+                              "visible": true
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "C2CS000028",
+                              "_parent": {
+                                "$ref": "C2CS000025"
+                              },
+                              "font": "Microsoft YaHei;12;0",
+                              "left": 625,
+                              "top": 40,
+                              "width": 235,
+                              "height": 20,
+                              "text": "",
+                              "horizontalAlignment": 2,
+                              "visible": false
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "C2CS000029",
+                              "_parent": {
+                                "$ref": "C2CS000025"
+                              },
+                              "font": "Microsoft YaHei;12;0",
+                              "left": 625,
+                              "top": 40,
+                              "width": 235,
+                              "height": 20,
+                              "text": "",
+                              "horizontalAlignment": 2,
+                              "visible": false
+                            }
+                          ],
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 620,
+                          "top": 35,
+                          "width": 245,
+                          "height": 32,
+                          "stereotypeLabel": {
+                            "$ref": "C2CS000026"
+                          },
+                          "nameLabel": {
+                            "$ref": "C2CS000027"
+                          },
+                          "namespaceLabel": {
+                            "$ref": "C2CS000028"
+                          },
+                          "propertyLabel": {
+                            "$ref": "C2CS000029"
+                          }
+                        },
+                        {
+                          "_type": "UMLLinePartView",
+                          "_id": "C2CS000030",
+                          "_parent": {
+                            "$ref": "C2CS000024"
+                          },
+                          "model": {
+                            "$ref": "C2CS000023"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 742.5,
+                          "top": 77,
+                          "width": 1,
+                          "height": 935
+                        }
+                      ],
+                      "nameCompartment": {
+                        "$ref": "C2CS000025"
+                      },
+                      "linePart": {
+                        "$ref": "C2CS000030"
+                      }
+                    },
+                    {
+                      "_type": "UMLSeqLifelineView",
+                      "_id": "C2CS000032",
+                      "_parent": {
+                        "$ref": "C2CS000006"
+                      },
+                      "model": {
+                        "$ref": "C2CS000031"
+                      },
+                      "font": "Microsoft YaHei;12;0",
+                      "left": 915,
+                      "top": 35,
+                      "width": 245,
+                      "height": 977,
+                      "fillColor": "#E3F2FD",
+                      "subViews": [
+                        {
+                          "_type": "UMLNameCompartmentView",
+                          "_id": "C2CS000033",
+                          "_parent": {
+                            "$ref": "C2CS000032"
+                          },
+                          "model": {
+                            "$ref": "C2CS000031"
+                          },
+                          "subViews": [
+                            {
+                              "_type": "LabelView",
+                              "_id": "C2CS000034",
+                              "_parent": {
+                                "$ref": "C2CS000033"
+                              },
+                              "font": "Microsoft YaHei;12;0",
+                              "left": 920,
+                              "top": 40,
+                              "width": 235,
+                              "height": 20,
+                              "text": "",
+                              "horizontalAlignment": 2,
+                              "visible": false
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "C2CS000035",
+                              "_parent": {
+                                "$ref": "C2CS000033"
+                              },
+                              "font": "Microsoft YaHei;12;0",
+                              "left": 920,
+                              "top": 40,
+                              "width": 235,
+                              "height": 20,
+                              "text": "用户资料服务",
+                              "horizontalAlignment": 2,
+                              "visible": true
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "C2CS000036",
+                              "_parent": {
+                                "$ref": "C2CS000033"
+                              },
+                              "font": "Microsoft YaHei;12;0",
+                              "left": 920,
+                              "top": 40,
+                              "width": 235,
+                              "height": 20,
+                              "text": "",
+                              "horizontalAlignment": 2,
+                              "visible": false
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "C2CS000037",
+                              "_parent": {
+                                "$ref": "C2CS000033"
+                              },
+                              "font": "Microsoft YaHei;12;0",
+                              "left": 920,
+                              "top": 40,
+                              "width": 235,
+                              "height": 20,
+                              "text": "",
+                              "horizontalAlignment": 2,
+                              "visible": false
+                            }
+                          ],
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 915,
+                          "top": 35,
+                          "width": 245,
+                          "height": 32,
+                          "stereotypeLabel": {
+                            "$ref": "C2CS000034"
+                          },
+                          "nameLabel": {
+                            "$ref": "C2CS000035"
+                          },
+                          "namespaceLabel": {
+                            "$ref": "C2CS000036"
+                          },
+                          "propertyLabel": {
+                            "$ref": "C2CS000037"
+                          }
+                        },
+                        {
+                          "_type": "UMLLinePartView",
+                          "_id": "C2CS000038",
+                          "_parent": {
+                            "$ref": "C2CS000032"
+                          },
+                          "model": {
+                            "$ref": "C2CS000031"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 1037.5,
+                          "top": 77,
+                          "width": 1,
+                          "height": 935
+                        }
+                      ],
+                      "nameCompartment": {
+                        "$ref": "C2CS000033"
+                      },
+                      "linePart": {
+                        "$ref": "C2CS000038"
+                      }
+                    },
+                    {
+                      "_type": "UMLSeqLifelineView",
+                      "_id": "C2CS000040",
+                      "_parent": {
+                        "$ref": "C2CS000006"
+                      },
+                      "model": {
+                        "$ref": "C2CS000039"
+                      },
+                      "font": "Microsoft YaHei;12;0",
+                      "left": 1210,
+                      "top": 35,
+                      "width": 245,
+                      "height": 977,
+                      "fillColor": "#E3F2FD",
+                      "subViews": [
+                        {
+                          "_type": "UMLNameCompartmentView",
+                          "_id": "C2CS000041",
+                          "_parent": {
+                            "$ref": "C2CS000040"
+                          },
+                          "model": {
+                            "$ref": "C2CS000039"
+                          },
+                          "subViews": [
+                            {
+                              "_type": "LabelView",
+                              "_id": "C2CS000042",
+                              "_parent": {
+                                "$ref": "C2CS000041"
+                              },
+                              "font": "Microsoft YaHei;12;0",
+                              "left": 1215,
+                              "top": 40,
+                              "width": 235,
+                              "height": 20,
+                              "text": "",
+                              "horizontalAlignment": 2,
+                              "visible": false
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "C2CS000043",
+                              "_parent": {
+                                "$ref": "C2CS000041"
+                              },
+                              "font": "Microsoft YaHei;12;0",
+                              "left": 1215,
+                              "top": 40,
+                              "width": 235,
+                              "height": 20,
+                              "text": "密码服务 / StringUtils",
+                              "horizontalAlignment": 2,
+                              "visible": true
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "C2CS000044",
+                              "_parent": {
+                                "$ref": "C2CS000041"
+                              },
+                              "font": "Microsoft YaHei;12;0",
+                              "left": 1215,
+                              "top": 40,
+                              "width": 235,
+                              "height": 20,
+                              "text": "",
+                              "horizontalAlignment": 2,
+                              "visible": false
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "C2CS000045",
+                              "_parent": {
+                                "$ref": "C2CS000041"
+                              },
+                              "font": "Microsoft YaHei;12;0",
+                              "left": 1215,
+                              "top": 40,
+                              "width": 235,
+                              "height": 20,
+                              "text": "",
+                              "horizontalAlignment": 2,
+                              "visible": false
+                            }
+                          ],
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 1210,
+                          "top": 35,
+                          "width": 245,
+                          "height": 32,
+                          "stereotypeLabel": {
+                            "$ref": "C2CS000042"
+                          },
+                          "nameLabel": {
+                            "$ref": "C2CS000043"
+                          },
+                          "namespaceLabel": {
+                            "$ref": "C2CS000044"
+                          },
+                          "propertyLabel": {
+                            "$ref": "C2CS000045"
+                          }
+                        },
+                        {
+                          "_type": "UMLLinePartView",
+                          "_id": "C2CS000046",
+                          "_parent": {
+                            "$ref": "C2CS000040"
+                          },
+                          "model": {
+                            "$ref": "C2CS000039"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 1332.5,
+                          "top": 77,
+                          "width": 1,
+                          "height": 935
+                        }
+                      ],
+                      "nameCompartment": {
+                        "$ref": "C2CS000041"
+                      },
+                      "linePart": {
+                        "$ref": "C2CS000046"
+                      }
+                    },
+                    {
+                      "_type": "UMLSeqLifelineView",
+                      "_id": "C2CS000048",
+                      "_parent": {
+                        "$ref": "C2CS000006"
+                      },
+                      "model": {
+                        "$ref": "C2CS000047"
+                      },
+                      "font": "Microsoft YaHei;12;0",
+                      "left": 1505,
+                      "top": 35,
+                      "width": 245,
+                      "height": 977,
+                      "fillColor": "#E3F2FD",
+                      "subViews": [
+                        {
+                          "_type": "UMLNameCompartmentView",
+                          "_id": "C2CS000049",
+                          "_parent": {
+                            "$ref": "C2CS000048"
+                          },
+                          "model": {
+                            "$ref": "C2CS000047"
+                          },
+                          "subViews": [
+                            {
+                              "_type": "LabelView",
+                              "_id": "C2CS000050",
+                              "_parent": {
+                                "$ref": "C2CS000049"
+                              },
+                              "font": "Microsoft YaHei;12;0",
+                              "left": 1510,
+                              "top": 40,
+                              "width": 235,
+                              "height": 20,
+                              "text": "",
+                              "horizontalAlignment": 2,
+                              "visible": false
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "C2CS000051",
+                              "_parent": {
+                                "$ref": "C2CS000049"
+                              },
+                              "font": "Microsoft YaHei;12;0",
+                              "left": 1510,
+                              "top": 40,
+                              "width": 235,
+                              "height": 20,
+                              "text": "SaveSession",
+                              "horizontalAlignment": 2,
+                              "visible": true
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "C2CS000052",
+                              "_parent": {
+                                "$ref": "C2CS000049"
+                              },
+                              "font": "Microsoft YaHei;12;0",
+                              "left": 1510,
+                              "top": 40,
+                              "width": 235,
+                              "height": 20,
+                              "text": "",
+                              "horizontalAlignment": 2,
+                              "visible": false
+                            },
+                            {
+                              "_type": "LabelView",
+                              "_id": "C2CS000053",
+                              "_parent": {
+                                "$ref": "C2CS000049"
+                              },
+                              "font": "Microsoft YaHei;12;0",
+                              "left": 1510,
+                              "top": 40,
+                              "width": 235,
+                              "height": 20,
+                              "text": "",
+                              "horizontalAlignment": 2,
+                              "visible": false
+                            }
+                          ],
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 1505,
+                          "top": 35,
+                          "width": 245,
+                          "height": 32,
+                          "stereotypeLabel": {
+                            "$ref": "C2CS000050"
+                          },
+                          "nameLabel": {
+                            "$ref": "C2CS000051"
+                          },
+                          "namespaceLabel": {
+                            "$ref": "C2CS000052"
+                          },
+                          "propertyLabel": {
+                            "$ref": "C2CS000053"
+                          }
+                        },
+                        {
+                          "_type": "UMLLinePartView",
+                          "_id": "C2CS000054",
+                          "_parent": {
+                            "$ref": "C2CS000048"
+                          },
+                          "model": {
+                            "$ref": "C2CS000047"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 1627.5,
+                          "top": 77,
+                          "width": 1,
+                          "height": 935
+                        }
+                      ],
+                      "nameCompartment": {
+                        "$ref": "C2CS000049"
+                      },
+                      "linePart": {
+                        "$ref": "C2CS000054"
+                      }
+                    },
+                    {
+                      "_type": "UMLSeqMessageView",
+                      "_id": "C2CS000056",
+                      "_parent": {
+                        "$ref": "C2CS000006"
+                      },
+                      "model": {
+                        "$ref": "C2CS000055"
+                      },
+                      "font": "Microsoft YaHei;12;0",
+                      "head": {
+                        "$ref": "C2CS000022"
+                      },
+                      "tail": {
+                        "$ref": "C2CS000014"
+                      },
+                      "points": "152.5:125;447.5:125",
+                      "lineStyle": 1,
+                      "subViews": [
+                        {
+                          "_type": "EdgeLabelView",
+                          "_id": "C2CS000057",
+                          "_parent": {
+                            "$ref": "C2CS000056"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 167.0,
+                          "top": 102.0,
+                          "width": 278,
+                          "height": 20,
+                          "text": "1 POST /login.do(phone,password,token)",
+                          "horizontalAlignment": 2,
+                          "visible": true,
+                          "model": {
+                            "$ref": "C2CS000055"
+                          },
+                          "hostEdge": {
+                            "$ref": "C2CS000056"
+                          },
+                          "edgePosition": 1,
+                          "distance": 18,
+                          "alpha": 1.5707963267948966
+                        },
+                        {
+                          "_type": "UMLActivationView",
+                          "_id": "C2CS000058",
+                          "_parent": {
+                            "$ref": "C2CS000056"
+                          },
+                          "model": {
+                            "$ref": "C2CS000055"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 440.5,
+                          "top": 125,
+                          "width": 14,
+                          "height": 28,
+                          "fillColor": "#BBDEFB"
+                        }
+                      ],
+                      "nameLabel": {
+                        "$ref": "C2CS000057"
+                      },
+                      "activation": {
+                        "$ref": "C2CS000058"
+                      }
+                    },
+                    {
+                      "_type": "UMLSeqMessageView",
+                      "_id": "C2CS000060",
+                      "_parent": {
+                        "$ref": "C2CS000006"
+                      },
+                      "model": {
+                        "$ref": "C2CS000059"
+                      },
+                      "font": "Microsoft YaHei;12;0",
+                      "head": {
+                        "$ref": "C2CS000030"
+                      },
+                      "tail": {
+                        "$ref": "C2CS000022"
+                      },
+                      "points": "447.5:190;742.5:190",
+                      "lineStyle": 1,
+                      "subViews": [
+                        {
+                          "_type": "EdgeLabelView",
+                          "_id": "C2CS000061",
+                          "_parent": {
+                            "$ref": "C2CS000060"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 554.0,
+                          "top": 167.0,
+                          "width": 94,
+                          "height": 20,
+                          "text": "2 读取 token",
+                          "horizontalAlignment": 2,
+                          "visible": true,
+                          "model": {
+                            "$ref": "C2CS000059"
+                          },
+                          "hostEdge": {
+                            "$ref": "C2CS000060"
+                          },
+                          "edgePosition": 1,
+                          "distance": 18,
+                          "alpha": 1.5707963267948966
+                        },
+                        {
+                          "_type": "UMLActivationView",
+                          "_id": "C2CS000062",
+                          "_parent": {
+                            "$ref": "C2CS000060"
+                          },
+                          "model": {
+                            "$ref": "C2CS000059"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 735.5,
+                          "top": 190,
+                          "width": 14,
+                          "height": 28,
+                          "fillColor": "#BBDEFB"
+                        }
+                      ],
+                      "nameLabel": {
+                        "$ref": "C2CS000061"
+                      },
+                      "activation": {
+                        "$ref": "C2CS000062"
+                      }
+                    },
+                    {
+                      "_type": "UMLSeqMessageView",
+                      "_id": "C2CS000064",
+                      "_parent": {
+                        "$ref": "C2CS000006"
+                      },
+                      "model": {
+                        "$ref": "C2CS000063"
+                      },
+                      "font": "Microsoft YaHei;12;0",
+                      "head": {
+                        "$ref": "C2CS000022"
+                      },
+                      "tail": {
+                        "$ref": "C2CS000030"
+                      },
+                      "points": "742.5:255;447.5:255",
+                      "lineStyle": 1,
+                      "subViews": [
+                        {
+                          "_type": "EdgeLabelView",
+                          "_id": "C2CS000065",
+                          "_parent": {
+                            "$ref": "C2CS000064"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 541.0,
+                          "top": 232.0,
+                          "width": 120,
+                          "height": 20,
+                          "text": "3 返回会话 token",
+                          "horizontalAlignment": 2,
+                          "visible": true,
+                          "model": {
+                            "$ref": "C2CS000063"
+                          },
+                          "hostEdge": {
+                            "$ref": "C2CS000064"
+                          },
+                          "edgePosition": 1,
+                          "distance": 18,
+                          "alpha": 1.5707963267948966
+                        },
+                        {
+                          "_type": "UMLActivationView",
+                          "_id": "C2CS000066",
+                          "_parent": {
+                            "$ref": "C2CS000064"
+                          },
+                          "model": {
+                            "$ref": "C2CS000063"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 440.5,
+                          "top": 255,
+                          "width": 14,
+                          "height": 28,
+                          "fillColor": "#BBDEFB"
+                        }
+                      ],
+                      "nameLabel": {
+                        "$ref": "C2CS000065"
+                      },
+                      "activation": {
+                        "$ref": "C2CS000066"
+                      }
+                    },
+                    {
+                      "_type": "UMLSeqMessageView",
+                      "_id": "C2CS000068",
+                      "_parent": {
+                        "$ref": "C2CS000006"
+                      },
+                      "model": {
+                        "$ref": "C2CS000067"
+                      },
+                      "font": "Microsoft YaHei;12;0",
+                      "head": {
+                        "$ref": "C2CS000022"
+                      },
+                      "tail": {
+                        "$ref": "C2CS000022"
+                      },
+                      "points": "447.5:320;482.5:320;482.5:345;447.5:345",
+                      "lineStyle": 1,
+                      "subViews": [
+                        {
+                          "_type": "EdgeLabelView",
+                          "_id": "C2CS000069",
+                          "_parent": {
+                            "$ref": "C2CS000068"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 387.0,
+                          "top": 309.5,
+                          "width": 133,
+                          "height": 20,
+                          "text": "4 校验参数与 token",
+                          "horizontalAlignment": 2,
+                          "visible": true,
+                          "model": {
+                            "$ref": "C2CS000067"
+                          },
+                          "hostEdge": {
+                            "$ref": "C2CS000068"
+                          },
+                          "edgePosition": 1,
+                          "distance": 18,
+                          "alpha": 1.5707963267948966
+                        },
+                        {
+                          "_type": "UMLActivationView",
+                          "_id": "C2CS000070",
+                          "_parent": {
+                            "$ref": "C2CS000068"
+                          },
+                          "model": {
+                            "$ref": "C2CS000067"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 440.5,
+                          "top": 320,
+                          "width": 14,
+                          "height": 28,
+                          "fillColor": "#BBDEFB"
+                        }
+                      ],
+                      "nameLabel": {
+                        "$ref": "C2CS000069"
+                      },
+                      "activation": {
+                        "$ref": "C2CS000070"
+                      }
+                    },
+                    {
+                      "_type": "UMLSeqMessageView",
+                      "_id": "C2CS000072",
+                      "_parent": {
+                        "$ref": "C2CS000006"
+                      },
+                      "model": {
+                        "$ref": "C2CS000071"
+                      },
+                      "font": "Microsoft YaHei;12;0",
+                      "head": {
+                        "$ref": "C2CS000038"
+                      },
+                      "tail": {
+                        "$ref": "C2CS000022"
+                      },
+                      "points": "447.5:385;1037.5:385",
+                      "lineStyle": 1,
+                      "subViews": [
+                        {
+                          "_type": "EdgeLabelView",
+                          "_id": "C2CS000073",
+                          "_parent": {
+                            "$ref": "C2CS000072"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 658.5,
+                          "top": 362.0,
+                          "width": 180,
+                          "height": 20,
+                          "text": "5 selectIdByPhone(phone)",
+                          "horizontalAlignment": 2,
+                          "visible": true,
+                          "model": {
+                            "$ref": "C2CS000071"
+                          },
+                          "hostEdge": {
+                            "$ref": "C2CS000072"
+                          },
+                          "edgePosition": 1,
+                          "distance": 18,
+                          "alpha": 1.5707963267948966
+                        },
+                        {
+                          "_type": "UMLActivationView",
+                          "_id": "C2CS000074",
+                          "_parent": {
+                            "$ref": "C2CS000072"
+                          },
+                          "model": {
+                            "$ref": "C2CS000071"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 1030.5,
+                          "top": 385,
+                          "width": 14,
+                          "height": 28,
+                          "fillColor": "#BBDEFB"
+                        }
+                      ],
+                      "nameLabel": {
+                        "$ref": "C2CS000073"
+                      },
+                      "activation": {
+                        "$ref": "C2CS000074"
+                      }
+                    },
+                    {
+                      "_type": "UMLSeqMessageView",
+                      "_id": "C2CS000076",
+                      "_parent": {
+                        "$ref": "C2CS000006"
+                      },
+                      "model": {
+                        "$ref": "C2CS000075"
+                      },
+                      "font": "Microsoft YaHei;12;0",
+                      "head": {
+                        "$ref": "C2CS000022"
+                      },
+                      "tail": {
+                        "$ref": "C2CS000038"
+                      },
+                      "points": "1037.5:450;447.5:450",
+                      "lineStyle": 1,
+                      "subViews": [
+                        {
+                          "_type": "EdgeLabelView",
+                          "_id": "C2CS000077",
+                          "_parent": {
+                            "$ref": "C2CS000076"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 708.5,
+                          "top": 427.0,
+                          "width": 80,
+                          "height": 20,
+                          "text": "6 返回 uid",
+                          "horizontalAlignment": 2,
+                          "visible": true,
+                          "model": {
+                            "$ref": "C2CS000075"
+                          },
+                          "hostEdge": {
+                            "$ref": "C2CS000076"
+                          },
+                          "edgePosition": 1,
+                          "distance": 18,
+                          "alpha": 1.5707963267948966
+                        },
+                        {
+                          "_type": "UMLActivationView",
+                          "_id": "C2CS000078",
+                          "_parent": {
+                            "$ref": "C2CS000076"
+                          },
+                          "model": {
+                            "$ref": "C2CS000075"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 440.5,
+                          "top": 450,
+                          "width": 14,
+                          "height": 28,
+                          "fillColor": "#BBDEFB"
+                        }
+                      ],
+                      "nameLabel": {
+                        "$ref": "C2CS000077"
+                      },
+                      "activation": {
+                        "$ref": "C2CS000078"
+                      }
+                    },
+                    {
+                      "_type": "UMLSeqMessageView",
+                      "_id": "C2CS000080",
+                      "_parent": {
+                        "$ref": "C2CS000006"
+                      },
+                      "model": {
+                        "$ref": "C2CS000079"
+                      },
+                      "font": "Microsoft YaHei;12;0",
+                      "head": {
+                        "$ref": "C2CS000038"
+                      },
+                      "tail": {
+                        "$ref": "C2CS000022"
+                      },
+                      "points": "447.5:515;1037.5:515",
+                      "lineStyle": 1,
+                      "subViews": [
+                        {
+                          "_type": "EdgeLabelView",
+                          "_id": "C2CS000081",
+                          "_parent": {
+                            "$ref": "C2CS000080"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 655.0,
+                          "top": 492.0,
+                          "width": 187,
+                          "height": 20,
+                          "text": "7 selectByPrimaryKey(uid)",
+                          "horizontalAlignment": 2,
+                          "visible": true,
+                          "model": {
+                            "$ref": "C2CS000079"
+                          },
+                          "hostEdge": {
+                            "$ref": "C2CS000080"
+                          },
+                          "edgePosition": 1,
+                          "distance": 18,
+                          "alpha": 1.5707963267948966
+                        },
+                        {
+                          "_type": "UMLActivationView",
+                          "_id": "C2CS000082",
+                          "_parent": {
+                            "$ref": "C2CS000080"
+                          },
+                          "model": {
+                            "$ref": "C2CS000079"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 1030.5,
+                          "top": 515,
+                          "width": 14,
+                          "height": 28,
+                          "fillColor": "#BBDEFB"
+                        }
+                      ],
+                      "nameLabel": {
+                        "$ref": "C2CS000081"
+                      },
+                      "activation": {
+                        "$ref": "C2CS000082"
+                      }
+                    },
+                    {
+                      "_type": "UMLSeqMessageView",
+                      "_id": "C2CS000084",
+                      "_parent": {
+                        "$ref": "C2CS000006"
+                      },
+                      "model": {
+                        "$ref": "C2CS000083"
+                      },
+                      "font": "Microsoft YaHei;12;0",
+                      "head": {
+                        "$ref": "C2CS000046"
+                      },
+                      "tail": {
+                        "$ref": "C2CS000022"
+                      },
+                      "points": "447.5:580;1332.5:580",
+                      "lineStyle": 1,
+                      "subViews": [
+                        {
+                          "_type": "EdgeLabelView",
+                          "_id": "C2CS000085",
+                          "_parent": {
+                            "$ref": "C2CS000084"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 760.5,
+                          "top": 557.0,
+                          "width": 271,
+                          "height": 20,
+                          "text": "8 getMD5(password) / selectByUid(uid)",
+                          "horizontalAlignment": 2,
+                          "visible": true,
+                          "model": {
+                            "$ref": "C2CS000083"
+                          },
+                          "hostEdge": {
+                            "$ref": "C2CS000084"
+                          },
+                          "edgePosition": 1,
+                          "distance": 18,
+                          "alpha": 1.5707963267948966
+                        },
+                        {
+                          "_type": "UMLActivationView",
+                          "_id": "C2CS000086",
+                          "_parent": {
+                            "$ref": "C2CS000084"
+                          },
+                          "model": {
+                            "$ref": "C2CS000083"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 1325.5,
+                          "top": 580,
+                          "width": 14,
+                          "height": 28,
+                          "fillColor": "#BBDEFB"
+                        }
+                      ],
+                      "nameLabel": {
+                        "$ref": "C2CS000085"
+                      },
+                      "activation": {
+                        "$ref": "C2CS000086"
+                      }
+                    },
+                    {
+                      "_type": "UMLSeqMessageView",
+                      "_id": "C2CS000088",
+                      "_parent": {
+                        "$ref": "C2CS000006"
+                      },
+                      "model": {
+                        "$ref": "C2CS000087"
+                      },
+                      "font": "Microsoft YaHei;12;0",
+                      "head": {
+                        "$ref": "C2CS000022"
+                      },
+                      "tail": {
+                        "$ref": "C2CS000046"
+                      },
+                      "points": "1332.5:645;447.5:645",
+                      "lineStyle": 1,
+                      "subViews": [
+                        {
+                          "_type": "EdgeLabelView",
+                          "_id": "C2CS000089",
+                          "_parent": {
+                            "$ref": "C2CS000088"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 824.5,
+                          "top": 622.0,
+                          "width": 143,
+                          "height": 20,
+                          "text": "9 返回计算值与存储值",
+                          "horizontalAlignment": 2,
+                          "visible": true,
+                          "model": {
+                            "$ref": "C2CS000087"
+                          },
+                          "hostEdge": {
+                            "$ref": "C2CS000088"
+                          },
+                          "edgePosition": 1,
+                          "distance": 18,
+                          "alpha": 1.5707963267948966
+                        },
+                        {
+                          "_type": "UMLActivationView",
+                          "_id": "C2CS000090",
+                          "_parent": {
+                            "$ref": "C2CS000088"
+                          },
+                          "model": {
+                            "$ref": "C2CS000087"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 440.5,
+                          "top": 645,
+                          "width": 14,
+                          "height": 28,
+                          "fillColor": "#BBDEFB"
+                        }
+                      ],
+                      "nameLabel": {
+                        "$ref": "C2CS000089"
+                      },
+                      "activation": {
+                        "$ref": "C2CS000090"
+                      }
+                    },
+                    {
+                      "_type": "UMLSeqMessageView",
+                      "_id": "C2CS000092",
+                      "_parent": {
+                        "$ref": "C2CS000006"
+                      },
+                      "model": {
+                        "$ref": "C2CS000091"
+                      },
+                      "font": "Microsoft YaHei;12;0",
+                      "head": {
+                        "$ref": "C2CS000022"
+                      },
+                      "tail": {
+                        "$ref": "C2CS000022"
+                      },
+                      "points": "447.5:710;482.5:710;482.5:735;447.5:735",
+                      "lineStyle": 1,
+                      "subViews": [
+                        {
+                          "_type": "EdgeLabelView",
+                          "_id": "C2CS000093",
+                          "_parent": {
+                            "$ref": "C2CS000092"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 398.0,
+                          "top": 699.5,
+                          "width": 111,
+                          "height": 20,
+                          "text": "10 比较密码摘要",
+                          "horizontalAlignment": 2,
+                          "visible": true,
+                          "model": {
+                            "$ref": "C2CS000091"
+                          },
+                          "hostEdge": {
+                            "$ref": "C2CS000092"
+                          },
+                          "edgePosition": 1,
+                          "distance": 18,
+                          "alpha": 1.5707963267948966
+                        },
+                        {
+                          "_type": "UMLActivationView",
+                          "_id": "C2CS000094",
+                          "_parent": {
+                            "$ref": "C2CS000092"
+                          },
+                          "model": {
+                            "$ref": "C2CS000091"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 440.5,
+                          "top": 710,
+                          "width": 14,
+                          "height": 28,
+                          "fillColor": "#BBDEFB"
+                        }
+                      ],
+                      "nameLabel": {
+                        "$ref": "C2CS000093"
+                      },
+                      "activation": {
+                        "$ref": "C2CS000094"
+                      }
+                    },
+                    {
+                      "_type": "UMLSeqMessageView",
+                      "_id": "C2CS000096",
+                      "_parent": {
+                        "$ref": "C2CS000006"
+                      },
+                      "model": {
+                        "$ref": "C2CS000095"
+                      },
+                      "font": "Microsoft YaHei;12;0",
+                      "head": {
+                        "$ref": "C2CS000030"
+                      },
+                      "tail": {
+                        "$ref": "C2CS000022"
+                      },
+                      "points": "447.5:775;742.5:775",
+                      "lineStyle": 1,
+                      "subViews": [
+                        {
+                          "_type": "EdgeLabelView",
+                          "_id": "C2CS000097",
+                          "_parent": {
+                            "$ref": "C2CS000096"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 498.5,
+                          "top": 752.0,
+                          "width": 205,
+                          "height": 20,
+                          "text": "11 写入 userInformation、uid",
+                          "horizontalAlignment": 2,
+                          "visible": true,
+                          "model": {
+                            "$ref": "C2CS000095"
+                          },
+                          "hostEdge": {
+                            "$ref": "C2CS000096"
+                          },
+                          "edgePosition": 1,
+                          "distance": 18,
+                          "alpha": 1.5707963267948966
+                        },
+                        {
+                          "_type": "UMLActivationView",
+                          "_id": "C2CS000098",
+                          "_parent": {
+                            "$ref": "C2CS000096"
+                          },
+                          "model": {
+                            "$ref": "C2CS000095"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 735.5,
+                          "top": 775,
+                          "width": 14,
+                          "height": 28,
+                          "fillColor": "#BBDEFB"
+                        }
+                      ],
+                      "nameLabel": {
+                        "$ref": "C2CS000097"
+                      },
+                      "activation": {
+                        "$ref": "C2CS000098"
+                      }
+                    },
+                    {
+                      "_type": "UMLSeqMessageView",
+                      "_id": "C2CS000100",
+                      "_parent": {
+                        "$ref": "C2CS000006"
+                      },
+                      "model": {
+                        "$ref": "C2CS000099"
+                      },
+                      "font": "Microsoft YaHei;12;0",
+                      "head": {
+                        "$ref": "C2CS000054"
+                      },
+                      "tail": {
+                        "$ref": "C2CS000022"
+                      },
+                      "points": "447.5:840;1627.5:840",
+                      "lineStyle": 1,
+                      "subViews": [
+                        {
+                          "_type": "EdgeLabelView",
+                          "_id": "C2CS000101",
+                          "_parent": {
+                            "$ref": "C2CS000100"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 955.5,
+                          "top": 817.0,
+                          "width": 176,
+                          "height": 20,
+                          "text": "12 save(phone, 当前毫秒)",
+                          "horizontalAlignment": 2,
+                          "visible": true,
+                          "model": {
+                            "$ref": "C2CS000099"
+                          },
+                          "hostEdge": {
+                            "$ref": "C2CS000100"
+                          },
+                          "edgePosition": 1,
+                          "distance": 18,
+                          "alpha": 1.5707963267948966
+                        },
+                        {
+                          "_type": "UMLActivationView",
+                          "_id": "C2CS000102",
+                          "_parent": {
+                            "$ref": "C2CS000100"
+                          },
+                          "model": {
+                            "$ref": "C2CS000099"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 1620.5,
+                          "top": 840,
+                          "width": 14,
+                          "height": 28,
+                          "fillColor": "#BBDEFB"
+                        }
+                      ],
+                      "nameLabel": {
+                        "$ref": "C2CS000101"
+                      },
+                      "activation": {
+                        "$ref": "C2CS000102"
+                      }
+                    },
+                    {
+                      "_type": "UMLSeqMessageView",
+                      "_id": "C2CS000104",
+                      "_parent": {
+                        "$ref": "C2CS000006"
+                      },
+                      "model": {
+                        "$ref": "C2CS000103"
+                      },
+                      "font": "Microsoft YaHei;12;0",
+                      "head": {
+                        "$ref": "C2CS000014"
+                      },
+                      "tail": {
+                        "$ref": "C2CS000022"
+                      },
+                      "points": "447.5:905;152.5:905",
+                      "lineStyle": 1,
+                      "subViews": [
+                        {
+                          "_type": "EdgeLabelView",
+                          "_id": "C2CS000105",
+                          "_parent": {
+                            "$ref": "C2CS000104"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 254.5,
+                          "top": 882.0,
+                          "width": 103,
+                          "height": 20,
+                          "text": "13 redirect:/",
+                          "horizontalAlignment": 2,
+                          "visible": true,
+                          "model": {
+                            "$ref": "C2CS000103"
+                          },
+                          "hostEdge": {
+                            "$ref": "C2CS000104"
+                          },
+                          "edgePosition": 1,
+                          "distance": 18,
+                          "alpha": 1.5707963267948966
+                        },
+                        {
+                          "_type": "UMLActivationView",
+                          "_id": "C2CS000106",
+                          "_parent": {
+                            "$ref": "C2CS000104"
+                          },
+                          "model": {
+                            "$ref": "C2CS000103"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 145.5,
+                          "top": 905,
+                          "width": 14,
+                          "height": 28,
+                          "fillColor": "#BBDEFB"
+                        }
+                      ],
+                      "nameLabel": {
+                        "$ref": "C2CS000105"
+                      },
+                      "activation": {
+                        "$ref": "C2CS000106"
+                      }
+                    }
+                  ],
+                  "defaultDiagram": true,
+                  "showSequenceNumber": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

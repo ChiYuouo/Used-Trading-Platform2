@@ -1,0 +1,4549 @@
+{
+  "_type": "Project",
+  "_id": "50e1dbdec1cf4f0aa4d20653d7b73db5",
+  "name": "校园二手交易平台 - 系统类图与对象图",
+  "ownedElements": [
+    {
+      "_type": "UMLModel",
+      "_id": "b332c47fc00748d9aa22c0fb41ab516d",
+      "name": "校园二手交易平台 - 系统类图与对象图",
+      "ownedElements": [
+        {
+          "_type": "UMLClassDiagram",
+          "_id": "742d11e4628242b7b4ae91e5d1fe81c9",
+          "name": "02 核心领域类图",
+          "ownedViews": [
+            {
+              "_type": "UMLClassView",
+              "_id": "a5eeb3e2ca4c428f8120b1e60531dd1a",
+              "name": "",
+              "model": {
+                "$ref": "fd295eff2f994460937d1a480e2ec216"
+              },
+              "left": 90,
+              "top": 350,
+              "width": 330,
+              "height": 301,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "742d11e4628242b7b4ae91e5d1fe81c9"
+              },
+              "showShadow": false,
+              "suppressOperations": true,
+              "suppressAttributes": false
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "4fc7a815976e403c8e9a0c651babc5f2",
+              "name": "",
+              "model": {
+                "$ref": "0225fa85d2c34509ae1f00c8d0b12d1a"
+              },
+              "left": 90,
+              "top": 80,
+              "width": 330,
+              "height": 154,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "742d11e4628242b7b4ae91e5d1fe81c9"
+              },
+              "showShadow": false,
+              "suppressOperations": true,
+              "suppressAttributes": false
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "632b2e89d4914e619689a1abb641f73f",
+              "name": "",
+              "model": {
+                "$ref": "deeff84c58b34633b1868fd8136c59ce"
+              },
+              "left": 90,
+              "top": 850,
+              "width": 330,
+              "height": 175,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "742d11e4628242b7b4ae91e5d1fe81c9"
+              },
+              "showShadow": false,
+              "suppressOperations": true,
+              "suppressAttributes": false
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "b65ce64469fe4b51bc8674537961df96",
+              "name": "",
+              "model": {
+                "$ref": "48915ab59bfe4280a51eb73f23cd2992"
+              },
+              "left": 1230,
+              "top": 310,
+              "width": 330,
+              "height": 364,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "742d11e4628242b7b4ae91e5d1fe81c9"
+              },
+              "showShadow": false,
+              "suppressOperations": true,
+              "suppressAttributes": false
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "d4b32b8a1e894184aa4023471bd2f514",
+              "name": "",
+              "model": {
+                "$ref": "652f04351b554ca0ba8c5800df2fc2e5"
+              },
+              "left": 650,
+              "top": 100,
+              "width": 330,
+              "height": 175,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "742d11e4628242b7b4ae91e5d1fe81c9"
+              },
+              "showShadow": false,
+              "suppressOperations": true,
+              "suppressAttributes": false
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "c90fdad501884ae5b4efcedc7766efe6",
+              "name": "",
+              "model": {
+                "$ref": "f95cff46060242e19871307a83f53824"
+              },
+              "left": 650,
+              "top": 430,
+              "width": 330,
+              "height": 175,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "742d11e4628242b7b4ae91e5d1fe81c9"
+              },
+              "showShadow": false,
+              "suppressOperations": true,
+              "suppressAttributes": false
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "8fe9a944cfe34bbba833cd0e5265507c",
+              "name": "",
+              "model": {
+                "$ref": "23f3a22282284bc99c01a83414666823"
+              },
+              "left": 650,
+              "top": 760,
+              "width": 330,
+              "height": 196,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "742d11e4628242b7b4ae91e5d1fe81c9"
+              },
+              "showShadow": false,
+              "suppressOperations": true,
+              "suppressAttributes": false
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "4b46c560b1054955a7a0983dd449b20f",
+              "name": "",
+              "model": {
+                "$ref": "bc462560c9e04be3b1387a3a232017f6"
+              },
+              "left": 1230,
+              "top": 880,
+              "width": 330,
+              "height": 196,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "742d11e4628242b7b4ae91e5d1fe81c9"
+              },
+              "showShadow": false,
+              "suppressOperations": true,
+              "suppressAttributes": false
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "880700e5d94e437381b49995ea4d8d02",
+              "name": "",
+              "model": {
+                "$ref": "e5c7741280d54365827c63196fd9adf6"
+              },
+              "left": 1230,
+              "top": 80,
+              "width": 330,
+              "height": 175,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "742d11e4628242b7b4ae91e5d1fe81c9"
+              },
+              "showShadow": false,
+              "suppressOperations": true,
+              "suppressAttributes": false
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "6af2c60ed8654c8b831f88d7280a973a",
+              "name": "",
+              "model": {
+                "$ref": "56b8a7b3ada3449e8a61d4e6c9adb077"
+              },
+              "tail": {
+                "$ref": "a5eeb3e2ca4c428f8120b1e60531dd1a"
+              },
+              "head": {
+                "$ref": "4fc7a815976e403c8e9a0c651babc5f2"
+              },
+              "points": "260:350;260:234",
+              "lineStyle": 2,
+              "font": "Microsoft YaHei;12;0",
+              "_parent": {
+                "$ref": "742d11e4628242b7b4ae91e5d1fe81c9"
+              },
+              "lineColor": "#475569"
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "89624ce7d45848b4acd54888b81b9480",
+              "name": "",
+              "model": {
+                "$ref": "879c0449d96b4705b713f18a1c15cb93"
+              },
+              "tail": {
+                "$ref": "a5eeb3e2ca4c428f8120b1e60531dd1a"
+              },
+              "head": {
+                "$ref": "632b2e89d4914e619689a1abb641f73f"
+              },
+              "points": "260:651;260:850",
+              "lineStyle": 2,
+              "font": "Microsoft YaHei;12;0",
+              "_parent": {
+                "$ref": "742d11e4628242b7b4ae91e5d1fe81c9"
+              },
+              "lineColor": "#475569"
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "ff4a32ee1c6c40a786199496f6bfb2cb",
+              "name": "",
+              "model": {
+                "$ref": "f88f5699030c493498bfd74c30d0fa2d"
+              },
+              "tail": {
+                "$ref": "a5eeb3e2ca4c428f8120b1e60531dd1a"
+              },
+              "head": {
+                "$ref": "b65ce64469fe4b51bc8674537961df96"
+              },
+              "points": "420:500;450:500;450:410;1200:410;1200:490;1230:490",
+              "lineStyle": 2,
+              "font": "Microsoft YaHei;12;0",
+              "_parent": {
+                "$ref": "742d11e4628242b7b4ae91e5d1fe81c9"
+              },
+              "lineColor": "#475569"
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "edfaf573a6954badabba61cb40b2a22d",
+              "name": "",
+              "model": {
+                "$ref": "bca1919c5dd1433e82ddd8801fcfb571"
+              },
+              "tail": {
+                "$ref": "a5eeb3e2ca4c428f8120b1e60531dd1a"
+              },
+              "head": {
+                "$ref": "d4b32b8a1e894184aa4023471bd2f514"
+              },
+              "points": "420:470;620:470;620:190;650:190",
+              "lineStyle": 2,
+              "font": "Microsoft YaHei;12;0",
+              "_parent": {
+                "$ref": "742d11e4628242b7b4ae91e5d1fe81c9"
+              },
+              "lineColor": "#475569"
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "0404335f8ed14a978b8c32e54dbba1dd",
+              "name": "",
+              "model": {
+                "$ref": "c110c5be09e9495aa521fc0ffde32918"
+              },
+              "tail": {
+                "$ref": "a5eeb3e2ca4c428f8120b1e60531dd1a"
+              },
+              "head": {
+                "$ref": "c90fdad501884ae5b4efcedc7766efe6"
+              },
+              "points": "420:530;450:530;450:520;650:520",
+              "lineStyle": 2,
+              "font": "Microsoft YaHei;12;0",
+              "_parent": {
+                "$ref": "742d11e4628242b7b4ae91e5d1fe81c9"
+              },
+              "lineColor": "#475569"
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "4de19c0c54c540f38d418a48a7500569",
+              "name": "",
+              "model": {
+                "$ref": "5bb5c630b0a342d1af89b8209a309bd9"
+              },
+              "tail": {
+                "$ref": "a5eeb3e2ca4c428f8120b1e60531dd1a"
+              },
+              "head": {
+                "$ref": "8fe9a944cfe34bbba833cd0e5265507c"
+              },
+              "points": "420:440;440:440;440:860;650:860",
+              "lineStyle": 2,
+              "font": "Microsoft YaHei;12;0",
+              "_parent": {
+                "$ref": "742d11e4628242b7b4ae91e5d1fe81c9"
+              },
+              "lineColor": "#475569"
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "74ef03c4235e4bee83952f40f6b3edf8",
+              "name": "",
+              "model": {
+                "$ref": "f5d9f8d7a1324399876d5081462bd553"
+              },
+              "tail": {
+                "$ref": "b65ce64469fe4b51bc8674537961df96"
+              },
+              "head": {
+                "$ref": "d4b32b8a1e894184aa4023471bd2f514"
+              },
+              "points": "1230:460;1010:460;1010:190;980:190",
+              "lineStyle": 2,
+              "font": "Microsoft YaHei;12;0",
+              "_parent": {
+                "$ref": "742d11e4628242b7b4ae91e5d1fe81c9"
+              },
+              "lineColor": "#475569"
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "e850be83ac4f49549c248b3666a232ea",
+              "name": "",
+              "model": {
+                "$ref": "af2317faada94f6395e950badac355a4"
+              },
+              "tail": {
+                "$ref": "b65ce64469fe4b51bc8674537961df96"
+              },
+              "head": {
+                "$ref": "c90fdad501884ae5b4efcedc7766efe6"
+              },
+              "points": "1230:520;980:520",
+              "lineStyle": 2,
+              "font": "Microsoft YaHei;12;0",
+              "_parent": {
+                "$ref": "742d11e4628242b7b4ae91e5d1fe81c9"
+              },
+              "lineColor": "#475569"
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "cfc009d87f9f4e3e8c07138cbb65aa51",
+              "name": "",
+              "model": {
+                "$ref": "c181f4e240314bbb9358e90a5f492b60"
+              },
+              "tail": {
+                "$ref": "b65ce64469fe4b51bc8674537961df96"
+              },
+              "head": {
+                "$ref": "8fe9a944cfe34bbba833cd0e5265507c"
+              },
+              "points": "1230:430;1210:430;1210:860;980:860",
+              "lineStyle": 2,
+              "font": "Microsoft YaHei;12;0",
+              "_parent": {
+                "$ref": "742d11e4628242b7b4ae91e5d1fe81c9"
+              },
+              "lineColor": "#475569"
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "d58e75614eb444138ff8261bdb3d5043",
+              "name": "",
+              "model": {
+                "$ref": "5abf907d99f84af5949228a1eb240031"
+              },
+              "tail": {
+                "$ref": "b65ce64469fe4b51bc8674537961df96"
+              },
+              "head": {
+                "$ref": "4b46c560b1054955a7a0983dd449b20f"
+              },
+              "points": "1400:674;1400:880",
+              "lineStyle": 2,
+              "font": "Microsoft YaHei;12;0",
+              "_parent": {
+                "$ref": "742d11e4628242b7b4ae91e5d1fe81c9"
+              },
+              "lineColor": "#475569"
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "c9d1ef303b5046b9b6f5ea22a4f2e203",
+              "name": "",
+              "model": {
+                "$ref": "b691eaae139d4491ba1ac5e0e84dad47"
+              },
+              "tail": {
+                "$ref": "b65ce64469fe4b51bc8674537961df96"
+              },
+              "head": {
+                "$ref": "880700e5d94e437381b49995ea4d8d02"
+              },
+              "points": "1400:310;1400:255",
+              "lineStyle": 2,
+              "font": "Microsoft YaHei;12;0",
+              "_parent": {
+                "$ref": "742d11e4628242b7b4ae91e5d1fe81c9"
+              },
+              "lineColor": "#475569"
+            },
+            {
+              "_type": "UMLNoteView",
+              "_id": "914b3baaa00446f186488340cb523c7b",
+              "name": "",
+              "left": 90,
+              "top": 1160,
+              "width": 1460,
+              "height": 60,
+              "text": "属性与类名来自 POJO；连线依据 uid / sid 推导；多重性为分析假设，非数据库约束证明。",
+              "font": "Microsoft YaHei;12;0",
+              "fillColor": "#fffbe8",
+              "_parent": {
+                "$ref": "742d11e4628242b7b4ae91e5d1fe81c9"
+              }
+            }
+          ],
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "documentation": "改进版：按职责分区；采用避让节点的正交连线；以源码为依据，分析假设见注释。"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "fd295eff2f994460937d1a480e2ec216",
+          "name": "UserInformation",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "attributes": [
+            {
+              "_type": "UMLAttribute",
+              "_id": "1f3b3f39c6274456bf23bab55fe266f0",
+              "name": "id",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "fd295eff2f994460937d1a480e2ec216"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "2032a7c785364f01bc6fa4491b39c557",
+              "name": "modified",
+              "type": "Date",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "fd295eff2f994460937d1a480e2ec216"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "ed081e1bad7c4f98bfe132701f5961b6",
+              "name": "username",
+              "type": "String",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "fd295eff2f994460937d1a480e2ec216"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "459ccb9171e8413997a61d5fa998ac9c",
+              "name": "phone",
+              "type": "String",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "fd295eff2f994460937d1a480e2ec216"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "19fff07c5ce7400e936c02cbc3f9482e",
+              "name": "realname",
+              "type": "String",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "fd295eff2f994460937d1a480e2ec216"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "aa668d3ad7ca4880b9979cf096ab66fb",
+              "name": "clazz",
+              "type": "String",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "fd295eff2f994460937d1a480e2ec216"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "6ef7e2765b6347d5b55c696ed3eefd8d",
+              "name": "sno",
+              "type": "String",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "fd295eff2f994460937d1a480e2ec216"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "df5d4cd1b38c4c9bae3915f052bb7072",
+              "name": "dormitory",
+              "type": "String",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "fd295eff2f994460937d1a480e2ec216"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "1e452882c86d4f21b76abf0487f3cb30",
+              "name": "gender",
+              "type": "String",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "fd295eff2f994460937d1a480e2ec216"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "910cb2a5aa2c4e59b096b200c7614bc4",
+              "name": "createtime",
+              "type": "Date",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "fd295eff2f994460937d1a480e2ec216"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "4eb0b2cf51a34649a3693c7db99d8c88",
+              "name": "avatar",
+              "type": "String",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "fd295eff2f994460937d1a480e2ec216"
+              }
+            }
+          ],
+          "documentation": "字段来自 pojo 源码；关联由外键式 ID 推导，不表示 Java 持有对象引用。"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "0225fa85d2c34509ae1f00c8d0b12d1a",
+          "name": "UserPassword",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "attributes": [
+            {
+              "_type": "UMLAttribute",
+              "_id": "3702344cbf2d495f9f8efc87e701f5a9",
+              "name": "id",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "0225fa85d2c34509ae1f00c8d0b12d1a"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "c53f733f1d30427c93ceb0860c2181fc",
+              "name": "modified",
+              "type": "Date",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "0225fa85d2c34509ae1f00c8d0b12d1a"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "6354dc5b1fd04d6881f440aff72a9a67",
+              "name": "password",
+              "type": "String",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "0225fa85d2c34509ae1f00c8d0b12d1a"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "2ae54282623b44dabb89b0f829cd0aad",
+              "name": "uid",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "0225fa85d2c34509ae1f00c8d0b12d1a"
+              }
+            }
+          ],
+          "documentation": "字段来自 pojo 源码；关联由外键式 ID 推导，不表示 Java 持有对象引用。"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "deeff84c58b34633b1868fd8136c59ce",
+          "name": "UserState",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "attributes": [
+            {
+              "_type": "UMLAttribute",
+              "_id": "1b7f3229df474bfc8c5140dcd320b4b0",
+              "name": "id",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "deeff84c58b34633b1868fd8136c59ce"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "5260f831cfa7470c8929ac30e8b4eb1f",
+              "name": "credit",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "deeff84c58b34633b1868fd8136c59ce"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "9d79ff0cd6db4bde9efbe5a534df6072",
+              "name": "balance",
+              "type": "BigDecimal",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "deeff84c58b34633b1868fd8136c59ce"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "5c3f7c682c03418a93c6e74945e2fd41",
+              "name": "modified",
+              "type": "Date",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "deeff84c58b34633b1868fd8136c59ce"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "9be9d59c137149ce8ab5e5387fa50180",
+              "name": "uid",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "deeff84c58b34633b1868fd8136c59ce"
+              }
+            }
+          ],
+          "documentation": "字段来自 pojo 源码；关联由外键式 ID 推导，不表示 Java 持有对象引用。"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "48915ab59bfe4280a51eb73f23cd2992",
+          "name": "ShopInformation",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "attributes": [
+            {
+              "_type": "UMLAttribute",
+              "_id": "16da9a92c194461396ab9519b1238e21",
+              "name": "id",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "48915ab59bfe4280a51eb73f23cd2992"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "ab785201eca942ba934a2deec6574350",
+              "name": "modified",
+              "type": "Date",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "48915ab59bfe4280a51eb73f23cd2992"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "220787328aa3442b918f16886a80627f",
+              "name": "name",
+              "type": "String",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "48915ab59bfe4280a51eb73f23cd2992"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "1dd4602600e6473cb149c2e9d8fb06cf",
+              "name": "level",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "48915ab59bfe4280a51eb73f23cd2992"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "0273fc356f3f4f11b3e507c29e88539f",
+              "name": "remark",
+              "type": "String",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "48915ab59bfe4280a51eb73f23cd2992"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "77c046157aa54f13b9ec7e0e78e2aba7",
+              "name": "price",
+              "type": "BigDecimal",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "48915ab59bfe4280a51eb73f23cd2992"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "d859648579304466b0febba6143c36a9",
+              "name": "sort",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "48915ab59bfe4280a51eb73f23cd2992"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "e5c4084a74a24dbbaa7cd5f2a868288e",
+              "name": "display",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "48915ab59bfe4280a51eb73f23cd2992"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "9ddc6ec81aaa486ca6511eddc6650ef9",
+              "name": "quantity",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "48915ab59bfe4280a51eb73f23cd2992"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "8294cb9295dd4d959f74fd3cb412718f",
+              "name": "transaction",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "48915ab59bfe4280a51eb73f23cd2992"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "294190f2e05f4ea8b3f330f5ba99368d",
+              "name": "uid",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "48915ab59bfe4280a51eb73f23cd2992"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "37a606e1f2924659afe898e6641a956e",
+              "name": "image",
+              "type": "String",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "48915ab59bfe4280a51eb73f23cd2992"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "b33ec5bf57714a8fab5fc1be5801fd83",
+              "name": "sales",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "48915ab59bfe4280a51eb73f23cd2992"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "ae42cdbf214c40978d6130cb2604bc3a",
+              "name": "thumbnails",
+              "type": "String",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "48915ab59bfe4280a51eb73f23cd2992"
+              }
+            }
+          ],
+          "documentation": "字段来自 pojo 源码；关联由外键式 ID 推导，不表示 Java 持有对象引用。"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "652f04351b554ca0ba8c5800df2fc2e5",
+          "name": "UserRelease",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "attributes": [
+            {
+              "_type": "UMLAttribute",
+              "_id": "73be56d7d9e64939bf3aebae9f83a5f5",
+              "name": "id",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "652f04351b554ca0ba8c5800df2fc2e5"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "286c7130f17c48da86c2762c934c0d2e",
+              "name": "modified",
+              "type": "Date",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "652f04351b554ca0ba8c5800df2fc2e5"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "275cd8b284f347498164fe7c9313d394",
+              "name": "display",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "652f04351b554ca0ba8c5800df2fc2e5"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "1c4f0712c0284d6abbe2065883fc679e",
+              "name": "uid",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "652f04351b554ca0ba8c5800df2fc2e5"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "c83de968357248a3872b8e6cc7919d5a",
+              "name": "sid",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "652f04351b554ca0ba8c5800df2fc2e5"
+              }
+            }
+          ],
+          "documentation": "字段来自 pojo 源码；关联由外键式 ID 推导，不表示 Java 持有对象引用。"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "f95cff46060242e19871307a83f53824",
+          "name": "UserCollection",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "attributes": [
+            {
+              "_type": "UMLAttribute",
+              "_id": "04c246328dca4fb8b27179b1db467245",
+              "name": "id",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "f95cff46060242e19871307a83f53824"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "73c11e676df541dd8415438bf3002781",
+              "name": "modified",
+              "type": "Date",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "f95cff46060242e19871307a83f53824"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "59b59ce14a6745ab88a7e59a5771d35e",
+              "name": "uid",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "f95cff46060242e19871307a83f53824"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "739c503c42bd49d3896975eb18a89d80",
+              "name": "sid",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "f95cff46060242e19871307a83f53824"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "1a2fe47db36d4cf984f02c3b8c1baa11",
+              "name": "display",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "f95cff46060242e19871307a83f53824"
+              }
+            }
+          ],
+          "documentation": "字段来自 pojo 源码；关联由外键式 ID 推导，不表示 Java 持有对象引用。"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "23f3a22282284bc99c01a83414666823",
+          "name": "GoodsCar",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "attributes": [
+            {
+              "_type": "UMLAttribute",
+              "_id": "4a63696524f6405ea67e64360874f109",
+              "name": "id",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "23f3a22282284bc99c01a83414666823"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "729a680e99fc4d4e83f31f99912c2eaf",
+              "name": "modified",
+              "type": "Date",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "23f3a22282284bc99c01a83414666823"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "04a770e3350f4ea3bcd35ceac3fc2879",
+              "name": "sid",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "23f3a22282284bc99c01a83414666823"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "f21f743c11464f80b8c7a637093da34f",
+              "name": "uid",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "23f3a22282284bc99c01a83414666823"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "4f09d74462ad45aab96bc47b7d9c6ee2",
+              "name": "quantity",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "23f3a22282284bc99c01a83414666823"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "84fb666172e044119265114d54623e05",
+              "name": "display",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "23f3a22282284bc99c01a83414666823"
+              }
+            }
+          ],
+          "documentation": "字段来自 pojo 源码；关联由外键式 ID 推导，不表示 Java 持有对象引用。"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "bc462560c9e04be3b1387a3a232017f6",
+          "name": "ShopContext",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "attributes": [
+            {
+              "_type": "UMLAttribute",
+              "_id": "4f4c1c3e15064833a02431928e00ef81",
+              "name": "id",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "bc462560c9e04be3b1387a3a232017f6"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "3897df563c3444ae89180d2f823d1982",
+              "name": "modified",
+              "type": "Date",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "bc462560c9e04be3b1387a3a232017f6"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "92f202fc6c754089ac6db63662020881",
+              "name": "sid",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "bc462560c9e04be3b1387a3a232017f6"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "2e4a19b71d794c0d9665b52cf5ddf9fe",
+              "name": "context",
+              "type": "String",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "bc462560c9e04be3b1387a3a232017f6"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "92dd5d96a1374e4cb3bd919de459a7cc",
+              "name": "display",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "bc462560c9e04be3b1387a3a232017f6"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "f15b08a5f3994a1daad7026008516b2e",
+              "name": "uid",
+              "type": "int",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "bc462560c9e04be3b1387a3a232017f6"
+              }
+            }
+          ],
+          "documentation": "字段来自 pojo 源码；关联由外键式 ID 推导，不表示 Java 持有对象引用。"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "e5c7741280d54365827c63196fd9adf6",
+          "name": "ShopPicture",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "attributes": [
+            {
+              "_type": "UMLAttribute",
+              "_id": "ab5f465a75324948ab6ba8a462bd862f",
+              "name": "id",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "e5c7741280d54365827c63196fd9adf6"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "9de73dc6a0b64aa991f24101890ada2f",
+              "name": "modified",
+              "type": "Date",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "e5c7741280d54365827c63196fd9adf6"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "2dab373236f946fc89201093a862ca0b",
+              "name": "sid",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "e5c7741280d54365827c63196fd9adf6"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "848150cd993d40c387a7f2700116a1f5",
+              "name": "picture",
+              "type": "String",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "e5c7741280d54365827c63196fd9adf6"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "e18fcd849c3f4a279fc6ddddce75ab10",
+              "name": "display",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "e5c7741280d54365827c63196fd9adf6"
+              }
+            }
+          ],
+          "documentation": "字段来自 pojo 源码；关联由外键式 ID 推导，不表示 Java 持有对象引用。"
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "56b8a7b3ada3449e8a61d4e6c9adb077",
+          "name": "",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "43695eb40cee4c95bde90f6da4666e27",
+            "name": "",
+            "reference": {
+              "$ref": "fd295eff2f994460937d1a480e2ec216"
+            },
+            "multiplicity": "1",
+            "_parent": {
+              "$ref": "56b8a7b3ada3449e8a61d4e6c9adb077"
+            }
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "b84c6d90f67f4356ab3e166a2b3a8819",
+            "name": "",
+            "reference": {
+              "$ref": "0225fa85d2c34509ae1f00c8d0b12d1a"
+            },
+            "multiplicity": "0..1",
+            "_parent": {
+              "$ref": "56b8a7b3ada3449e8a61d4e6c9adb077"
+            }
+          }
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "879c0449d96b4705b713f18a1c15cb93",
+          "name": "",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "b2ae7769cb594d6191adada8a40f66c8",
+            "name": "",
+            "reference": {
+              "$ref": "fd295eff2f994460937d1a480e2ec216"
+            },
+            "multiplicity": "1",
+            "_parent": {
+              "$ref": "879c0449d96b4705b713f18a1c15cb93"
+            }
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "ed4fa157c324484e875981da0748a4a8",
+            "name": "",
+            "reference": {
+              "$ref": "deeff84c58b34633b1868fd8136c59ce"
+            },
+            "multiplicity": "0..1",
+            "_parent": {
+              "$ref": "879c0449d96b4705b713f18a1c15cb93"
+            }
+          }
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "f88f5699030c493498bfd74c30d0fa2d",
+          "name": "",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "257559c7ce28484d961be8580c6a7962",
+            "name": "",
+            "reference": {
+              "$ref": "fd295eff2f994460937d1a480e2ec216"
+            },
+            "multiplicity": "1",
+            "_parent": {
+              "$ref": "f88f5699030c493498bfd74c30d0fa2d"
+            }
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "c45d624a56734e65b36f0f1a912aafe8",
+            "name": "",
+            "reference": {
+              "$ref": "48915ab59bfe4280a51eb73f23cd2992"
+            },
+            "multiplicity": "0..*",
+            "_parent": {
+              "$ref": "f88f5699030c493498bfd74c30d0fa2d"
+            }
+          }
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "bca1919c5dd1433e82ddd8801fcfb571",
+          "name": "",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "ef74b0ec4669491d9b6b8a70cbf4fb3b",
+            "name": "",
+            "reference": {
+              "$ref": "fd295eff2f994460937d1a480e2ec216"
+            },
+            "multiplicity": "1",
+            "_parent": {
+              "$ref": "bca1919c5dd1433e82ddd8801fcfb571"
+            }
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "a17437b627cf400a9d7433ac3f724c8c",
+            "name": "",
+            "reference": {
+              "$ref": "652f04351b554ca0ba8c5800df2fc2e5"
+            },
+            "multiplicity": "0..*",
+            "_parent": {
+              "$ref": "bca1919c5dd1433e82ddd8801fcfb571"
+            }
+          }
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "c110c5be09e9495aa521fc0ffde32918",
+          "name": "",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "27422cd8ff5f4ee69a8ffcc5fd85311f",
+            "name": "",
+            "reference": {
+              "$ref": "fd295eff2f994460937d1a480e2ec216"
+            },
+            "multiplicity": "1",
+            "_parent": {
+              "$ref": "c110c5be09e9495aa521fc0ffde32918"
+            }
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "b2f82a05167b4db7973a81baacf97c61",
+            "name": "",
+            "reference": {
+              "$ref": "f95cff46060242e19871307a83f53824"
+            },
+            "multiplicity": "0..*",
+            "_parent": {
+              "$ref": "c110c5be09e9495aa521fc0ffde32918"
+            }
+          }
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "5bb5c630b0a342d1af89b8209a309bd9",
+          "name": "",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "2d7eb22d6d6b4e848716cff468031d58",
+            "name": "",
+            "reference": {
+              "$ref": "fd295eff2f994460937d1a480e2ec216"
+            },
+            "multiplicity": "1",
+            "_parent": {
+              "$ref": "5bb5c630b0a342d1af89b8209a309bd9"
+            }
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "f587fcac6baa43a5900bece1dacd6715",
+            "name": "",
+            "reference": {
+              "$ref": "23f3a22282284bc99c01a83414666823"
+            },
+            "multiplicity": "0..*",
+            "_parent": {
+              "$ref": "5bb5c630b0a342d1af89b8209a309bd9"
+            }
+          }
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "f5d9f8d7a1324399876d5081462bd553",
+          "name": "",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "f78511574b01448aa9aabfa7611709bc",
+            "name": "",
+            "reference": {
+              "$ref": "48915ab59bfe4280a51eb73f23cd2992"
+            },
+            "multiplicity": "1",
+            "_parent": {
+              "$ref": "f5d9f8d7a1324399876d5081462bd553"
+            }
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "6139a0e832724e9490195a515f544212",
+            "name": "",
+            "reference": {
+              "$ref": "652f04351b554ca0ba8c5800df2fc2e5"
+            },
+            "multiplicity": "0..*",
+            "_parent": {
+              "$ref": "f5d9f8d7a1324399876d5081462bd553"
+            }
+          }
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "af2317faada94f6395e950badac355a4",
+          "name": "",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "097c46e7a1d14cd48998e4c2a6271431",
+            "name": "",
+            "reference": {
+              "$ref": "48915ab59bfe4280a51eb73f23cd2992"
+            },
+            "multiplicity": "1",
+            "_parent": {
+              "$ref": "af2317faada94f6395e950badac355a4"
+            }
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "999bc49d278f4052987c7895ace2b580",
+            "name": "",
+            "reference": {
+              "$ref": "f95cff46060242e19871307a83f53824"
+            },
+            "multiplicity": "0..*",
+            "_parent": {
+              "$ref": "af2317faada94f6395e950badac355a4"
+            }
+          }
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "c181f4e240314bbb9358e90a5f492b60",
+          "name": "",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "1285b30d870041ca938c7f802362c53e",
+            "name": "",
+            "reference": {
+              "$ref": "48915ab59bfe4280a51eb73f23cd2992"
+            },
+            "multiplicity": "1",
+            "_parent": {
+              "$ref": "c181f4e240314bbb9358e90a5f492b60"
+            }
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "0f571fde8e994518b3c95599b738b4ed",
+            "name": "",
+            "reference": {
+              "$ref": "23f3a22282284bc99c01a83414666823"
+            },
+            "multiplicity": "0..*",
+            "_parent": {
+              "$ref": "c181f4e240314bbb9358e90a5f492b60"
+            }
+          }
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "5abf907d99f84af5949228a1eb240031",
+          "name": "",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "f4ce2155c8724f89b14b998e5932d80d",
+            "name": "",
+            "reference": {
+              "$ref": "48915ab59bfe4280a51eb73f23cd2992"
+            },
+            "multiplicity": "1",
+            "_parent": {
+              "$ref": "5abf907d99f84af5949228a1eb240031"
+            }
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "f8f3b9a341b24112a04a205488ddb185",
+            "name": "",
+            "reference": {
+              "$ref": "bc462560c9e04be3b1387a3a232017f6"
+            },
+            "multiplicity": "0..*",
+            "_parent": {
+              "$ref": "5abf907d99f84af5949228a1eb240031"
+            }
+          }
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "b691eaae139d4491ba1ac5e0e84dad47",
+          "name": "",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "cf4b4b25c5284e4ca05def984965eb07",
+            "name": "",
+            "reference": {
+              "$ref": "48915ab59bfe4280a51eb73f23cd2992"
+            },
+            "multiplicity": "1",
+            "_parent": {
+              "$ref": "b691eaae139d4491ba1ac5e0e84dad47"
+            }
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "0182304fbf8643969b83ec917c4084db",
+            "name": "",
+            "reference": {
+              "$ref": "e5c7741280d54365827c63196fd9adf6"
+            },
+            "multiplicity": "0..*",
+            "_parent": {
+              "$ref": "b691eaae139d4491ba1ac5e0e84dad47"
+            }
+          }
+        },
+        {
+          "_type": "UMLClassDiagram",
+          "_id": "95a36c2e73e54a3494685e2951bcfbe8",
+          "name": "03 分类求购与订单实体图",
+          "ownedViews": [
+            {
+              "_type": "UMLClassView",
+              "_id": "c9393e0ea2354b439afa3019448fd927",
+              "name": "",
+              "model": {
+                "$ref": "d8834c767b8b4fbe99038780831d94e9"
+              },
+              "left": 80,
+              "top": 90,
+              "width": 330,
+              "height": 133,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "95a36c2e73e54a3494685e2951bcfbe8"
+              },
+              "showShadow": false,
+              "suppressOperations": true,
+              "suppressAttributes": false
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "14b82e28f30c469db3e06854a73ff771",
+              "name": "",
+              "model": {
+                "$ref": "e6c264f79c9c4d659be9bbd16f096654"
+              },
+              "left": 520,
+              "top": 90,
+              "width": 330,
+              "height": 154,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "95a36c2e73e54a3494685e2951bcfbe8"
+              },
+              "showShadow": false,
+              "suppressOperations": true,
+              "suppressAttributes": false
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "9a36901baeaf4031aa878a39fa649fb1",
+              "name": "",
+              "model": {
+                "$ref": "bf008916e2db4d0e983e81c33d519a21"
+              },
+              "left": 960,
+              "top": 90,
+              "width": 330,
+              "height": 154,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "95a36c2e73e54a3494685e2951bcfbe8"
+              },
+              "showShadow": false,
+              "suppressOperations": true,
+              "suppressAttributes": false
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "d790d93dae2b401b94eeba4c2081ae2e",
+              "name": "",
+              "model": {
+                "$ref": "1612aaf647ee49fbba35c5871b7a7f86"
+              },
+              "left": 960,
+              "top": 420,
+              "width": 330,
+              "height": 259,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "95a36c2e73e54a3494685e2951bcfbe8"
+              },
+              "showShadow": false,
+              "suppressOperations": true,
+              "suppressAttributes": false
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "800868840a304dd6988a42390fe85562",
+              "name": "",
+              "model": {
+                "$ref": "e33540e6f06b40bda3b7fe7eac93aebd"
+              },
+              "left": 520,
+              "top": 430,
+              "width": 330,
+              "height": 175,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "95a36c2e73e54a3494685e2951bcfbe8"
+              },
+              "showShadow": false,
+              "suppressOperations": true,
+              "suppressAttributes": false
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "18f75871e48d463c91c9854a3ae1c324",
+              "name": "",
+              "model": {
+                "$ref": "50abaf0f062742e09bf38b6ed3d8c9c3"
+              },
+              "left": 80,
+              "top": 850,
+              "width": 330,
+              "height": 196,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "95a36c2e73e54a3494685e2951bcfbe8"
+              },
+              "showShadow": false,
+              "suppressOperations": true,
+              "suppressAttributes": false
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "3c3eb0b5a937425b986cde59e9e5aaa0",
+              "name": "",
+              "model": {
+                "$ref": "9dfd78abd4fb44d5b3a3abbe9dbf6217"
+              },
+              "left": 520,
+              "top": 850,
+              "width": 330,
+              "height": 196,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "95a36c2e73e54a3494685e2951bcfbe8"
+              },
+              "showShadow": false,
+              "suppressOperations": true,
+              "suppressAttributes": false
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "102c2845cadb4be59426b3259769fe07",
+              "name": "",
+              "model": {
+                "$ref": "00aef175e3f3422f9a08c24ae5cb0411"
+              },
+              "left": 960,
+              "top": 850,
+              "width": 330,
+              "height": 196,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "95a36c2e73e54a3494685e2951bcfbe8"
+              },
+              "showShadow": false,
+              "suppressOperations": true,
+              "suppressAttributes": false
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "064c579d87cc4c1da9f4412b97f86da0",
+              "name": "",
+              "model": {
+                "$ref": "609e4abf890d4abcb7b159c2a7ce0aaf"
+              },
+              "tail": {
+                "$ref": "c9393e0ea2354b439afa3019448fd927"
+              },
+              "head": {
+                "$ref": "14b82e28f30c469db3e06854a73ff771"
+              },
+              "points": "410:160;440:160;440:170;520:170",
+              "lineStyle": 2,
+              "font": "Microsoft YaHei;12;0",
+              "_parent": {
+                "$ref": "95a36c2e73e54a3494685e2951bcfbe8"
+              },
+              "lineColor": "#475569"
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "5043922d2f9a41e8ba921fbdcef752d6",
+              "name": "",
+              "model": {
+                "$ref": "96d695c462034dd996389533e81ef94e"
+              },
+              "tail": {
+                "$ref": "14b82e28f30c469db3e06854a73ff771"
+              },
+              "head": {
+                "$ref": "9a36901baeaf4031aa878a39fa649fb1"
+              },
+              "points": "850:170;960:170",
+              "lineStyle": 2,
+              "font": "Microsoft YaHei;12;0",
+              "_parent": {
+                "$ref": "95a36c2e73e54a3494685e2951bcfbe8"
+              },
+              "lineColor": "#475569"
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "7b54378ea74c4b0d85ae3000836c3042",
+              "name": "",
+              "model": {
+                "$ref": "0bd39c1d4fd242ee9606282a821c2e3c"
+              },
+              "tail": {
+                "$ref": "9a36901baeaf4031aa878a39fa649fb1"
+              },
+              "head": {
+                "$ref": "d790d93dae2b401b94eeba4c2081ae2e"
+              },
+              "points": "1120:244;1120:420",
+              "lineStyle": 2,
+              "font": "Microsoft YaHei;12;0",
+              "_parent": {
+                "$ref": "95a36c2e73e54a3494685e2951bcfbe8"
+              },
+              "lineColor": "#475569"
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "8dd2c31b1bcb46e6ac61978de013779e",
+              "name": "",
+              "model": {
+                "$ref": "6531f33c4f3b4f3b86caf52fc1581d7c"
+              },
+              "tail": {
+                "$ref": "d790d93dae2b401b94eeba4c2081ae2e"
+              },
+              "head": {
+                "$ref": "800868840a304dd6988a42390fe85562"
+              },
+              "points": "960:550;930:550;930:520;850:520",
+              "lineStyle": 2,
+              "font": "Microsoft YaHei;12;0",
+              "_parent": {
+                "$ref": "95a36c2e73e54a3494685e2951bcfbe8"
+              },
+              "lineColor": "#475569"
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "4007ce9b940842d2937f8d1ad3255783",
+              "name": "",
+              "model": {
+                "$ref": "52ba7fbf10da469cab99ce19ee03d15c"
+              },
+              "tail": {
+                "$ref": "18f75871e48d463c91c9854a3ae1c324"
+              },
+              "head": {
+                "$ref": "3c3eb0b5a937425b986cde59e9e5aaa0"
+              },
+              "points": "410:950;520:950",
+              "lineStyle": 2,
+              "font": "Microsoft YaHei;12;0",
+              "_parent": {
+                "$ref": "95a36c2e73e54a3494685e2951bcfbe8"
+              },
+              "lineColor": "#475569"
+            },
+            {
+              "_type": "UMLNoteView",
+              "_id": "31bc74822a694200b375a83a62dd8c31",
+              "name": "",
+              "left": 80,
+              "top": 1180,
+              "width": 1210,
+              "height": 70,
+              "text": "上部：三级分类与求购；下部：订单 / 已购数据结构。订单实体存在不代表支付流程已实现。\nOrderForm.uid、BoughtShop.uid / sid、GoodsOfOrderForm.sid 指向图02的用户 / 商品。",
+              "font": "Microsoft YaHei;12;0",
+              "fillColor": "#fffbe8",
+              "_parent": {
+                "$ref": "95a36c2e73e54a3494685e2951bcfbe8"
+              }
+            }
+          ],
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "documentation": "改进版：按职责分区；采用避让节点的正交连线；以源码为依据，分析假设见注释。"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "d8834c767b8b4fbe99038780831d94e9",
+          "name": "AllKinds",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "attributes": [
+            {
+              "_type": "UMLAttribute",
+              "_id": "7cf2081309844cdb99a781ecfa1eebf1",
+              "name": "id",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "d8834c767b8b4fbe99038780831d94e9"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "c3445e67112149b8abefeacc22894f0b",
+              "name": "name",
+              "type": "String",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "d8834c767b8b4fbe99038780831d94e9"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "7d21881f6dd040c485691b3cf82c3905",
+              "name": "modified",
+              "type": "Date",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "d8834c767b8b4fbe99038780831d94e9"
+              }
+            }
+          ],
+          "documentation": "字段来自 pojo 源码；关联由外键式 ID 推导，不表示 Java 持有对象引用。"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "e6c264f79c9c4d659be9bbd16f096654",
+          "name": "Classification",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "attributes": [
+            {
+              "_type": "UMLAttribute",
+              "_id": "0e932f3dc17e4132afc44636cd54a2fc",
+              "name": "id",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "e6c264f79c9c4d659be9bbd16f096654"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "20580fb6044a4473af2710f7d4d14ef7",
+              "name": "name",
+              "type": "String",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "e6c264f79c9c4d659be9bbd16f096654"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "1173b30e538b42d296b702ee57dc66f6",
+              "name": "modified",
+              "type": "Date",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "e6c264f79c9c4d659be9bbd16f096654"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "d1df4550f73d46b8ade3ba3da231d351",
+              "name": "aid",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "e6c264f79c9c4d659be9bbd16f096654"
+              }
+            }
+          ],
+          "documentation": "字段来自 pojo 源码；关联由外键式 ID 推导，不表示 Java 持有对象引用。"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "bf008916e2db4d0e983e81c33d519a21",
+          "name": "Specific",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "attributes": [
+            {
+              "_type": "UMLAttribute",
+              "_id": "9a16cd96b0914b32a92dbe273e17c611",
+              "name": "id",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "bf008916e2db4d0e983e81c33d519a21"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "ba5134ab8ad04152acce08ee1a9a3157",
+              "name": "name",
+              "type": "String",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "bf008916e2db4d0e983e81c33d519a21"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "933fbc8b0d9346de986070e9e30bdf83",
+              "name": "modified",
+              "type": "Date",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "bf008916e2db4d0e983e81c33d519a21"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "f442c8e7c06b42da8f6bc98631b3e252",
+              "name": "cid",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "bf008916e2db4d0e983e81c33d519a21"
+              }
+            }
+          ],
+          "documentation": "字段来自 pojo 源码；关联由外键式 ID 推导，不表示 Java 持有对象引用。"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "1612aaf647ee49fbba35c5871b7a7f86",
+          "name": "UserWant",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "attributes": [
+            {
+              "_type": "UMLAttribute",
+              "_id": "d2fc4dff0bb642c28efe9e9e89f5389c",
+              "name": "id",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "1612aaf647ee49fbba35c5871b7a7f86"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "ca69a6c2b8c84b459c0b19a6cdef0943",
+              "name": "modified",
+              "type": "Date",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "1612aaf647ee49fbba35c5871b7a7f86"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "5fa7ddd041454598a06d838eba06c6e4",
+              "name": "display",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "1612aaf647ee49fbba35c5871b7a7f86"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "ea378cff9d1f43c184b04fd7bef20cae",
+              "name": "name",
+              "type": "String",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "1612aaf647ee49fbba35c5871b7a7f86"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "f0e0f0f3242440a4ae654b991eed6bef",
+              "name": "sort",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "1612aaf647ee49fbba35c5871b7a7f86"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "24164b9df2054a43a53807742c5c3d3d",
+              "name": "uid",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "1612aaf647ee49fbba35c5871b7a7f86"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "9feec83f87a3463eb0f739f753e698d9",
+              "name": "quantity",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "1612aaf647ee49fbba35c5871b7a7f86"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "656df7f1ad0f452a81855bbfacba9eda",
+              "name": "price",
+              "type": "BigDecimal",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "1612aaf647ee49fbba35c5871b7a7f86"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "48f303df92034184a5fc9d119f5fa6e0",
+              "name": "remark",
+              "type": "String",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "1612aaf647ee49fbba35c5871b7a7f86"
+              }
+            }
+          ],
+          "documentation": "字段来自 pojo 源码；关联由外键式 ID 推导，不表示 Java 持有对象引用。"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "e33540e6f06b40bda3b7fe7eac93aebd",
+          "name": "WantContext",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "attributes": [
+            {
+              "_type": "UMLAttribute",
+              "_id": "bb3fd8442c4d4b67b5986e1a7aa48205",
+              "name": "id",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "e33540e6f06b40bda3b7fe7eac93aebd"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "61cc46a39b374d458c995e9fccf856a3",
+              "name": "modified",
+              "type": "Date",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "e33540e6f06b40bda3b7fe7eac93aebd"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "5ee3a0f7d8af45649c6b14ee9fff68d8",
+              "name": "uwid",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "e33540e6f06b40bda3b7fe7eac93aebd"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "8994082b4e5242958f3e857c8415424d",
+              "name": "context",
+              "type": "String",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "e33540e6f06b40bda3b7fe7eac93aebd"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "8f71da8dccb742e6b8cdeced81bc5f72",
+              "name": "display",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "e33540e6f06b40bda3b7fe7eac93aebd"
+              }
+            }
+          ],
+          "documentation": "字段来自 pojo 源码；关联由外键式 ID 推导，不表示 Java 持有对象引用。"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "50abaf0f062742e09bf38b6ed3d8c9c3",
+          "name": "OrderForm",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "attributes": [
+            {
+              "_type": "UMLAttribute",
+              "_id": "ef8d6196b93042ce8e545dcfff06b72e",
+              "name": "id",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "50abaf0f062742e09bf38b6ed3d8c9c3"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "0021610795fc4aebb80cdab447bcf9ef",
+              "name": "modified",
+              "type": "Date",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "50abaf0f062742e09bf38b6ed3d8c9c3"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "af3cc10937dc4133842bcc9f05ac2904",
+              "name": "display",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "50abaf0f062742e09bf38b6ed3d8c9c3"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "65323a7b7e9d44ecbb8e02fe06022745",
+              "name": "uid",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "50abaf0f062742e09bf38b6ed3d8c9c3"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "d108edf440374638a7832afa04eda140",
+              "name": "address",
+              "type": "String",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "50abaf0f062742e09bf38b6ed3d8c9c3"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "bd896f5c0ba34379977c7f7eae92d295",
+              "name": "context",
+              "type": "String",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "50abaf0f062742e09bf38b6ed3d8c9c3"
+              }
+            }
+          ],
+          "documentation": "字段来自 pojo 源码；关联由外键式 ID 推导，不表示 Java 持有对象引用。"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "9dfd78abd4fb44d5b3a3abbe9dbf6217",
+          "name": "GoodsOfOrderForm",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "attributes": [
+            {
+              "_type": "UMLAttribute",
+              "_id": "eafd6e30564b4fa782557c4bb2f49cfd",
+              "name": "id",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "9dfd78abd4fb44d5b3a3abbe9dbf6217"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "c572331d2e874c7fb49c8f7b9af66315",
+              "name": "ofid",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "9dfd78abd4fb44d5b3a3abbe9dbf6217"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "549e7dbfcc9d48748a890b9d05acce18",
+              "name": "sid",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "9dfd78abd4fb44d5b3a3abbe9dbf6217"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "1e40862f98784ef1ba13e589164982b4",
+              "name": "modified",
+              "type": "Date",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "9dfd78abd4fb44d5b3a3abbe9dbf6217"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "9d1622cd46964e5bb2f1263abbd8fd14",
+              "name": "quantity",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "9dfd78abd4fb44d5b3a3abbe9dbf6217"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "a28cfbf961ca47248d25bf0f55055c2e",
+              "name": "display",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "9dfd78abd4fb44d5b3a3abbe9dbf6217"
+              }
+            }
+          ],
+          "documentation": "字段来自 pojo 源码；关联由外键式 ID 推导，不表示 Java 持有对象引用。"
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "00aef175e3f3422f9a08c24ae5cb0411",
+          "name": "BoughtShop",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "attributes": [
+            {
+              "_type": "UMLAttribute",
+              "_id": "8d084f06757e413bac691a736d800a2d",
+              "name": "id",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "00aef175e3f3422f9a08c24ae5cb0411"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "0e597272f4834f60bf1a2f2fc7290cc2",
+              "name": "modified",
+              "type": "Date",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "00aef175e3f3422f9a08c24ae5cb0411"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "1e30a8a879c945d6b365d928e8672bab",
+              "name": "state",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "00aef175e3f3422f9a08c24ae5cb0411"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "cf234df35865434698ff88e24ba128cd",
+              "name": "uid",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "00aef175e3f3422f9a08c24ae5cb0411"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "b693fa82febb44688fb452e1472e9753",
+              "name": "sid",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "00aef175e3f3422f9a08c24ae5cb0411"
+              }
+            },
+            {
+              "_type": "UMLAttribute",
+              "_id": "78e3b0fa530947ffb1c866352f2eb3c0",
+              "name": "quantity",
+              "type": "Integer",
+              "visibility": "private",
+              "_parent": {
+                "$ref": "00aef175e3f3422f9a08c24ae5cb0411"
+              }
+            }
+          ],
+          "documentation": "字段来自 pojo 源码；关联由外键式 ID 推导，不表示 Java 持有对象引用。"
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "609e4abf890d4abcb7b159c2a7ce0aaf",
+          "name": "",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "2ceb58cf3e5a4740858144e49bbade04",
+            "name": "",
+            "reference": {
+              "$ref": "d8834c767b8b4fbe99038780831d94e9"
+            },
+            "multiplicity": "1",
+            "_parent": {
+              "$ref": "609e4abf890d4abcb7b159c2a7ce0aaf"
+            }
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "22da571e70484b52b2488547e07e5890",
+            "name": "",
+            "reference": {
+              "$ref": "e6c264f79c9c4d659be9bbd16f096654"
+            },
+            "multiplicity": "0..*",
+            "_parent": {
+              "$ref": "609e4abf890d4abcb7b159c2a7ce0aaf"
+            }
+          }
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "96d695c462034dd996389533e81ef94e",
+          "name": "",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "dae24d8797fe4f4a9eb9aaec30575211",
+            "name": "",
+            "reference": {
+              "$ref": "e6c264f79c9c4d659be9bbd16f096654"
+            },
+            "multiplicity": "1",
+            "_parent": {
+              "$ref": "96d695c462034dd996389533e81ef94e"
+            }
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "61907bd5b4414e06bfff387400295c0f",
+            "name": "",
+            "reference": {
+              "$ref": "bf008916e2db4d0e983e81c33d519a21"
+            },
+            "multiplicity": "0..*",
+            "_parent": {
+              "$ref": "96d695c462034dd996389533e81ef94e"
+            }
+          }
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "0bd39c1d4fd242ee9606282a821c2e3c",
+          "name": "",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "ea02036df4dd42869774007e6579c550",
+            "name": "",
+            "reference": {
+              "$ref": "bf008916e2db4d0e983e81c33d519a21"
+            },
+            "multiplicity": "1",
+            "_parent": {
+              "$ref": "0bd39c1d4fd242ee9606282a821c2e3c"
+            }
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "e1891e6ab4694d1bad3a0b11e10153d4",
+            "name": "",
+            "reference": {
+              "$ref": "1612aaf647ee49fbba35c5871b7a7f86"
+            },
+            "multiplicity": "0..*",
+            "_parent": {
+              "$ref": "0bd39c1d4fd242ee9606282a821c2e3c"
+            }
+          }
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "6531f33c4f3b4f3b86caf52fc1581d7c",
+          "name": "",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "e09b47dd8a7e43b7a4537b1662842231",
+            "name": "",
+            "reference": {
+              "$ref": "1612aaf647ee49fbba35c5871b7a7f86"
+            },
+            "multiplicity": "1",
+            "_parent": {
+              "$ref": "6531f33c4f3b4f3b86caf52fc1581d7c"
+            }
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "0ff6705086814ef8b30e853ce02f5d46",
+            "name": "",
+            "reference": {
+              "$ref": "e33540e6f06b40bda3b7fe7eac93aebd"
+            },
+            "multiplicity": "0..*",
+            "_parent": {
+              "$ref": "6531f33c4f3b4f3b86caf52fc1581d7c"
+            }
+          }
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "52ba7fbf10da469cab99ce19ee03d15c",
+          "name": "",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "0eac5af09104436b9ab71b327fbe82ff",
+            "name": "",
+            "reference": {
+              "$ref": "50abaf0f062742e09bf38b6ed3d8c9c3"
+            },
+            "multiplicity": "1",
+            "_parent": {
+              "$ref": "52ba7fbf10da469cab99ce19ee03d15c"
+            }
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "fa353ddd030741b096e671d75f275dff",
+            "name": "",
+            "reference": {
+              "$ref": "9dfd78abd4fb44d5b3a3abbe9dbf6217"
+            },
+            "multiplicity": "0..*",
+            "_parent": {
+              "$ref": "52ba7fbf10da469cab99ce19ee03d15c"
+            }
+          }
+        },
+        {
+          "_type": "UMLClassDiagram",
+          "_id": "e788698c9cdc4e2b9ad21e9af124f2bf",
+          "name": "04 分层设计类图",
+          "ownedViews": [
+            {
+              "_type": "UMLInterfaceView",
+              "_id": "86515aaa4254492090a33723edd70a15",
+              "name": "",
+              "model": {
+                "$ref": "7467251f8e5449bf997d153290c8876a"
+              },
+              "left": 470,
+              "top": 90,
+              "width": 340,
+              "height": 180,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "e788698c9cdc4e2b9ad21e9af124f2bf"
+              },
+              "showShadow": false,
+              "stereotypeDisplay": "label",
+              "suppressOperations": false,
+              "suppressAttributes": true
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "8c5050a5e9414af285a470d2e0ef7e72",
+              "name": "",
+              "model": {
+                "$ref": "0856b5b94a364f86bb36efa30d2b205a"
+              },
+              "left": 900,
+              "top": 90,
+              "width": 340,
+              "height": 180,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "e788698c9cdc4e2b9ad21e9af124f2bf"
+              },
+              "showShadow": false,
+              "suppressOperations": false,
+              "suppressAttributes": true
+            },
+            {
+              "_type": "UMLInterfaceView",
+              "_id": "f0c2716ff4414bcd8e0c7de72bc97753",
+              "name": "",
+              "model": {
+                "$ref": "57532b6545174495805ce2cbc9463e7a"
+              },
+              "left": 1330,
+              "top": 90,
+              "width": 340,
+              "height": 180,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "e788698c9cdc4e2b9ad21e9af124f2bf"
+              },
+              "showShadow": false,
+              "stereotypeDisplay": "label",
+              "suppressOperations": false,
+              "suppressAttributes": true
+            },
+            {
+              "_type": "UMLInterfaceRealizationView",
+              "_id": "6fb7943a93194895b9e2bb8c21394fa5",
+              "name": "",
+              "model": {
+                "$ref": "4715d4ed71e240e0ae2d9e700aba3e5f"
+              },
+              "tail": {
+                "$ref": "8c5050a5e9414af285a470d2e0ef7e72"
+              },
+              "head": {
+                "$ref": "86515aaa4254492090a33723edd70a15"
+              },
+              "points": "900:180;810:180",
+              "lineStyle": 2,
+              "font": "Microsoft YaHei;12;0",
+              "_parent": {
+                "$ref": "e788698c9cdc4e2b9ad21e9af124f2bf"
+              },
+              "lineColor": "#475569"
+            },
+            {
+              "_type": "UMLDependencyView",
+              "_id": "4a85cca58ff14f979fc68f383bb6c830",
+              "name": "",
+              "model": {
+                "$ref": "670d08d42fb041ca84cb14882d13efa6"
+              },
+              "tail": {
+                "$ref": "8c5050a5e9414af285a470d2e0ef7e72"
+              },
+              "head": {
+                "$ref": "f0c2716ff4414bcd8e0c7de72bc97753"
+              },
+              "points": "1240:180;1330:180",
+              "lineStyle": 2,
+              "font": "Microsoft YaHei;12;0",
+              "_parent": {
+                "$ref": "e788698c9cdc4e2b9ad21e9af124f2bf"
+              },
+              "lineColor": "#475569"
+            },
+            {
+              "_type": "UMLInterfaceView",
+              "_id": "b6555c21e6094a9d8080b2c43e8e10d8",
+              "name": "",
+              "model": {
+                "$ref": "e32e190c0c1b40879a11e4a964b5f9f5"
+              },
+              "left": 470,
+              "top": 390,
+              "width": 340,
+              "height": 180,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "e788698c9cdc4e2b9ad21e9af124f2bf"
+              },
+              "showShadow": false,
+              "stereotypeDisplay": "label",
+              "suppressOperations": false,
+              "suppressAttributes": true
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "c162b39f96da4dc69042c9a0700d6a61",
+              "name": "",
+              "model": {
+                "$ref": "88e7081b6ab74ce08a1ccf3daeef969d"
+              },
+              "left": 900,
+              "top": 390,
+              "width": 340,
+              "height": 180,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "e788698c9cdc4e2b9ad21e9af124f2bf"
+              },
+              "showShadow": false,
+              "suppressOperations": false,
+              "suppressAttributes": true
+            },
+            {
+              "_type": "UMLInterfaceView",
+              "_id": "a92aec92d07643f28bbc66947c31d6df",
+              "name": "",
+              "model": {
+                "$ref": "59bc6ca4ae7c4b7e89b53bd2fe306eb0"
+              },
+              "left": 1330,
+              "top": 390,
+              "width": 340,
+              "height": 180,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "e788698c9cdc4e2b9ad21e9af124f2bf"
+              },
+              "showShadow": false,
+              "stereotypeDisplay": "label",
+              "suppressOperations": false,
+              "suppressAttributes": true
+            },
+            {
+              "_type": "UMLInterfaceRealizationView",
+              "_id": "7d8c219644f7492c9f1f7962acb45ac9",
+              "name": "",
+              "model": {
+                "$ref": "b144cd01117c4e2b81fc0e6579a7ae92"
+              },
+              "tail": {
+                "$ref": "c162b39f96da4dc69042c9a0700d6a61"
+              },
+              "head": {
+                "$ref": "b6555c21e6094a9d8080b2c43e8e10d8"
+              },
+              "points": "900:480;810:480",
+              "lineStyle": 2,
+              "font": "Microsoft YaHei;12;0",
+              "_parent": {
+                "$ref": "e788698c9cdc4e2b9ad21e9af124f2bf"
+              },
+              "lineColor": "#475569"
+            },
+            {
+              "_type": "UMLDependencyView",
+              "_id": "57ff6b5288c34e1abb059dacf2d7b3aa",
+              "name": "",
+              "model": {
+                "$ref": "11c36c0ffc524ea4a6a3777dbf0a91ca"
+              },
+              "tail": {
+                "$ref": "c162b39f96da4dc69042c9a0700d6a61"
+              },
+              "head": {
+                "$ref": "a92aec92d07643f28bbc66947c31d6df"
+              },
+              "points": "1240:480;1330:480",
+              "lineStyle": 2,
+              "font": "Microsoft YaHei;12;0",
+              "_parent": {
+                "$ref": "e788698c9cdc4e2b9ad21e9af124f2bf"
+              },
+              "lineColor": "#475569"
+            },
+            {
+              "_type": "UMLInterfaceView",
+              "_id": "6b3d496f2c2b4eb3ba6d64df29ddb1d7",
+              "name": "",
+              "model": {
+                "$ref": "0a746d6473674cb5ab9d8672e9c1d1e8"
+              },
+              "left": 470,
+              "top": 690,
+              "width": 340,
+              "height": 180,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "e788698c9cdc4e2b9ad21e9af124f2bf"
+              },
+              "showShadow": false,
+              "stereotypeDisplay": "label",
+              "suppressOperations": false,
+              "suppressAttributes": true
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "3aec2120d8c64b498fd42ecca32326ce",
+              "name": "",
+              "model": {
+                "$ref": "67d11fc6d8b243398ce6b8882c7cba0e"
+              },
+              "left": 900,
+              "top": 690,
+              "width": 340,
+              "height": 180,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "e788698c9cdc4e2b9ad21e9af124f2bf"
+              },
+              "showShadow": false,
+              "suppressOperations": false,
+              "suppressAttributes": true
+            },
+            {
+              "_type": "UMLInterfaceView",
+              "_id": "e8e91f0219804dcb91e7c3558e258dcd",
+              "name": "",
+              "model": {
+                "$ref": "d8f6d5339ef447fbb74b408f00f2ca46"
+              },
+              "left": 1330,
+              "top": 690,
+              "width": 340,
+              "height": 180,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "e788698c9cdc4e2b9ad21e9af124f2bf"
+              },
+              "showShadow": false,
+              "stereotypeDisplay": "label",
+              "suppressOperations": false,
+              "suppressAttributes": true
+            },
+            {
+              "_type": "UMLInterfaceRealizationView",
+              "_id": "680588e303934bb6993f214a48455853",
+              "name": "",
+              "model": {
+                "$ref": "dae1432131a4425ea7db9682cc9d8a22"
+              },
+              "tail": {
+                "$ref": "3aec2120d8c64b498fd42ecca32326ce"
+              },
+              "head": {
+                "$ref": "6b3d496f2c2b4eb3ba6d64df29ddb1d7"
+              },
+              "points": "900:780;810:780",
+              "lineStyle": 2,
+              "font": "Microsoft YaHei;12;0",
+              "_parent": {
+                "$ref": "e788698c9cdc4e2b9ad21e9af124f2bf"
+              },
+              "lineColor": "#475569"
+            },
+            {
+              "_type": "UMLDependencyView",
+              "_id": "fe2a3832d84d474aabf1588f9d795b4c",
+              "name": "",
+              "model": {
+                "$ref": "3f29a71fe1de48dab2ece83e01a6b922"
+              },
+              "tail": {
+                "$ref": "3aec2120d8c64b498fd42ecca32326ce"
+              },
+              "head": {
+                "$ref": "e8e91f0219804dcb91e7c3558e258dcd"
+              },
+              "points": "1240:780;1330:780",
+              "lineStyle": 2,
+              "font": "Microsoft YaHei;12;0",
+              "_parent": {
+                "$ref": "e788698c9cdc4e2b9ad21e9af124f2bf"
+              },
+              "lineColor": "#475569"
+            },
+            {
+              "_type": "UMLClassView",
+              "_id": "9cd754fba95246b2a1611694dcc8075c",
+              "name": "",
+              "model": {
+                "$ref": "effbe1c6e5e24340bbdbba77f536349f"
+              },
+              "left": 60,
+              "top": 330,
+              "width": 270,
+              "height": 200,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "e788698c9cdc4e2b9ad21e9af124f2bf"
+              },
+              "showShadow": false,
+              "suppressOperations": false,
+              "suppressAttributes": true
+            },
+            {
+              "_type": "UMLDependencyView",
+              "_id": "6cb5846fd6db4867b0fd87f8ba665e49",
+              "name": "",
+              "model": {
+                "$ref": "94281534735f4ff5b96a79ed1d092e7b"
+              },
+              "tail": {
+                "$ref": "9cd754fba95246b2a1611694dcc8075c"
+              },
+              "head": {
+                "$ref": "86515aaa4254492090a33723edd70a15"
+              },
+              "points": "330:430;360:430;360:180;470:180",
+              "lineStyle": 2,
+              "font": "Microsoft YaHei;12;0",
+              "_parent": {
+                "$ref": "e788698c9cdc4e2b9ad21e9af124f2bf"
+              },
+              "lineColor": "#475569"
+            },
+            {
+              "_type": "UMLDependencyView",
+              "_id": "376a029f27dc4d8eb810d1f38d17ec0c",
+              "name": "",
+              "model": {
+                "$ref": "6b20cbf61792472a857b9e5aed714a03"
+              },
+              "tail": {
+                "$ref": "9cd754fba95246b2a1611694dcc8075c"
+              },
+              "head": {
+                "$ref": "b6555c21e6094a9d8080b2c43e8e10d8"
+              },
+              "points": "330:400;440:400;440:480;470:480",
+              "lineStyle": 2,
+              "font": "Microsoft YaHei;12;0",
+              "_parent": {
+                "$ref": "e788698c9cdc4e2b9ad21e9af124f2bf"
+              },
+              "lineColor": "#475569"
+            },
+            {
+              "_type": "UMLDependencyView",
+              "_id": "f294c728087945a996c5369250e66416",
+              "name": "",
+              "model": {
+                "$ref": "c828711c0bc441eda64339cca8c2fa59"
+              },
+              "tail": {
+                "$ref": "9cd754fba95246b2a1611694dcc8075c"
+              },
+              "head": {
+                "$ref": "6b3d496f2c2b4eb3ba6d64df29ddb1d7"
+              },
+              "points": "330:460;360:460;360:780;470:780",
+              "lineStyle": 2,
+              "font": "Microsoft YaHei;12;0",
+              "_parent": {
+                "$ref": "e788698c9cdc4e2b9ad21e9af124f2bf"
+              },
+              "lineColor": "#475569"
+            },
+            {
+              "_type": "UMLNoteView",
+              "_id": "e1232b86873243ad8cdb6b791e7c8f17",
+              "name": "",
+              "left": 60,
+              "top": 1050,
+              "width": 1610,
+              "height": 60,
+              "text": "Controller 依赖接口；Impl 实现接口并委托 Mapper；依赖箭头表示调用，不表示数据流。",
+              "font": "Microsoft YaHei;12;0",
+              "fillColor": "#fffbe8",
+              "_parent": {
+                "$ref": "e788698c9cdc4e2b9ad21e9af124f2bf"
+              }
+            }
+          ],
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "documentation": "改进版：按职责分区；采用避让节点的正交连线；以源码为依据，分析假设见注释。"
+        },
+        {
+          "_type": "UMLInterface",
+          "_id": "7467251f8e5449bf997d153290c8876a",
+          "name": "ShopInformationService",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "operations": [
+            {
+              "_type": "UMLOperation",
+              "_id": "7dbf90bb4fba4198849a7d8d41c37b12",
+              "name": "insertSelective",
+              "visibility": "public",
+              "parameters": [
+                {
+                  "_type": "UMLParameter",
+                  "_id": "1f99c9228d90492989c09678e66f9114",
+                  "name": "record",
+                  "direction": "in",
+                  "type": "ShopInformation",
+                  "_parent": {
+                    "$ref": "7dbf90bb4fba4198849a7d8d41c37b12"
+                  }
+                },
+                {
+                  "_type": "UMLParameter",
+                  "_id": "42e14b8bdf554a068c95ce57a9364681",
+                  "name": "",
+                  "direction": "return",
+                  "type": "int",
+                  "_parent": {
+                    "$ref": "7dbf90bb4fba4198849a7d8d41c37b12"
+                  }
+                }
+              ],
+              "_parent": {
+                "$ref": "7467251f8e5449bf997d153290c8876a"
+              }
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "62f4893fd35044d7a586b5a004a7034b",
+              "name": "selectIdByImage",
+              "visibility": "public",
+              "parameters": [
+                {
+                  "_type": "UMLParameter",
+                  "_id": "419e35924a8648c99000648c49b07479",
+                  "name": "image",
+                  "direction": "in",
+                  "type": "String",
+                  "_parent": {
+                    "$ref": "62f4893fd35044d7a586b5a004a7034b"
+                  }
+                },
+                {
+                  "_type": "UMLParameter",
+                  "_id": "4a0f7ffc567446459766474077595b38",
+                  "name": "",
+                  "direction": "return",
+                  "type": "int",
+                  "_parent": {
+                    "$ref": "62f4893fd35044d7a586b5a004a7034b"
+                  }
+                }
+              ],
+              "_parent": {
+                "$ref": "7467251f8e5449bf997d153290c8876a"
+              }
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "45970e4dce1e4123b890bc9bb5a0ef90",
+              "name": "deleteByPrimaryKey",
+              "visibility": "public",
+              "parameters": [
+                {
+                  "_type": "UMLParameter",
+                  "_id": "aa443e0d3a9247ce8dff69f6f6187aca",
+                  "name": "id",
+                  "direction": "in",
+                  "type": "Integer",
+                  "_parent": {
+                    "$ref": "45970e4dce1e4123b890bc9bb5a0ef90"
+                  }
+                },
+                {
+                  "_type": "UMLParameter",
+                  "_id": "86d55119df88450ba9254ae3e244546a",
+                  "name": "",
+                  "direction": "return",
+                  "type": "int",
+                  "_parent": {
+                    "$ref": "45970e4dce1e4123b890bc9bb5a0ef90"
+                  }
+                }
+              ],
+              "_parent": {
+                "$ref": "7467251f8e5449bf997d153290c8876a"
+              }
+            }
+          ]
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "0856b5b94a364f86bb36efa30d2b205a",
+          "name": "ShopInformationServiceImpl",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "operations": [
+            {
+              "_type": "UMLOperation",
+              "_id": "413a8d06ea0b49dab2d2bb08209f3c30",
+              "name": "insertSelective",
+              "visibility": "public",
+              "parameters": [
+                {
+                  "_type": "UMLParameter",
+                  "_id": "8d185d82a7b24751af4ac9d863c231fd",
+                  "name": "record",
+                  "direction": "in",
+                  "type": "ShopInformation",
+                  "_parent": {
+                    "$ref": "413a8d06ea0b49dab2d2bb08209f3c30"
+                  }
+                },
+                {
+                  "_type": "UMLParameter",
+                  "_id": "35a63bfddb7742eabd0941e133286d5c",
+                  "name": "",
+                  "direction": "return",
+                  "type": "int",
+                  "_parent": {
+                    "$ref": "413a8d06ea0b49dab2d2bb08209f3c30"
+                  }
+                }
+              ],
+              "_parent": {
+                "$ref": "0856b5b94a364f86bb36efa30d2b205a"
+              }
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "df41d1a3d6024f96ab553c2d7c8d25d1",
+              "name": "selectIdByImage",
+              "visibility": "public",
+              "parameters": [
+                {
+                  "_type": "UMLParameter",
+                  "_id": "52c004db32124d38b94495321310b34f",
+                  "name": "image",
+                  "direction": "in",
+                  "type": "String",
+                  "_parent": {
+                    "$ref": "df41d1a3d6024f96ab553c2d7c8d25d1"
+                  }
+                },
+                {
+                  "_type": "UMLParameter",
+                  "_id": "77c87de16cd14e3b9edc309abbbfe702",
+                  "name": "",
+                  "direction": "return",
+                  "type": "int",
+                  "_parent": {
+                    "$ref": "df41d1a3d6024f96ab553c2d7c8d25d1"
+                  }
+                }
+              ],
+              "_parent": {
+                "$ref": "0856b5b94a364f86bb36efa30d2b205a"
+              }
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "017ef55563a34276a916130e7f5c90e3",
+              "name": "deleteByPrimaryKey",
+              "visibility": "public",
+              "parameters": [
+                {
+                  "_type": "UMLParameter",
+                  "_id": "7a5e18d03ad94ec4bafa415d6043872b",
+                  "name": "id",
+                  "direction": "in",
+                  "type": "Integer",
+                  "_parent": {
+                    "$ref": "017ef55563a34276a916130e7f5c90e3"
+                  }
+                },
+                {
+                  "_type": "UMLParameter",
+                  "_id": "a20f0c3fbb404e9392b14a8d9a8a484f",
+                  "name": "",
+                  "direction": "return",
+                  "type": "int",
+                  "_parent": {
+                    "$ref": "017ef55563a34276a916130e7f5c90e3"
+                  }
+                }
+              ],
+              "_parent": {
+                "$ref": "0856b5b94a364f86bb36efa30d2b205a"
+              }
+            }
+          ]
+        },
+        {
+          "_type": "UMLInterface",
+          "_id": "57532b6545174495805ce2cbc9463e7a",
+          "name": "ShopInformationMapper",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "operations": [
+            {
+              "_type": "UMLOperation",
+              "_id": "e30ccdd7af904b5b970c7e4da6343a47",
+              "name": "insertSelective",
+              "visibility": "public",
+              "parameters": [
+                {
+                  "_type": "UMLParameter",
+                  "_id": "07a2e828b3f440128c3d753fd73d7208",
+                  "name": "record",
+                  "direction": "in",
+                  "type": "ShopInformation",
+                  "_parent": {
+                    "$ref": "e30ccdd7af904b5b970c7e4da6343a47"
+                  }
+                },
+                {
+                  "_type": "UMLParameter",
+                  "_id": "adcaaea45fc643059dfe79c2f10a0540",
+                  "name": "",
+                  "direction": "return",
+                  "type": "int",
+                  "_parent": {
+                    "$ref": "e30ccdd7af904b5b970c7e4da6343a47"
+                  }
+                }
+              ],
+              "_parent": {
+                "$ref": "57532b6545174495805ce2cbc9463e7a"
+              }
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "7d4775beaaec48edbe3a42522fccb79e",
+              "name": "selectIdByImage",
+              "visibility": "public",
+              "parameters": [
+                {
+                  "_type": "UMLParameter",
+                  "_id": "a466231e9b3a407e9aa6d19c3344ee31",
+                  "name": "image",
+                  "direction": "in",
+                  "type": "String",
+                  "_parent": {
+                    "$ref": "7d4775beaaec48edbe3a42522fccb79e"
+                  }
+                },
+                {
+                  "_type": "UMLParameter",
+                  "_id": "991b96a0209e4f9cbae90c6f719506f4",
+                  "name": "",
+                  "direction": "return",
+                  "type": "int",
+                  "_parent": {
+                    "$ref": "7d4775beaaec48edbe3a42522fccb79e"
+                  }
+                }
+              ],
+              "_parent": {
+                "$ref": "57532b6545174495805ce2cbc9463e7a"
+              }
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "a3cd03c48348496bb48b4138899453c6",
+              "name": "deleteByPrimaryKey",
+              "visibility": "public",
+              "parameters": [
+                {
+                  "_type": "UMLParameter",
+                  "_id": "09074a03393443d6a42b17409e7933e8",
+                  "name": "id",
+                  "direction": "in",
+                  "type": "Integer",
+                  "_parent": {
+                    "$ref": "a3cd03c48348496bb48b4138899453c6"
+                  }
+                },
+                {
+                  "_type": "UMLParameter",
+                  "_id": "4b8c022efbc24af5a677bbe4abb12231",
+                  "name": "",
+                  "direction": "return",
+                  "type": "int",
+                  "_parent": {
+                    "$ref": "a3cd03c48348496bb48b4138899453c6"
+                  }
+                }
+              ],
+              "_parent": {
+                "$ref": "57532b6545174495805ce2cbc9463e7a"
+              }
+            }
+          ]
+        },
+        {
+          "_type": "UMLInterfaceRealization",
+          "_id": "4715d4ed71e240e0ae2d9e700aba3e5f",
+          "name": "",
+          "source": {
+            "$ref": "0856b5b94a364f86bb36efa30d2b205a"
+          },
+          "target": {
+            "$ref": "7467251f8e5449bf997d153290c8876a"
+          },
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          }
+        },
+        {
+          "_type": "UMLDependency",
+          "_id": "670d08d42fb041ca84cb14882d13efa6",
+          "name": "调用",
+          "source": {
+            "$ref": "0856b5b94a364f86bb36efa30d2b205a"
+          },
+          "target": {
+            "$ref": "57532b6545174495805ce2cbc9463e7a"
+          },
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          }
+        },
+        {
+          "_type": "UMLInterface",
+          "_id": "e32e190c0c1b40879a11e4a964b5f9f5",
+          "name": "UserReleaseService",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "operations": [
+            {
+              "_type": "UMLOperation",
+              "_id": "819a09948a254272954e9a05881d279b",
+              "name": "insertSelective",
+              "visibility": "public",
+              "parameters": [
+                {
+                  "_type": "UMLParameter",
+                  "_id": "e92c5d9379af4cd18af501527aad9a96",
+                  "name": "record",
+                  "direction": "in",
+                  "type": "UserRelease",
+                  "_parent": {
+                    "$ref": "819a09948a254272954e9a05881d279b"
+                  }
+                },
+                {
+                  "_type": "UMLParameter",
+                  "_id": "5effc6b7d4ad4ea88badd6fb2c1b5949",
+                  "name": "",
+                  "direction": "return",
+                  "type": "int",
+                  "_parent": {
+                    "$ref": "819a09948a254272954e9a05881d279b"
+                  }
+                }
+              ],
+              "_parent": {
+                "$ref": "e32e190c0c1b40879a11e4a964b5f9f5"
+              }
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "06b281f90f29407fa2809ef9f12abce8",
+              "name": "updateByPrimaryKeySelective",
+              "visibility": "public",
+              "parameters": [
+                {
+                  "_type": "UMLParameter",
+                  "_id": "2b0da99a4c6142ffa6f136db9ea3c4b5",
+                  "name": "record",
+                  "direction": "in",
+                  "type": "UserRelease",
+                  "_parent": {
+                    "$ref": "06b281f90f29407fa2809ef9f12abce8"
+                  }
+                },
+                {
+                  "_type": "UMLParameter",
+                  "_id": "f5b5076697be44248aa264505dd9b052",
+                  "name": "",
+                  "direction": "return",
+                  "type": "int",
+                  "_parent": {
+                    "$ref": "06b281f90f29407fa2809ef9f12abce8"
+                  }
+                }
+              ],
+              "_parent": {
+                "$ref": "e32e190c0c1b40879a11e4a964b5f9f5"
+              }
+            }
+          ]
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "88e7081b6ab74ce08a1ccf3daeef969d",
+          "name": "UserReleaseServiceImpl",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "operations": [
+            {
+              "_type": "UMLOperation",
+              "_id": "7623a3c0ff794d9b9467aa7d0cbc6323",
+              "name": "insertSelective",
+              "visibility": "public",
+              "parameters": [
+                {
+                  "_type": "UMLParameter",
+                  "_id": "cb58c7537df24e12ac7c5f4245198ccd",
+                  "name": "record",
+                  "direction": "in",
+                  "type": "UserRelease",
+                  "_parent": {
+                    "$ref": "7623a3c0ff794d9b9467aa7d0cbc6323"
+                  }
+                },
+                {
+                  "_type": "UMLParameter",
+                  "_id": "90968d640e674a87b242ac4ef5c94a10",
+                  "name": "",
+                  "direction": "return",
+                  "type": "int",
+                  "_parent": {
+                    "$ref": "7623a3c0ff794d9b9467aa7d0cbc6323"
+                  }
+                }
+              ],
+              "_parent": {
+                "$ref": "88e7081b6ab74ce08a1ccf3daeef969d"
+              }
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "678f382481714320bf7d2b0b0151a2a9",
+              "name": "updateByPrimaryKeySelective",
+              "visibility": "public",
+              "parameters": [
+                {
+                  "_type": "UMLParameter",
+                  "_id": "59e4f0a8c9e64ea0b877447104afcaf0",
+                  "name": "record",
+                  "direction": "in",
+                  "type": "UserRelease",
+                  "_parent": {
+                    "$ref": "678f382481714320bf7d2b0b0151a2a9"
+                  }
+                },
+                {
+                  "_type": "UMLParameter",
+                  "_id": "3ff8a0f1f69548f8a4650b1f63d9e0ff",
+                  "name": "",
+                  "direction": "return",
+                  "type": "int",
+                  "_parent": {
+                    "$ref": "678f382481714320bf7d2b0b0151a2a9"
+                  }
+                }
+              ],
+              "_parent": {
+                "$ref": "88e7081b6ab74ce08a1ccf3daeef969d"
+              }
+            }
+          ]
+        },
+        {
+          "_type": "UMLInterface",
+          "_id": "59bc6ca4ae7c4b7e89b53bd2fe306eb0",
+          "name": "UserReleaseMapper",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "operations": [
+            {
+              "_type": "UMLOperation",
+              "_id": "af3010c6e2984d0b8d7e6dd560518679",
+              "name": "insertSelective",
+              "visibility": "public",
+              "parameters": [
+                {
+                  "_type": "UMLParameter",
+                  "_id": "8da4c57204f7401088eb506c732faab3",
+                  "name": "record",
+                  "direction": "in",
+                  "type": "UserRelease",
+                  "_parent": {
+                    "$ref": "af3010c6e2984d0b8d7e6dd560518679"
+                  }
+                },
+                {
+                  "_type": "UMLParameter",
+                  "_id": "1a83f77d25754a9c930839d5ee444347",
+                  "name": "",
+                  "direction": "return",
+                  "type": "int",
+                  "_parent": {
+                    "$ref": "af3010c6e2984d0b8d7e6dd560518679"
+                  }
+                }
+              ],
+              "_parent": {
+                "$ref": "59bc6ca4ae7c4b7e89b53bd2fe306eb0"
+              }
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "a1b3210a1e854ccc9540a3c3ba34db8d",
+              "name": "updateByPrimaryKeySelective",
+              "visibility": "public",
+              "parameters": [
+                {
+                  "_type": "UMLParameter",
+                  "_id": "daab284eb7fe4f2d95e1a9ea54ff8262",
+                  "name": "record",
+                  "direction": "in",
+                  "type": "UserRelease",
+                  "_parent": {
+                    "$ref": "a1b3210a1e854ccc9540a3c3ba34db8d"
+                  }
+                },
+                {
+                  "_type": "UMLParameter",
+                  "_id": "ddab960300c14f32a5ad4ed487bbfdf4",
+                  "name": "",
+                  "direction": "return",
+                  "type": "int",
+                  "_parent": {
+                    "$ref": "a1b3210a1e854ccc9540a3c3ba34db8d"
+                  }
+                }
+              ],
+              "_parent": {
+                "$ref": "59bc6ca4ae7c4b7e89b53bd2fe306eb0"
+              }
+            }
+          ]
+        },
+        {
+          "_type": "UMLInterfaceRealization",
+          "_id": "b144cd01117c4e2b81fc0e6579a7ae92",
+          "name": "",
+          "source": {
+            "$ref": "88e7081b6ab74ce08a1ccf3daeef969d"
+          },
+          "target": {
+            "$ref": "e32e190c0c1b40879a11e4a964b5f9f5"
+          },
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          }
+        },
+        {
+          "_type": "UMLDependency",
+          "_id": "11c36c0ffc524ea4a6a3777dbf0a91ca",
+          "name": "调用",
+          "source": {
+            "$ref": "88e7081b6ab74ce08a1ccf3daeef969d"
+          },
+          "target": {
+            "$ref": "59bc6ca4ae7c4b7e89b53bd2fe306eb0"
+          },
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          }
+        },
+        {
+          "_type": "UMLInterface",
+          "_id": "0a746d6473674cb5ab9d8672e9c1d1e8",
+          "name": "GoodsCarService",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "operations": [
+            {
+              "_type": "UMLOperation",
+              "_id": "e91642f2830740e089e1621620f3a1cd",
+              "name": "insertSelective",
+              "visibility": "public",
+              "parameters": [
+                {
+                  "_type": "UMLParameter",
+                  "_id": "4ff895d3a87c44909c8556bff240d7c1",
+                  "name": "record",
+                  "direction": "in",
+                  "type": "GoodsCar",
+                  "_parent": {
+                    "$ref": "e91642f2830740e089e1621620f3a1cd"
+                  }
+                },
+                {
+                  "_type": "UMLParameter",
+                  "_id": "cc1750e7864f4b44b72e8335d738c9a5",
+                  "name": "",
+                  "direction": "return",
+                  "type": "int",
+                  "_parent": {
+                    "$ref": "e91642f2830740e089e1621620f3a1cd"
+                  }
+                }
+              ],
+              "_parent": {
+                "$ref": "0a746d6473674cb5ab9d8672e9c1d1e8"
+              }
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "71342c22d8b14100b2211c9098b6502f",
+              "name": "updateByPrimaryKeySelective",
+              "visibility": "public",
+              "parameters": [
+                {
+                  "_type": "UMLParameter",
+                  "_id": "ad4abcf051bb40ac925a90f82fdd2b38",
+                  "name": "record",
+                  "direction": "in",
+                  "type": "GoodsCar",
+                  "_parent": {
+                    "$ref": "71342c22d8b14100b2211c9098b6502f"
+                  }
+                },
+                {
+                  "_type": "UMLParameter",
+                  "_id": "dc43eccb03b94639a0cd45fb664deb06",
+                  "name": "",
+                  "direction": "return",
+                  "type": "int",
+                  "_parent": {
+                    "$ref": "71342c22d8b14100b2211c9098b6502f"
+                  }
+                }
+              ],
+              "_parent": {
+                "$ref": "0a746d6473674cb5ab9d8672e9c1d1e8"
+              }
+            }
+          ]
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "67d11fc6d8b243398ce6b8882c7cba0e",
+          "name": "GoodsCarServiceImpl",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "operations": [
+            {
+              "_type": "UMLOperation",
+              "_id": "36b6b0316ea94df4a3c6ac6155c3179e",
+              "name": "insertSelective",
+              "visibility": "public",
+              "parameters": [
+                {
+                  "_type": "UMLParameter",
+                  "_id": "4b3a51c06daa4adabef8495ded312ac5",
+                  "name": "record",
+                  "direction": "in",
+                  "type": "GoodsCar",
+                  "_parent": {
+                    "$ref": "36b6b0316ea94df4a3c6ac6155c3179e"
+                  }
+                },
+                {
+                  "_type": "UMLParameter",
+                  "_id": "b6339481ef954e67bb4b38efcf8d97a5",
+                  "name": "",
+                  "direction": "return",
+                  "type": "int",
+                  "_parent": {
+                    "$ref": "36b6b0316ea94df4a3c6ac6155c3179e"
+                  }
+                }
+              ],
+              "_parent": {
+                "$ref": "67d11fc6d8b243398ce6b8882c7cba0e"
+              }
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "941d109156cf4341a83d1b1a2f8ffc1c",
+              "name": "updateByPrimaryKeySelective",
+              "visibility": "public",
+              "parameters": [
+                {
+                  "_type": "UMLParameter",
+                  "_id": "93f74f34b53f414da13f0023bf20423a",
+                  "name": "record",
+                  "direction": "in",
+                  "type": "GoodsCar",
+                  "_parent": {
+                    "$ref": "941d109156cf4341a83d1b1a2f8ffc1c"
+                  }
+                },
+                {
+                  "_type": "UMLParameter",
+                  "_id": "10d09416beb949b4b5de32ae8f255cc2",
+                  "name": "",
+                  "direction": "return",
+                  "type": "int",
+                  "_parent": {
+                    "$ref": "941d109156cf4341a83d1b1a2f8ffc1c"
+                  }
+                }
+              ],
+              "_parent": {
+                "$ref": "67d11fc6d8b243398ce6b8882c7cba0e"
+              }
+            }
+          ]
+        },
+        {
+          "_type": "UMLInterface",
+          "_id": "d8f6d5339ef447fbb74b408f00f2ca46",
+          "name": "GoodsCarMapper",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "operations": [
+            {
+              "_type": "UMLOperation",
+              "_id": "3d5ec08eb41a443fa0ce18e0f399607f",
+              "name": "insertSelective",
+              "visibility": "public",
+              "parameters": [
+                {
+                  "_type": "UMLParameter",
+                  "_id": "5b96c43284aa431298aca826f8bb8ae4",
+                  "name": "record",
+                  "direction": "in",
+                  "type": "GoodsCar",
+                  "_parent": {
+                    "$ref": "3d5ec08eb41a443fa0ce18e0f399607f"
+                  }
+                },
+                {
+                  "_type": "UMLParameter",
+                  "_id": "db7d1c61ff2b4fa79085253af0846831",
+                  "name": "",
+                  "direction": "return",
+                  "type": "int",
+                  "_parent": {
+                    "$ref": "3d5ec08eb41a443fa0ce18e0f399607f"
+                  }
+                }
+              ],
+              "_parent": {
+                "$ref": "d8f6d5339ef447fbb74b408f00f2ca46"
+              }
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "872e12fa25ac4801bfaf9a7755137dae",
+              "name": "updateByPrimaryKeySelective",
+              "visibility": "public",
+              "parameters": [
+                {
+                  "_type": "UMLParameter",
+                  "_id": "d1169b23433e4b6197129cf8ea2ed68f",
+                  "name": "record",
+                  "direction": "in",
+                  "type": "GoodsCar",
+                  "_parent": {
+                    "$ref": "872e12fa25ac4801bfaf9a7755137dae"
+                  }
+                },
+                {
+                  "_type": "UMLParameter",
+                  "_id": "2f90b78335074a3eb2186dee005c8c9e",
+                  "name": "",
+                  "direction": "return",
+                  "type": "int",
+                  "_parent": {
+                    "$ref": "872e12fa25ac4801bfaf9a7755137dae"
+                  }
+                }
+              ],
+              "_parent": {
+                "$ref": "d8f6d5339ef447fbb74b408f00f2ca46"
+              }
+            }
+          ]
+        },
+        {
+          "_type": "UMLInterfaceRealization",
+          "_id": "dae1432131a4425ea7db9682cc9d8a22",
+          "name": "",
+          "source": {
+            "$ref": "67d11fc6d8b243398ce6b8882c7cba0e"
+          },
+          "target": {
+            "$ref": "0a746d6473674cb5ab9d8672e9c1d1e8"
+          },
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          }
+        },
+        {
+          "_type": "UMLDependency",
+          "_id": "3f29a71fe1de48dab2ece83e01a6b922",
+          "name": "调用",
+          "source": {
+            "$ref": "67d11fc6d8b243398ce6b8882c7cba0e"
+          },
+          "target": {
+            "$ref": "d8f6d5339ef447fbb74b408f00f2ca46"
+          },
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          }
+        },
+        {
+          "_type": "UMLClass",
+          "_id": "effbe1c6e5e24340bbdbba77f536349f",
+          "name": "UserController",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "operations": [
+            {
+              "_type": "UMLOperation",
+              "_id": "6692b6f1a7b34851bcb1d9048da6317f",
+              "name": "insertGoods",
+              "visibility": "public",
+              "parameters": [
+                {
+                  "_type": "UMLParameter",
+                  "_id": "67822d4d64464ffea9bb9cfb1766a1fe",
+                  "name": "...",
+                  "direction": "in",
+                  "type": "",
+                  "_parent": {
+                    "$ref": "6692b6f1a7b34851bcb1d9048da6317f"
+                  }
+                },
+                {
+                  "_type": "UMLParameter",
+                  "_id": "7ef8fff2c50f4d3aa7fa0e4d4d3eb114",
+                  "name": "",
+                  "direction": "return",
+                  "type": "String",
+                  "_parent": {
+                    "$ref": "6692b6f1a7b34851bcb1d9048da6317f"
+                  }
+                }
+              ],
+              "_parent": {
+                "$ref": "effbe1c6e5e24340bbdbba77f536349f"
+              }
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "0854a6c689974ce693e994d5c260939d",
+              "name": "insertGoodsCar",
+              "visibility": "public",
+              "parameters": [
+                {
+                  "_type": "UMLParameter",
+                  "_id": "cecb5a787e01493ebfd36d5119fb1451",
+                  "name": "...",
+                  "direction": "in",
+                  "type": "",
+                  "_parent": {
+                    "$ref": "0854a6c689974ce693e994d5c260939d"
+                  }
+                },
+                {
+                  "_type": "UMLParameter",
+                  "_id": "1ef8b8b9e9e8461bb2ec759a784e2353",
+                  "name": "",
+                  "direction": "return",
+                  "type": "BaseResponse",
+                  "_parent": {
+                    "$ref": "0854a6c689974ce693e994d5c260939d"
+                  }
+                }
+              ],
+              "_parent": {
+                "$ref": "effbe1c6e5e24340bbdbba77f536349f"
+              }
+            },
+            {
+              "_type": "UMLOperation",
+              "_id": "9f8e0b3263cc4cb78bf380e87956c12a",
+              "name": "deleteShopCar",
+              "visibility": "public",
+              "parameters": [
+                {
+                  "_type": "UMLParameter",
+                  "_id": "79a6e39c9437484d802ab61e65ebb720",
+                  "name": "...",
+                  "direction": "in",
+                  "type": "",
+                  "_parent": {
+                    "$ref": "9f8e0b3263cc4cb78bf380e87956c12a"
+                  }
+                },
+                {
+                  "_type": "UMLParameter",
+                  "_id": "7b1ac2d59040412592e30390fc18996c",
+                  "name": "",
+                  "direction": "return",
+                  "type": "BaseResponse",
+                  "_parent": {
+                    "$ref": "9f8e0b3263cc4cb78bf380e87956c12a"
+                  }
+                }
+              ],
+              "_parent": {
+                "$ref": "effbe1c6e5e24340bbdbba77f536349f"
+              }
+            }
+          ]
+        },
+        {
+          "_type": "UMLDependency",
+          "_id": "94281534735f4ff5b96a79ed1d092e7b",
+          "name": "注入",
+          "source": {
+            "$ref": "effbe1c6e5e24340bbdbba77f536349f"
+          },
+          "target": {
+            "$ref": "7467251f8e5449bf997d153290c8876a"
+          },
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          }
+        },
+        {
+          "_type": "UMLDependency",
+          "_id": "6b20cbf61792472a857b9e5aed714a03",
+          "name": "注入",
+          "source": {
+            "$ref": "effbe1c6e5e24340bbdbba77f536349f"
+          },
+          "target": {
+            "$ref": "e32e190c0c1b40879a11e4a964b5f9f5"
+          },
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          }
+        },
+        {
+          "_type": "UMLDependency",
+          "_id": "c828711c0bc441eda64339cca8c2fa59",
+          "name": "注入",
+          "source": {
+            "$ref": "effbe1c6e5e24340bbdbba77f536349f"
+          },
+          "target": {
+            "$ref": "0a746d6473674cb5ab9d8672e9c1d1e8"
+          },
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          }
+        },
+        {
+          "_type": "UMLObjectDiagram",
+          "_id": "c836d6666bb343e8b4229edde12463ce",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "name": "04 典型交易场景对象图",
+          "ownedViews": [
+            {
+              "_type": "UMLObjectView",
+              "_id": "5ed7238fe0fc4f7fb036f7221f317412",
+              "_parent": {
+                "$ref": "c836d6666bb343e8b4229edde12463ce"
+              },
+              "name": "",
+              "model": {
+                "$ref": "3743593eee1f4caf9c6fb3c245796ecd"
+              },
+              "left": 75,
+              "top": 105,
+              "width": 315,
+              "height": 168,
+              "font": "Microsoft YaHei;14;0",
+              "lineColor": "#334155",
+              "fillColor": "#f8fafc",
+              "showShadow": false
+            },
+            {
+              "_type": "UMLObjectView",
+              "_id": "5d5931f364a44dd5ad7f21b3211aa31d",
+              "_parent": {
+                "$ref": "c836d6666bb343e8b4229edde12463ce"
+              },
+              "name": "",
+              "model": {
+                "$ref": "237fb6f18c1b4b878b9e534e0559a38f"
+              },
+              "left": 75,
+              "top": 580,
+              "width": 315,
+              "height": 168,
+              "font": "Microsoft YaHei;14;0",
+              "lineColor": "#334155",
+              "fillColor": "#f8fafc",
+              "showShadow": false
+            },
+            {
+              "_type": "UMLObjectView",
+              "_id": "cb08316e64c04bc4b3e9b50576e3e30e",
+              "_parent": {
+                "$ref": "c836d6666bb343e8b4229edde12463ce"
+              },
+              "name": "",
+              "model": {
+                "$ref": "ab3c4aea269f4f77916d2d6105ccdb0f"
+              },
+              "left": 560,
+              "top": 85,
+              "width": 315,
+              "height": 168,
+              "font": "Microsoft YaHei;14;0",
+              "lineColor": "#334155",
+              "fillColor": "#f8fafc",
+              "showShadow": false
+            },
+            {
+              "_type": "UMLObjectView",
+              "_id": "faa57a59df884cb4b3db558374430f36",
+              "_parent": {
+                "$ref": "c836d6666bb343e8b4229edde12463ce"
+              },
+              "name": "",
+              "model": {
+                "$ref": "7b3aa5c1334d429abdd75b62543e4053"
+              },
+              "left": 560,
+              "top": 420,
+              "width": 315,
+              "height": 168,
+              "font": "Microsoft YaHei;14;0",
+              "lineColor": "#334155",
+              "fillColor": "#f8fafc",
+              "showShadow": false
+            },
+            {
+              "_type": "UMLObjectView",
+              "_id": "e4c0663458c345f6a34dd7258511ee97",
+              "_parent": {
+                "$ref": "c836d6666bb343e8b4229edde12463ce"
+              },
+              "name": "",
+              "model": {
+                "$ref": "9e289a6780554eae8ae1cc8b03bcc1b1"
+              },
+              "left": 560,
+              "top": 735,
+              "width": 315,
+              "height": 195,
+              "font": "Microsoft YaHei;14;0",
+              "lineColor": "#334155",
+              "fillColor": "#f8fafc",
+              "showShadow": false
+            },
+            {
+              "_type": "UMLObjectView",
+              "_id": "0b36a8f368cc432ca13c82beed1472ed",
+              "_parent": {
+                "$ref": "c836d6666bb343e8b4229edde12463ce"
+              },
+              "name": "",
+              "model": {
+                "$ref": "b8baed832da442b4858874efb973126c"
+              },
+              "left": 1050,
+              "top": 420,
+              "width": 335,
+              "height": 194,
+              "font": "Microsoft YaHei;14;0",
+              "lineColor": "#334155",
+              "fillColor": "#f8fafc",
+              "showShadow": false
+            },
+            {
+              "_type": "UMLLinkView",
+              "_id": "914fe41d67ac465bbf90d7d82d2ce21e",
+              "_parent": {
+                "$ref": "c836d6666bb343e8b4229edde12463ce"
+              },
+              "model": {
+                "$ref": "f36e2c9beaf04fbbb0fbafa85ee26fed"
+              },
+              "tail": {
+                "$ref": "5ed7238fe0fc4f7fb036f7221f317412"
+              },
+              "head": {
+                "$ref": "cb08316e64c04bc4b3e9b50576e3e30e"
+              },
+              "points": "390:183;560:183",
+              "lineColor": "#334155",
+              "font": "Microsoft YaHei;13;0"
+            },
+            {
+              "_type": "UMLLinkView",
+              "_id": "cadb1bf7e8a94fafb9aad145054c4b64",
+              "_parent": {
+                "$ref": "c836d6666bb343e8b4229edde12463ce"
+              },
+              "model": {
+                "$ref": "4bb942b43f764a19bf6abf7d4b53f456"
+              },
+              "tail": {
+                "$ref": "cb08316e64c04bc4b3e9b50576e3e30e"
+              },
+              "head": {
+                "$ref": "0b36a8f368cc432ca13c82beed1472ed"
+              },
+              "points": "875:169;965:169;965:480;1050:480",
+              "lineColor": "#334155",
+              "font": "Microsoft YaHei;13;0"
+            },
+            {
+              "_type": "UMLLinkView",
+              "_id": "82bb0dff8e6947d28bc5de350fb31997",
+              "_parent": {
+                "$ref": "c836d6666bb343e8b4229edde12463ce"
+              },
+              "model": {
+                "$ref": "b094291d05ff424598a652e97634c197"
+              },
+              "tail": {
+                "$ref": "5d5931f364a44dd5ad7f21b3211aa31d"
+              },
+              "head": {
+                "$ref": "faa57a59df884cb4b3db558374430f36"
+              },
+              "points": "390:664;465:664;465:504;560:504",
+              "lineColor": "#334155",
+              "font": "Microsoft YaHei;13;0"
+            },
+            {
+              "_type": "UMLLinkView",
+              "_id": "e834131b4d744e55accc58759bc40c6e",
+              "_parent": {
+                "$ref": "c836d6666bb343e8b4229edde12463ce"
+              },
+              "model": {
+                "$ref": "e20e6a60c513438ba50e0d42f13ae48b"
+              },
+              "tail": {
+                "$ref": "faa57a59df884cb4b3db558374430f36"
+              },
+              "head": {
+                "$ref": "0b36a8f368cc432ca13c82beed1472ed"
+              },
+              "points": "875:504;1050:504",
+              "lineColor": "#334155",
+              "font": "Microsoft YaHei;13;0"
+            },
+            {
+              "_type": "UMLLinkView",
+              "_id": "99af5ebc4e2c484fabd51dc9f4440da4",
+              "_parent": {
+                "$ref": "c836d6666bb343e8b4229edde12463ce"
+              },
+              "model": {
+                "$ref": "f0aad90951dc40e9b5cd4a59a8fd1e24"
+              },
+              "tail": {
+                "$ref": "5d5931f364a44dd5ad7f21b3211aa31d"
+              },
+              "head": {
+                "$ref": "e4c0663458c345f6a34dd7258511ee97"
+              },
+              "points": "390:710;475:710;475:815;560:815",
+              "lineColor": "#334155",
+              "font": "Microsoft YaHei;13;0"
+            },
+            {
+              "_type": "UMLLinkView",
+              "_id": "7a3c250aa07e4c8980a2a46d9b9574da",
+              "_parent": {
+                "$ref": "c836d6666bb343e8b4229edde12463ce"
+              },
+              "model": {
+                "$ref": "777ef5c63a854f458576a09b43f5fa91"
+              },
+              "tail": {
+                "$ref": "e4c0663458c345f6a34dd7258511ee97"
+              },
+              "head": {
+                "$ref": "0b36a8f368cc432ca13c82beed1472ed"
+              },
+              "points": "875:830;975:830;975:580;1050:580",
+              "lineColor": "#334155",
+              "font": "Microsoft YaHei;13;0"
+            }
+          ]
+        },
+        {
+          "_type": "UMLObject",
+          "_id": "3743593eee1f4caf9c6fb3c245796ecd",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "name": "seller01",
+          "classifier": {
+            "$ref": "fd295eff2f994460937d1a480e2ec216"
+          },
+          "slots": [
+            {
+              "_type": "UMLSlot",
+              "_id": "4b51f1d2698e4b8196055fdb33595d43",
+              "_parent": {
+                "$ref": "3743593eee1f4caf9c6fb3c245796ecd"
+              },
+              "name": "id",
+              "value": "1001"
+            },
+            {
+              "_type": "UMLSlot",
+              "_id": "15c8d08e39614ace9aaa16b2c3bf45f9",
+              "_parent": {
+                "$ref": "3743593eee1f4caf9c6fb3c245796ecd"
+              },
+              "name": "username",
+              "value": "student_A"
+            }
+          ]
+        },
+        {
+          "_type": "UMLObject",
+          "_id": "237fb6f18c1b4b878b9e534e0559a38f",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "name": "buyer01",
+          "classifier": {
+            "$ref": "fd295eff2f994460937d1a480e2ec216"
+          },
+          "slots": [
+            {
+              "_type": "UMLSlot",
+              "_id": "1627df9d243447239f5ce94ee77acc1b",
+              "_parent": {
+                "$ref": "237fb6f18c1b4b878b9e534e0559a38f"
+              },
+              "name": "id",
+              "value": "1002"
+            },
+            {
+              "_type": "UMLSlot",
+              "_id": "73fd3d87deb34f21895168025f11bbf4",
+              "_parent": {
+                "$ref": "237fb6f18c1b4b878b9e534e0559a38f"
+              },
+              "name": "username",
+              "value": "student_B"
+            }
+          ]
+        },
+        {
+          "_type": "UMLObject",
+          "_id": "ab3c4aea269f4f77916d2d6105ccdb0f",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "name": "release01",
+          "classifier": {
+            "$ref": "652f04351b554ca0ba8c5800df2fc2e5"
+          },
+          "slots": [
+            {
+              "_type": "UMLSlot",
+              "_id": "801f3eac6b70436ea59da1c7d78815a7",
+              "_parent": {
+                "$ref": "ab3c4aea269f4f77916d2d6105ccdb0f"
+              },
+              "name": "id",
+              "value": "3001"
+            },
+            {
+              "_type": "UMLSlot",
+              "_id": "1e342ac4598341a5b9d9e1be89526946",
+              "_parent": {
+                "$ref": "ab3c4aea269f4f77916d2d6105ccdb0f"
+              },
+              "name": "uid",
+              "value": "1001"
+            },
+            {
+              "_type": "UMLSlot",
+              "_id": "f6abb8a1751841d9b31159f102c2901b",
+              "_parent": {
+                "$ref": "ab3c4aea269f4f77916d2d6105ccdb0f"
+              },
+              "name": "sid",
+              "value": "2001"
+            }
+          ]
+        },
+        {
+          "_type": "UMLObject",
+          "_id": "7b3aa5c1334d429abdd75b62543e4053",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "name": "collection01",
+          "classifier": {
+            "$ref": "f95cff46060242e19871307a83f53824"
+          },
+          "slots": [
+            {
+              "_type": "UMLSlot",
+              "_id": "b67d6f40d8cd484eb8df0b19f27a9489",
+              "_parent": {
+                "$ref": "7b3aa5c1334d429abdd75b62543e4053"
+              },
+              "name": "id",
+              "value": "4001"
+            },
+            {
+              "_type": "UMLSlot",
+              "_id": "c78b7ff05ddc4b90b11d62805ec71329",
+              "_parent": {
+                "$ref": "7b3aa5c1334d429abdd75b62543e4053"
+              },
+              "name": "uid",
+              "value": "1002"
+            },
+            {
+              "_type": "UMLSlot",
+              "_id": "56f7792801db4936bdf48d521bef5ea8",
+              "_parent": {
+                "$ref": "7b3aa5c1334d429abdd75b62543e4053"
+              },
+              "name": "sid",
+              "value": "2001"
+            }
+          ]
+        },
+        {
+          "_type": "UMLObject",
+          "_id": "9e289a6780554eae8ae1cc8b03bcc1b1",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "name": "car01",
+          "classifier": {
+            "$ref": "23f3a22282284bc99c01a83414666823"
+          },
+          "slots": [
+            {
+              "_type": "UMLSlot",
+              "_id": "5ac6d99d9f5045cb9628ad816ad0e148",
+              "_parent": {
+                "$ref": "9e289a6780554eae8ae1cc8b03bcc1b1"
+              },
+              "name": "id",
+              "value": "5001"
+            },
+            {
+              "_type": "UMLSlot",
+              "_id": "ac3194f7b0f544c09c8d7cf77d5d7f97",
+              "_parent": {
+                "$ref": "9e289a6780554eae8ae1cc8b03bcc1b1"
+              },
+              "name": "uid",
+              "value": "1002"
+            },
+            {
+              "_type": "UMLSlot",
+              "_id": "e55c2b428c374fbaba58f830fbccd9c4",
+              "_parent": {
+                "$ref": "9e289a6780554eae8ae1cc8b03bcc1b1"
+              },
+              "name": "sid",
+              "value": "2001"
+            },
+            {
+              "_type": "UMLSlot",
+              "_id": "d086dd5489ad464186e39f8c65a44ad1",
+              "_parent": {
+                "$ref": "9e289a6780554eae8ae1cc8b03bcc1b1"
+              },
+              "name": "quantity",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "_type": "UMLObject",
+          "_id": "b8baed832da442b4858874efb973126c",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "name": "book01",
+          "classifier": {
+            "$ref": "48915ab59bfe4280a51eb73f23cd2992"
+          },
+          "slots": [
+            {
+              "_type": "UMLSlot",
+              "_id": "ed42ada7560d4d4e8020ce64f94fe9f7",
+              "_parent": {
+                "$ref": "b8baed832da442b4858874efb973126c"
+              },
+              "name": "id",
+              "value": "2001"
+            },
+            {
+              "_type": "UMLSlot",
+              "_id": "16ad3f68256c4416876668efaeb14dc6",
+              "_parent": {
+                "$ref": "b8baed832da442b4858874efb973126c"
+              },
+              "name": "name",
+              "value": "二手教材"
+            },
+            {
+              "_type": "UMLSlot",
+              "_id": "2a072458760f4f64b1453ac5724c4dbc",
+              "_parent": {
+                "$ref": "b8baed832da442b4858874efb973126c"
+              },
+              "name": "price",
+              "value": "25.00"
+            },
+            {
+              "_type": "UMLSlot",
+              "_id": "e0cbb19751d446b4a70459be5caf6878",
+              "_parent": {
+                "$ref": "b8baed832da442b4858874efb973126c"
+              },
+              "name": "uid",
+              "value": "1001"
+            }
+          ]
+        },
+        {
+          "_type": "UMLLink",
+          "_id": "f36e2c9beaf04fbbb0fbafa85ee26fed",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "name": "发布记录",
+          "end1": {
+            "_type": "UMLLinkEnd",
+            "_id": "9ea635da8c8a461686d61411876df6d7",
+            "_parent": {
+              "$ref": "f36e2c9beaf04fbbb0fbafa85ee26fed"
+            },
+            "reference": {
+              "$ref": "3743593eee1f4caf9c6fb3c245796ecd"
+            }
+          },
+          "end2": {
+            "_type": "UMLLinkEnd",
+            "_id": "0898d95416da4bfd8116974184b6e289",
+            "_parent": {
+              "$ref": "f36e2c9beaf04fbbb0fbafa85ee26fed"
+            },
+            "reference": {
+              "$ref": "ab3c4aea269f4f77916d2d6105ccdb0f"
+            }
+          }
+        },
+        {
+          "_type": "UMLLink",
+          "_id": "4bb942b43f764a19bf6abf7d4b53f456",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "name": "发布商品",
+          "end1": {
+            "_type": "UMLLinkEnd",
+            "_id": "a6014c43690840bc883ae627ddb179cd",
+            "_parent": {
+              "$ref": "4bb942b43f764a19bf6abf7d4b53f456"
+            },
+            "reference": {
+              "$ref": "ab3c4aea269f4f77916d2d6105ccdb0f"
+            }
+          },
+          "end2": {
+            "_type": "UMLLinkEnd",
+            "_id": "71713bcfe8a84a539d77a522e6252977",
+            "_parent": {
+              "$ref": "4bb942b43f764a19bf6abf7d4b53f456"
+            },
+            "reference": {
+              "$ref": "b8baed832da442b4858874efb973126c"
+            }
+          }
+        },
+        {
+          "_type": "UMLLink",
+          "_id": "b094291d05ff424598a652e97634c197",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "name": "收藏记录",
+          "end1": {
+            "_type": "UMLLinkEnd",
+            "_id": "fdc6b048e0dd42639f8e583f5581ff80",
+            "_parent": {
+              "$ref": "b094291d05ff424598a652e97634c197"
+            },
+            "reference": {
+              "$ref": "237fb6f18c1b4b878b9e534e0559a38f"
+            }
+          },
+          "end2": {
+            "_type": "UMLLinkEnd",
+            "_id": "ee7802d282084fa8b4bf25e9d73ded88",
+            "_parent": {
+              "$ref": "b094291d05ff424598a652e97634c197"
+            },
+            "reference": {
+              "$ref": "7b3aa5c1334d429abdd75b62543e4053"
+            }
+          }
+        },
+        {
+          "_type": "UMLLink",
+          "_id": "e20e6a60c513438ba50e0d42f13ae48b",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "name": "收藏商品",
+          "end1": {
+            "_type": "UMLLinkEnd",
+            "_id": "7342d469232b487bab2219b635d8be71",
+            "_parent": {
+              "$ref": "e20e6a60c513438ba50e0d42f13ae48b"
+            },
+            "reference": {
+              "$ref": "7b3aa5c1334d429abdd75b62543e4053"
+            }
+          },
+          "end2": {
+            "_type": "UMLLinkEnd",
+            "_id": "1a6a7da43d744a539238931f9b86f8ba",
+            "_parent": {
+              "$ref": "e20e6a60c513438ba50e0d42f13ae48b"
+            },
+            "reference": {
+              "$ref": "b8baed832da442b4858874efb973126c"
+            }
+          }
+        },
+        {
+          "_type": "UMLLink",
+          "_id": "f0aad90951dc40e9b5cd4a59a8fd1e24",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "name": "购物车条目",
+          "end1": {
+            "_type": "UMLLinkEnd",
+            "_id": "34bbec59302f4951897b0d181067968b",
+            "_parent": {
+              "$ref": "f0aad90951dc40e9b5cd4a59a8fd1e24"
+            },
+            "reference": {
+              "$ref": "237fb6f18c1b4b878b9e534e0559a38f"
+            }
+          },
+          "end2": {
+            "_type": "UMLLinkEnd",
+            "_id": "bd5be9d066c34c6baa06d5634b8812aa",
+            "_parent": {
+              "$ref": "f0aad90951dc40e9b5cd4a59a8fd1e24"
+            },
+            "reference": {
+              "$ref": "9e289a6780554eae8ae1cc8b03bcc1b1"
+            }
+          }
+        },
+        {
+          "_type": "UMLLink",
+          "_id": "777ef5c63a854f458576a09b43f5fa91",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "name": "加入购物车",
+          "end1": {
+            "_type": "UMLLinkEnd",
+            "_id": "a4c3716169234cdf8511e05226ea905d",
+            "_parent": {
+              "$ref": "777ef5c63a854f458576a09b43f5fa91"
+            },
+            "reference": {
+              "$ref": "9e289a6780554eae8ae1cc8b03bcc1b1"
+            }
+          },
+          "end2": {
+            "_type": "UMLLinkEnd",
+            "_id": "73b206fa74c04be48fb70fec12410866",
+            "_parent": {
+              "$ref": "777ef5c63a854f458576a09b43f5fa91"
+            },
+            "reference": {
+              "$ref": "b8baed832da442b4858874efb973126c"
+            }
+          }
+        }
+      ],
+      "_parent": {
+        "$ref": "50e1dbdec1cf4f0aa4d20653d7b73db5"
+      },
+      "documentation": "依据现有代码生成。订单为数据结构，不代表已实现支付链路；未发现管理员业务入口。部署按 application.yml，不代表生产环境。"
+    }
+  ]
+}

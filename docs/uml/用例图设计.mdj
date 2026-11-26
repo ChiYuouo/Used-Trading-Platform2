@@ -1,0 +1,1182 @@
+{
+  "_type": "Project",
+  "_id": "50e1dbdec1cf4f0aa4d20653d7b73db5",
+  "name": "校园二手交易平台 - 用例图设计",
+  "ownedElements": [
+    {
+      "_type": "UMLModel",
+      "_id": "b332c47fc00748d9aa22c0fb41ab516d",
+      "name": "校园二手交易平台 - 用例图设计",
+      "ownedElements": [
+        {
+          "_type": "UMLUseCaseDiagram",
+          "_id": "c02a44460c5842caa9882ade4fe00069",
+          "name": "01 系统用例图",
+          "ownedViews": [
+            {
+              "_type": "UMLUseCaseSubjectView",
+              "_id": "a717f268f7f744a2afd26b7c3afca099",
+              "name": "",
+              "model": {
+                "$ref": "ae6612a0d8194eff8cee0d0ac9584016"
+              },
+              "left": 310,
+              "top": 70,
+              "width": 1000,
+              "height": 1000,
+              "font": "Microsoft YaHei;16;0",
+              "fillColor": "#ffffff",
+              "_parent": {
+                "$ref": "c02a44460c5842caa9882ade4fe00069"
+              }
+            },
+            {
+              "_type": "UMLActorView",
+              "_id": "d2c6d79ea0bb4bc785e37eb3bad511a8",
+              "name": "",
+              "model": {
+                "$ref": "59262e74bab34bbcbeb0f0cb82b6dfcd"
+              },
+              "left": 65,
+              "top": 150,
+              "width": 120,
+              "height": 150,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "c02a44460c5842caa9882ade4fe00069"
+              },
+              "showShadow": false,
+              "suppressOperations": true,
+              "suppressAttributes": true
+            },
+            {
+              "_type": "UMLActorView",
+              "_id": "727e37d5c7ba4458b63ff1873f1ac804",
+              "name": "",
+              "model": {
+                "$ref": "3f4552e8734a4845ba1861ca3ba7d06a"
+              },
+              "left": 55,
+              "top": 660,
+              "width": 200,
+              "height": 160,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "c02a44460c5842caa9882ade4fe00069"
+              },
+              "showShadow": false,
+              "suppressOperations": true,
+              "suppressAttributes": true
+            },
+            {
+              "_type": "UMLUseCaseView",
+              "_id": "f01bc07162cc4cc3a2bb2f296ca68d48",
+              "name": "",
+              "model": {
+                "$ref": "d07cac7721ad4f6a822296da49ed6a33"
+              },
+              "left": 390,
+              "top": 145,
+              "width": 310,
+              "height": 64,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "c02a44460c5842caa9882ade4fe00069"
+              },
+              "showShadow": false,
+              "suppressOperations": true,
+              "suppressAttributes": true,
+              "containerView": {
+                "$ref": "a717f268f7f744a2afd26b7c3afca099"
+              }
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "0e27b7c73f974112b0dbfa12c4b1a32f",
+              "name": "",
+              "model": {
+                "$ref": "6e6d7d8d96a145d5a68c103f83361240"
+              },
+              "tail": {
+                "$ref": "d2c6d79ea0bb4bc785e37eb3bad511a8"
+              },
+              "head": {
+                "$ref": "f01bc07162cc4cc3a2bb2f296ca68d48"
+              },
+              "points": "185:220;220:220;220:180;390:180",
+              "lineStyle": 2,
+              "font": "Microsoft YaHei;12;0",
+              "_parent": {
+                "$ref": "c02a44460c5842caa9882ade4fe00069"
+              },
+              "lineColor": "#475569"
+            },
+            {
+              "_type": "UMLUseCaseView",
+              "_id": "2a8854d60e5f431b92d00468c4e494a7",
+              "name": "",
+              "model": {
+                "$ref": "94ded2acb3b240a881065bc250f6f717"
+              },
+              "left": 850,
+              "top": 145,
+              "width": 310,
+              "height": 64,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "c02a44460c5842caa9882ade4fe00069"
+              },
+              "showShadow": false,
+              "suppressOperations": true,
+              "suppressAttributes": true,
+              "containerView": {
+                "$ref": "a717f268f7f744a2afd26b7c3afca099"
+              }
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "1bb8545c2b74443f8afd857282a85edb",
+              "name": "",
+              "model": {
+                "$ref": "5302a4ec16184962834eec1fe958d9fe"
+              },
+              "tail": {
+                "$ref": "d2c6d79ea0bb4bc785e37eb3bad511a8"
+              },
+              "head": {
+                "$ref": "2a8854d60e5f431b92d00468c4e494a7"
+              },
+              "points": "185:200;370:200;370:220;820:220;820:180;850:180",
+              "lineStyle": 2,
+              "font": "Microsoft YaHei;12;0",
+              "_parent": {
+                "$ref": "c02a44460c5842caa9882ade4fe00069"
+              },
+              "lineColor": "#475569"
+            },
+            {
+              "_type": "UMLUseCaseView",
+              "_id": "79c1cdb78e834627bd59ec8b86180c03",
+              "name": "",
+              "model": {
+                "$ref": "cbf2c00ab7624ae696338331346d25d9"
+              },
+              "left": 390,
+              "top": 270,
+              "width": 310,
+              "height": 64,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "c02a44460c5842caa9882ade4fe00069"
+              },
+              "showShadow": false,
+              "suppressOperations": true,
+              "suppressAttributes": true,
+              "containerView": {
+                "$ref": "a717f268f7f744a2afd26b7c3afca099"
+              }
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "9e2cf772346e4c53b85f69db937aec1a",
+              "name": "",
+              "model": {
+                "$ref": "2156074c516f471daa153960684d0c52"
+              },
+              "tail": {
+                "$ref": "d2c6d79ea0bb4bc785e37eb3bad511a8"
+              },
+              "head": {
+                "$ref": "79c1cdb78e834627bd59ec8b86180c03"
+              },
+              "points": "185:260;220:260;220:300;390:300",
+              "lineStyle": 2,
+              "font": "Microsoft YaHei;12;0",
+              "_parent": {
+                "$ref": "c02a44460c5842caa9882ade4fe00069"
+              },
+              "lineColor": "#475569"
+            },
+            {
+              "_type": "UMLUseCaseView",
+              "_id": "10a56866eff841e3bbea51c7ae4e85c6",
+              "name": "",
+              "model": {
+                "$ref": "c1f03adb55be4e78b2634ff985515c52"
+              },
+              "left": 850,
+              "top": 270,
+              "width": 310,
+              "height": 64,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "c02a44460c5842caa9882ade4fe00069"
+              },
+              "showShadow": false,
+              "suppressOperations": true,
+              "suppressAttributes": true,
+              "containerView": {
+                "$ref": "a717f268f7f744a2afd26b7c3afca099"
+              }
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "ce7c4a74544647b2acf69574afe31400",
+              "name": "",
+              "model": {
+                "$ref": "abf711f4bb0e4a0da2a39d96259fa08c"
+              },
+              "tail": {
+                "$ref": "d2c6d79ea0bb4bc785e37eb3bad511a8"
+              },
+              "head": {
+                "$ref": "10a56866eff841e3bbea51c7ae4e85c6"
+              },
+              "points": "185:170;210:170;210:250;820:250;820:300;850:300",
+              "lineStyle": 2,
+              "font": "Microsoft YaHei;12;0",
+              "_parent": {
+                "$ref": "c02a44460c5842caa9882ade4fe00069"
+              },
+              "lineColor": "#475569"
+            },
+            {
+              "_type": "UMLUseCaseView",
+              "_id": "d4c6264d3da5405ea565efafeca2cdd2",
+              "name": "",
+              "model": {
+                "$ref": "f498e3c1d8864574b7444e96077c01fb"
+              },
+              "left": 390,
+              "top": 395,
+              "width": 310,
+              "height": 64,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "c02a44460c5842caa9882ade4fe00069"
+              },
+              "showShadow": false,
+              "suppressOperations": true,
+              "suppressAttributes": true,
+              "containerView": {
+                "$ref": "a717f268f7f744a2afd26b7c3afca099"
+              }
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "4a11ed02369042b5a0b631500a74ab37",
+              "name": "",
+              "model": {
+                "$ref": "19605393eacd4cc08496b31bda7d2beb"
+              },
+              "tail": {
+                "$ref": "d2c6d79ea0bb4bc785e37eb3bad511a8"
+              },
+              "head": {
+                "$ref": "d4c6264d3da5405ea565efafeca2cdd2"
+              },
+              "points": "185:280;360:280;360:430;390:430",
+              "lineStyle": 2,
+              "font": "Microsoft YaHei;12;0",
+              "_parent": {
+                "$ref": "c02a44460c5842caa9882ade4fe00069"
+              },
+              "lineColor": "#475569"
+            },
+            {
+              "_type": "UMLUseCaseView",
+              "_id": "b1be48404e624d4e95b447de0c044e38",
+              "name": "",
+              "model": {
+                "$ref": "ad4f1359d1834eeeab9c32e4fe6ce318"
+              },
+              "left": 850,
+              "top": 395,
+              "width": 310,
+              "height": 64,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "c02a44460c5842caa9882ade4fe00069"
+              },
+              "showShadow": false,
+              "suppressOperations": true,
+              "suppressAttributes": true,
+              "containerView": {
+                "$ref": "a717f268f7f744a2afd26b7c3afca099"
+              }
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "ada72264ddc44c57a8c322226f6b5cee",
+              "name": "",
+              "model": {
+                "$ref": "e74d0ac0698d46aba704d5e4ce295fb7"
+              },
+              "tail": {
+                "$ref": "727e37d5c7ba4458b63ff1873f1ac804"
+              },
+              "head": {
+                "$ref": "b1be48404e624d4e95b447de0c044e38"
+              },
+              "points": "255:740;280:740;280:470;820:470;820:430;850:430",
+              "lineStyle": 2,
+              "font": "Microsoft YaHei;12;0",
+              "_parent": {
+                "$ref": "c02a44460c5842caa9882ade4fe00069"
+              },
+              "lineColor": "#475569"
+            },
+            {
+              "_type": "UMLUseCaseView",
+              "_id": "dbb22b185e1e487182681565420e7cdf",
+              "name": "",
+              "model": {
+                "$ref": "4a76f3eea7c64c51a9cc56bd1f4b3beb"
+              },
+              "left": 390,
+              "top": 560,
+              "width": 310,
+              "height": 64,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "c02a44460c5842caa9882ade4fe00069"
+              },
+              "showShadow": false,
+              "suppressOperations": true,
+              "suppressAttributes": true,
+              "containerView": {
+                "$ref": "a717f268f7f744a2afd26b7c3afca099"
+              }
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "b996bcae8dae4410bb2a9e424623cb59",
+              "name": "",
+              "model": {
+                "$ref": "0045b03b2476425dac0c754b7468c00e"
+              },
+              "tail": {
+                "$ref": "727e37d5c7ba4458b63ff1873f1ac804"
+              },
+              "head": {
+                "$ref": "dbb22b185e1e487182681565420e7cdf"
+              },
+              "points": "255:710;360:710;360:590;390:590",
+              "lineStyle": 2,
+              "font": "Microsoft YaHei;12;0",
+              "_parent": {
+                "$ref": "c02a44460c5842caa9882ade4fe00069"
+              },
+              "lineColor": "#475569"
+            },
+            {
+              "_type": "UMLUseCaseView",
+              "_id": "06e8232faf27470fb5776c51bcc29b45",
+              "name": "",
+              "model": {
+                "$ref": "732c51bc3e5044a091fe169df82a0c62"
+              },
+              "left": 850,
+              "top": 560,
+              "width": 310,
+              "height": 64,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "c02a44460c5842caa9882ade4fe00069"
+              },
+              "showShadow": false,
+              "suppressOperations": true,
+              "suppressAttributes": true,
+              "containerView": {
+                "$ref": "a717f268f7f744a2afd26b7c3afca099"
+              }
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "0534922315ed4260b7c0133938e372cf",
+              "name": "",
+              "model": {
+                "$ref": "f1f928e789ba4d579ed2bf9ded3b905a"
+              },
+              "tail": {
+                "$ref": "727e37d5c7ba4458b63ff1873f1ac804"
+              },
+              "head": {
+                "$ref": "06e8232faf27470fb5776c51bcc29b45"
+              },
+              "points": "255:770;820:770;820:590;850:590",
+              "lineStyle": 2,
+              "font": "Microsoft YaHei;12;0",
+              "_parent": {
+                "$ref": "c02a44460c5842caa9882ade4fe00069"
+              },
+              "lineColor": "#475569"
+            },
+            {
+              "_type": "UMLUseCaseView",
+              "_id": "afe10eb8ecc1491daca25e4f55175306",
+              "name": "",
+              "model": {
+                "$ref": "15882a33a39542d69c93f86bacaaa8ac"
+              },
+              "left": 390,
+              "top": 690,
+              "width": 310,
+              "height": 64,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "c02a44460c5842caa9882ade4fe00069"
+              },
+              "showShadow": false,
+              "suppressOperations": true,
+              "suppressAttributes": true,
+              "containerView": {
+                "$ref": "a717f268f7f744a2afd26b7c3afca099"
+              }
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "d4c739823bfa4d848ed4141289da1a4e",
+              "name": "",
+              "model": {
+                "$ref": "f465f2d8741c414caa8030b23852dccd"
+              },
+              "tail": {
+                "$ref": "727e37d5c7ba4458b63ff1873f1ac804"
+              },
+              "head": {
+                "$ref": "afe10eb8ecc1491daca25e4f55175306"
+              },
+              "points": "255:680;350:680;350:720;390:720",
+              "lineStyle": 2,
+              "font": "Microsoft YaHei;12;0",
+              "_parent": {
+                "$ref": "c02a44460c5842caa9882ade4fe00069"
+              },
+              "lineColor": "#475569"
+            },
+            {
+              "_type": "UMLUseCaseView",
+              "_id": "9457b1f2fbf04c0b8367110b92387adc",
+              "name": "",
+              "model": {
+                "$ref": "629547fef5aa491ca5e573f08f97c73e"
+              },
+              "left": 850,
+              "top": 690,
+              "width": 310,
+              "height": 64,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "c02a44460c5842caa9882ade4fe00069"
+              },
+              "showShadow": false,
+              "suppressOperations": true,
+              "suppressAttributes": true,
+              "containerView": {
+                "$ref": "a717f268f7f744a2afd26b7c3afca099"
+              }
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "d9309e41b3ef4de89ed48bde7a4786d5",
+              "name": "",
+              "model": {
+                "$ref": "f751d8ac7cb943b5b14b2e6e1ef1bf1e"
+              },
+              "tail": {
+                "$ref": "727e37d5c7ba4458b63ff1873f1ac804"
+              },
+              "head": {
+                "$ref": "9457b1f2fbf04c0b8367110b92387adc"
+              },
+              "points": "255:800;830:800;830:720;850:720",
+              "lineStyle": 2,
+              "font": "Microsoft YaHei;12;0",
+              "_parent": {
+                "$ref": "c02a44460c5842caa9882ade4fe00069"
+              },
+              "lineColor": "#475569"
+            },
+            {
+              "_type": "UMLUseCaseView",
+              "_id": "642ca3931ea74953bac68f551865ae69",
+              "name": "",
+              "model": {
+                "$ref": "05be536dd3e34c26b1f7e4b4d4ce9e73"
+              },
+              "left": 390,
+              "top": 820,
+              "width": 310,
+              "height": 64,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "c02a44460c5842caa9882ade4fe00069"
+              },
+              "showShadow": false,
+              "suppressOperations": true,
+              "suppressAttributes": true,
+              "containerView": {
+                "$ref": "a717f268f7f744a2afd26b7c3afca099"
+              }
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "9bf458fe64d74b38a96b6a5120f43ccb",
+              "name": "",
+              "model": {
+                "$ref": "baca74138f5c497492dbb68509a45cdd"
+              },
+              "tail": {
+                "$ref": "727e37d5c7ba4458b63ff1873f1ac804"
+              },
+              "head": {
+                "$ref": "642ca3931ea74953bac68f551865ae69"
+              },
+              "points": "255:680;270:680;270:850;390:850",
+              "lineStyle": 2,
+              "font": "Microsoft YaHei;12;0",
+              "_parent": {
+                "$ref": "c02a44460c5842caa9882ade4fe00069"
+              },
+              "lineColor": "#475569"
+            },
+            {
+              "_type": "UMLUseCaseView",
+              "_id": "5f29c6f248494dd0ab3d3de2243dcf5b",
+              "name": "",
+              "model": {
+                "$ref": "91c59a9c942f419499960a450de74a56"
+              },
+              "left": 850,
+              "top": 820,
+              "width": 310,
+              "height": 64,
+              "font": "Microsoft YaHei;14;0",
+              "fillColor": "#f8fafc",
+              "lineColor": "#334155",
+              "_parent": {
+                "$ref": "c02a44460c5842caa9882ade4fe00069"
+              },
+              "showShadow": false,
+              "suppressOperations": true,
+              "suppressAttributes": true,
+              "containerView": {
+                "$ref": "a717f268f7f744a2afd26b7c3afca099"
+              }
+            },
+            {
+              "_type": "UMLAssociationView",
+              "_id": "4a14768ee48540119a32a7ad463d006d",
+              "name": "",
+              "model": {
+                "$ref": "886c5e620d074200911b0ff30f2523d2"
+              },
+              "tail": {
+                "$ref": "727e37d5c7ba4458b63ff1873f1ac804"
+              },
+              "head": {
+                "$ref": "5f29c6f248494dd0ab3d3de2243dcf5b"
+              },
+              "points": "255:800;280:800;280:790;820:790;820:850;850:850",
+              "lineStyle": 2,
+              "font": "Microsoft YaHei;12;0",
+              "_parent": {
+                "$ref": "c02a44460c5842caa9882ade4fe00069"
+              },
+              "lineColor": "#475569"
+            },
+            {
+              "_type": "UMLGeneralizationView",
+              "_id": "e0cb0aaaefb24c92ba03a65339f43648",
+              "name": "",
+              "model": {
+                "$ref": "9ce8303d41164c0bb2027cceeba69efc"
+              },
+              "tail": {
+                "$ref": "727e37d5c7ba4458b63ff1873f1ac804"
+              },
+              "head": {
+                "$ref": "d2c6d79ea0bb4bc785e37eb3bad511a8"
+              },
+              "points": "160:660;160:330;120:330;120:300",
+              "lineStyle": 2,
+              "font": "Microsoft YaHei;12;0",
+              "_parent": {
+                "$ref": "c02a44460c5842caa9882ade4fe00069"
+              },
+              "lineColor": "#475569"
+            },
+            {
+              "_type": "UMLNoteView",
+              "_id": "0444c3a0dc1043ec98bdb61ad175b8d4",
+              "name": "",
+              "left": 365,
+              "top": 970,
+              "width": 880,
+              "height": 55,
+              "text": "买家和卖家是同一注册用户的不同角色；用户泛化访客，继承浏览等公共用例。",
+              "font": "Microsoft YaHei;12;0",
+              "fillColor": "#fffbe8",
+              "_parent": {
+                "$ref": "c02a44460c5842caa9882ade4fe00069"
+              }
+            }
+          ],
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "documentation": "改进版：按职责分区；采用避让节点的正交连线；以源码为依据，分析假设见注释。"
+        },
+        {
+          "_type": "UMLActor",
+          "_id": "59262e74bab34bbcbeb0f0cb82b6dfcd",
+          "name": "访客",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          }
+        },
+        {
+          "_type": "UMLActor",
+          "_id": "3f4552e8734a4845ba1861ca3ba7d06a",
+          "name": "注册用户（买家／卖家）",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          }
+        },
+        {
+          "_type": "UMLUseCase",
+          "_id": "d07cac7721ad4f6a822296da49ed6a33",
+          "name": "浏览与搜索商品",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          }
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "6e6d7d8d96a145d5a68c103f83361240",
+          "name": "",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "190b2c9dd3c546cd970e4af8d3da2ce4",
+            "name": "",
+            "reference": {
+              "$ref": "59262e74bab34bbcbeb0f0cb82b6dfcd"
+            },
+            "multiplicity": "",
+            "_parent": {
+              "$ref": "6e6d7d8d96a145d5a68c103f83361240"
+            }
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "6c715c1bcef94e4c9402a2640a64d99a",
+            "name": "",
+            "reference": {
+              "$ref": "d07cac7721ad4f6a822296da49ed6a33"
+            },
+            "multiplicity": "",
+            "_parent": {
+              "$ref": "6e6d7d8d96a145d5a68c103f83361240"
+            }
+          }
+        },
+        {
+          "_type": "UMLUseCase",
+          "_id": "94ded2acb3b240a881065bc250f6f717",
+          "name": "查看商品详情",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          }
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "5302a4ec16184962834eec1fe958d9fe",
+          "name": "",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "9f758daeb84348fcb30c5bc513f97af0",
+            "name": "",
+            "reference": {
+              "$ref": "59262e74bab34bbcbeb0f0cb82b6dfcd"
+            },
+            "multiplicity": "",
+            "_parent": {
+              "$ref": "5302a4ec16184962834eec1fe958d9fe"
+            }
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "85c222c81a974bb0a07d0703e6c343b5",
+            "name": "",
+            "reference": {
+              "$ref": "94ded2acb3b240a881065bc250f6f717"
+            },
+            "multiplicity": "",
+            "_parent": {
+              "$ref": "5302a4ec16184962834eec1fe958d9fe"
+            }
+          }
+        },
+        {
+          "_type": "UMLUseCase",
+          "_id": "cbf2c00ab7624ae696338331346d25d9",
+          "name": "注册账号",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          }
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "2156074c516f471daa153960684d0c52",
+          "name": "",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "6ebf159f83d545f0953701992de68f30",
+            "name": "",
+            "reference": {
+              "$ref": "59262e74bab34bbcbeb0f0cb82b6dfcd"
+            },
+            "multiplicity": "",
+            "_parent": {
+              "$ref": "2156074c516f471daa153960684d0c52"
+            }
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "3897e51bc31545ed8e2c8d88e247c327",
+            "name": "",
+            "reference": {
+              "$ref": "cbf2c00ab7624ae696338331346d25d9"
+            },
+            "multiplicity": "",
+            "_parent": {
+              "$ref": "2156074c516f471daa153960684d0c52"
+            }
+          }
+        },
+        {
+          "_type": "UMLUseCase",
+          "_id": "c1f03adb55be4e78b2634ff985515c52",
+          "name": "登录／退出",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          }
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "abf711f4bb0e4a0da2a39d96259fa08c",
+          "name": "",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "b99a59b4dd7d4e018b33ce9360f41b6a",
+            "name": "",
+            "reference": {
+              "$ref": "59262e74bab34bbcbeb0f0cb82b6dfcd"
+            },
+            "multiplicity": "",
+            "_parent": {
+              "$ref": "abf711f4bb0e4a0da2a39d96259fa08c"
+            }
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "273fecbe0a2f409faf0cbec0a82b3d90",
+            "name": "",
+            "reference": {
+              "$ref": "c1f03adb55be4e78b2634ff985515c52"
+            },
+            "multiplicity": "",
+            "_parent": {
+              "$ref": "abf711f4bb0e4a0da2a39d96259fa08c"
+            }
+          }
+        },
+        {
+          "_type": "UMLUseCase",
+          "_id": "f498e3c1d8864574b7444e96077c01fb",
+          "name": "邮箱找回密码",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          }
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "19605393eacd4cc08496b31bda7d2beb",
+          "name": "",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "af49514819544032a998c7b405524bc2",
+            "name": "",
+            "reference": {
+              "$ref": "59262e74bab34bbcbeb0f0cb82b6dfcd"
+            },
+            "multiplicity": "",
+            "_parent": {
+              "$ref": "19605393eacd4cc08496b31bda7d2beb"
+            }
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "3c468c5fa2804d18b9a2f797dc4ce234",
+            "name": "",
+            "reference": {
+              "$ref": "f498e3c1d8864574b7444e96077c01fb"
+            },
+            "multiplicity": "",
+            "_parent": {
+              "$ref": "19605393eacd4cc08496b31bda7d2beb"
+            }
+          }
+        },
+        {
+          "_type": "UMLUseCase",
+          "_id": "ad4f1359d1834eeeab9c32e4fe6ce318",
+          "name": "实名认证",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          }
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "e74d0ac0698d46aba704d5e4ce295fb7",
+          "name": "",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "35cd7638c33444e58dae1ea5cc114c34",
+            "name": "",
+            "reference": {
+              "$ref": "3f4552e8734a4845ba1861ca3ba7d06a"
+            },
+            "multiplicity": "",
+            "_parent": {
+              "$ref": "e74d0ac0698d46aba704d5e4ce295fb7"
+            }
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "e5e008c85d9f43d18b5790424b0e9734",
+            "name": "",
+            "reference": {
+              "$ref": "ad4f1359d1834eeeab9c32e4fe6ce318"
+            },
+            "multiplicity": "",
+            "_parent": {
+              "$ref": "e74d0ac0698d46aba704d5e4ce295fb7"
+            }
+          }
+        },
+        {
+          "_type": "UMLUseCase",
+          "_id": "4a76f3eea7c64c51a9cc56bd1f4b3beb",
+          "name": "收藏／取消收藏",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          }
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "0045b03b2476425dac0c754b7468c00e",
+          "name": "",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "0a9e427622414cfe9017fd86b08d4046",
+            "name": "",
+            "reference": {
+              "$ref": "3f4552e8734a4845ba1861ca3ba7d06a"
+            },
+            "multiplicity": "",
+            "_parent": {
+              "$ref": "0045b03b2476425dac0c754b7468c00e"
+            }
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "f0a333d47aaa4682a719d39a24a56d9a",
+            "name": "",
+            "reference": {
+              "$ref": "4a76f3eea7c64c51a9cc56bd1f4b3beb"
+            },
+            "multiplicity": "",
+            "_parent": {
+              "$ref": "0045b03b2476425dac0c754b7468c00e"
+            }
+          }
+        },
+        {
+          "_type": "UMLUseCase",
+          "_id": "732c51bc3e5044a091fe169df82a0c62",
+          "name": "管理购物车",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          }
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "f1f928e789ba4d579ed2bf9ded3b905a",
+          "name": "",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "d9ea97bc9b2349e28366fd2b78ec545d",
+            "name": "",
+            "reference": {
+              "$ref": "3f4552e8734a4845ba1861ca3ba7d06a"
+            },
+            "multiplicity": "",
+            "_parent": {
+              "$ref": "f1f928e789ba4d579ed2bf9ded3b905a"
+            }
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "69fca22d7d474479aff6124d44f10431",
+            "name": "",
+            "reference": {
+              "$ref": "732c51bc3e5044a091fe169df82a0c62"
+            },
+            "multiplicity": "",
+            "_parent": {
+              "$ref": "f1f928e789ba4d579ed2bf9ded3b905a"
+            }
+          }
+        },
+        {
+          "_type": "UMLUseCase",
+          "_id": "15882a33a39542d69c93f86bacaaa8ac",
+          "name": "发布／修改／删除商品",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          }
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "f465f2d8741c414caa8030b23852dccd",
+          "name": "",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "d32f16de1d054ad981d436ba270022cd",
+            "name": "",
+            "reference": {
+              "$ref": "3f4552e8734a4845ba1861ca3ba7d06a"
+            },
+            "multiplicity": "",
+            "_parent": {
+              "$ref": "f465f2d8741c414caa8030b23852dccd"
+            }
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "e8beb90010674504a7fd7e4d9ecc60be",
+            "name": "",
+            "reference": {
+              "$ref": "15882a33a39542d69c93f86bacaaa8ac"
+            },
+            "multiplicity": "",
+            "_parent": {
+              "$ref": "f465f2d8741c414caa8030b23852dccd"
+            }
+          }
+        },
+        {
+          "_type": "UMLUseCase",
+          "_id": "629547fef5aa491ca5e573f08f97c73e",
+          "name": "发布／修改／删除求购",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          }
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "f751d8ac7cb943b5b14b2e6e1ef1bf1e",
+          "name": "",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "df1addc156764799acd87fa4074f75bc",
+            "name": "",
+            "reference": {
+              "$ref": "3f4552e8734a4845ba1861ca3ba7d06a"
+            },
+            "multiplicity": "",
+            "_parent": {
+              "$ref": "f751d8ac7cb943b5b14b2e6e1ef1bf1e"
+            }
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "08a3852e3be64b1ba67c8634ad2d136b",
+            "name": "",
+            "reference": {
+              "$ref": "629547fef5aa491ca5e573f08f97c73e"
+            },
+            "multiplicity": "",
+            "_parent": {
+              "$ref": "f751d8ac7cb943b5b14b2e6e1ef1bf1e"
+            }
+          }
+        },
+        {
+          "_type": "UMLUseCase",
+          "_id": "05be536dd3e34c26b1f7e4b4d4ce9e73",
+          "name": "商品留言",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          }
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "baca74138f5c497492dbb68509a45cdd",
+          "name": "",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "8ee018779b544b1f87d5fdc6da6d566e",
+            "name": "",
+            "reference": {
+              "$ref": "3f4552e8734a4845ba1861ca3ba7d06a"
+            },
+            "multiplicity": "",
+            "_parent": {
+              "$ref": "baca74138f5c497492dbb68509a45cdd"
+            }
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "83aceb8bf34a45d99534a1105ee1a860",
+            "name": "",
+            "reference": {
+              "$ref": "05be536dd3e34c26b1f7e4b4d4ce9e73"
+            },
+            "multiplicity": "",
+            "_parent": {
+              "$ref": "baca74138f5c497492dbb68509a45cdd"
+            }
+          }
+        },
+        {
+          "_type": "UMLUseCase",
+          "_id": "91c59a9c942f419499960a450de74a56",
+          "name": "在线聊天",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          }
+        },
+        {
+          "_type": "UMLAssociation",
+          "_id": "886c5e620d074200911b0ff30f2523d2",
+          "name": "",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          },
+          "end1": {
+            "_type": "UMLAssociationEnd",
+            "_id": "e890506a59b74ff5baea70e48e3f70ba",
+            "name": "",
+            "reference": {
+              "$ref": "3f4552e8734a4845ba1861ca3ba7d06a"
+            },
+            "multiplicity": "",
+            "_parent": {
+              "$ref": "886c5e620d074200911b0ff30f2523d2"
+            }
+          },
+          "end2": {
+            "_type": "UMLAssociationEnd",
+            "_id": "61db73a7bce74718933e1f431c6750ab",
+            "name": "",
+            "reference": {
+              "$ref": "91c59a9c942f419499960a450de74a56"
+            },
+            "multiplicity": "",
+            "_parent": {
+              "$ref": "886c5e620d074200911b0ff30f2523d2"
+            }
+          }
+        },
+        {
+          "_type": "UMLGeneralization",
+          "_id": "9ce8303d41164c0bb2027cceeba69efc",
+          "name": "",
+          "source": {
+            "$ref": "3f4552e8734a4845ba1861ca3ba7d06a"
+          },
+          "target": {
+            "$ref": "59262e74bab34bbcbeb0f0cb82b6dfcd"
+          },
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          }
+        },
+        {
+          "_type": "UMLUseCaseSubject",
+          "_id": "ae6612a0d8194eff8cee0d0ac9584016",
+          "name": "校园二手交易平台",
+          "_parent": {
+            "$ref": "b332c47fc00748d9aa22c0fb41ab516d"
+          }
+        }
+      ],
+      "_parent": {
+        "$ref": "50e1dbdec1cf4f0aa4d20653d7b73db5"
+      },
+      "documentation": "依据现有代码生成。订单为数据结构，不代表已实现支付链路；未发现管理员业务入口。部署按 application.yml，不代表生产环境。"
+    }
+  ]
+}

@@ -1,0 +1,950 @@
+{
+  "_type": "Project",
+  "_id": "C2CS000361",
+  "name": "校园二手交易平台－登录会话状态图",
+  "ownedElements": [
+    {
+      "_type": "UMLModel",
+      "_id": "C2CS000362",
+      "_parent": {
+        "$ref": "C2CS000361"
+      },
+      "name": "登录会话状态图",
+      "ownedElements": [
+        {
+          "_type": "UMLStateMachine",
+          "_id": "C2CS000363",
+          "_parent": {
+            "$ref": "C2CS000362"
+          },
+          "name": "登录会话状态图",
+          "documentation": "",
+          "ownedElements": [
+            {
+              "_type": "UMLStatechartDiagram",
+              "_id": "C2CS000365",
+              "_parent": {
+                "$ref": "C2CS000363"
+              },
+              "name": "登录会话状态图",
+              "documentation": "",
+              "ownedViews": [
+                {
+                  "_type": "UMLPseudostateView",
+                  "_id": "C2CS000367",
+                  "_parent": {
+                    "$ref": "C2CS000365"
+                  },
+                  "model": {
+                    "$ref": "C2CS000366"
+                  },
+                  "font": "Microsoft YaHei;12;0",
+                  "left": 40,
+                  "top": 100,
+                  "width": 24,
+                  "height": 24,
+                  "fillColor": "#212121",
+                  "subViews": []
+                },
+                {
+                  "_type": "UMLStateView",
+                  "_id": "C2CS000369",
+                  "_parent": {
+                    "$ref": "C2CS000365"
+                  },
+                  "model": {
+                    "$ref": "C2CS000368"
+                  },
+                  "font": "Microsoft YaHei;12;0",
+                  "left": 150,
+                  "top": 80,
+                  "width": 230,
+                  "height": 70,
+                  "fillColor": "#E8F5E9",
+                  "subViews": [
+                    {
+                      "_type": "UMLNameCompartmentView",
+                      "_id": "C2CS000370",
+                      "_parent": {
+                        "$ref": "C2CS000369"
+                      },
+                      "model": {
+                        "$ref": "C2CS000368"
+                      },
+                      "subViews": [
+                        {
+                          "_type": "LabelView",
+                          "_id": "C2CS000371",
+                          "_parent": {
+                            "$ref": "C2CS000370"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 155,
+                          "top": 85,
+                          "width": 220,
+                          "height": 20,
+                          "text": "",
+                          "horizontalAlignment": 2,
+                          "visible": false
+                        },
+                        {
+                          "_type": "LabelView",
+                          "_id": "C2CS000372",
+                          "_parent": {
+                            "$ref": "C2CS000370"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 155,
+                          "top": 85,
+                          "width": 220,
+                          "height": 20,
+                          "text": "未登录",
+                          "horizontalAlignment": 2,
+                          "visible": true
+                        },
+                        {
+                          "_type": "LabelView",
+                          "_id": "C2CS000373",
+                          "_parent": {
+                            "$ref": "C2CS000370"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 155,
+                          "top": 85,
+                          "width": 220,
+                          "height": 20,
+                          "text": "",
+                          "horizontalAlignment": 2,
+                          "visible": false
+                        },
+                        {
+                          "_type": "LabelView",
+                          "_id": "C2CS000374",
+                          "_parent": {
+                            "$ref": "C2CS000370"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 155,
+                          "top": 85,
+                          "width": 220,
+                          "height": 20,
+                          "text": "",
+                          "horizontalAlignment": 2,
+                          "visible": false
+                        }
+                      ],
+                      "font": "Microsoft YaHei;12;0",
+                      "left": 150,
+                      "top": 80,
+                      "width": 230,
+                      "height": 32,
+                      "stereotypeLabel": {
+                        "$ref": "C2CS000371"
+                      },
+                      "nameLabel": {
+                        "$ref": "C2CS000372"
+                      },
+                      "namespaceLabel": {
+                        "$ref": "C2CS000373"
+                      },
+                      "propertyLabel": {
+                        "$ref": "C2CS000374"
+                      }
+                    }
+                  ],
+                  "nameCompartment": {
+                    "$ref": "C2CS000370"
+                  },
+                  "wordWrap": true
+                },
+                {
+                  "_type": "UMLStateView",
+                  "_id": "C2CS000376",
+                  "_parent": {
+                    "$ref": "C2CS000365"
+                  },
+                  "model": {
+                    "$ref": "C2CS000375"
+                  },
+                  "font": "Microsoft YaHei;12;0",
+                  "left": 530,
+                  "top": 80,
+                  "width": 230,
+                  "height": 70,
+                  "fillColor": "#E8F5E9",
+                  "subViews": [
+                    {
+                      "_type": "UMLNameCompartmentView",
+                      "_id": "C2CS000377",
+                      "_parent": {
+                        "$ref": "C2CS000376"
+                      },
+                      "model": {
+                        "$ref": "C2CS000375"
+                      },
+                      "subViews": [
+                        {
+                          "_type": "LabelView",
+                          "_id": "C2CS000378",
+                          "_parent": {
+                            "$ref": "C2CS000377"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 535,
+                          "top": 85,
+                          "width": 220,
+                          "height": 20,
+                          "text": "",
+                          "horizontalAlignment": 2,
+                          "visible": false
+                        },
+                        {
+                          "_type": "LabelView",
+                          "_id": "C2CS000379",
+                          "_parent": {
+                            "$ref": "C2CS000377"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 535,
+                          "top": 85,
+                          "width": 220,
+                          "height": 20,
+                          "text": "已登录",
+                          "horizontalAlignment": 2,
+                          "visible": true
+                        },
+                        {
+                          "_type": "LabelView",
+                          "_id": "C2CS000380",
+                          "_parent": {
+                            "$ref": "C2CS000377"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 535,
+                          "top": 85,
+                          "width": 220,
+                          "height": 20,
+                          "text": "",
+                          "horizontalAlignment": 2,
+                          "visible": false
+                        },
+                        {
+                          "_type": "LabelView",
+                          "_id": "C2CS000381",
+                          "_parent": {
+                            "$ref": "C2CS000377"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 535,
+                          "top": 85,
+                          "width": 220,
+                          "height": 20,
+                          "text": "",
+                          "horizontalAlignment": 2,
+                          "visible": false
+                        }
+                      ],
+                      "font": "Microsoft YaHei;12;0",
+                      "left": 530,
+                      "top": 80,
+                      "width": 230,
+                      "height": 32,
+                      "stereotypeLabel": {
+                        "$ref": "C2CS000378"
+                      },
+                      "nameLabel": {
+                        "$ref": "C2CS000379"
+                      },
+                      "namespaceLabel": {
+                        "$ref": "C2CS000380"
+                      },
+                      "propertyLabel": {
+                        "$ref": "C2CS000381"
+                      }
+                    }
+                  ],
+                  "nameCompartment": {
+                    "$ref": "C2CS000377"
+                  },
+                  "wordWrap": true
+                },
+                {
+                  "_type": "UMLStateView",
+                  "_id": "C2CS000383",
+                  "_parent": {
+                    "$ref": "C2CS000365"
+                  },
+                  "model": {
+                    "$ref": "C2CS000382"
+                  },
+                  "font": "Microsoft YaHei;12;0",
+                  "left": 530,
+                  "top": 300,
+                  "width": 230,
+                  "height": 70,
+                  "fillColor": "#E8F5E9",
+                  "subViews": [
+                    {
+                      "_type": "UMLNameCompartmentView",
+                      "_id": "C2CS000384",
+                      "_parent": {
+                        "$ref": "C2CS000383"
+                      },
+                      "model": {
+                        "$ref": "C2CS000382"
+                      },
+                      "subViews": [
+                        {
+                          "_type": "LabelView",
+                          "_id": "C2CS000385",
+                          "_parent": {
+                            "$ref": "C2CS000384"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 535,
+                          "top": 305,
+                          "width": 220,
+                          "height": 20,
+                          "text": "",
+                          "horizontalAlignment": 2,
+                          "visible": false
+                        },
+                        {
+                          "_type": "LabelView",
+                          "_id": "C2CS000386",
+                          "_parent": {
+                            "$ref": "C2CS000384"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 535,
+                          "top": 305,
+                          "width": 220,
+                          "height": 20,
+                          "text": "客户端检测到异地登录",
+                          "horizontalAlignment": 2,
+                          "visible": true
+                        },
+                        {
+                          "_type": "LabelView",
+                          "_id": "C2CS000387",
+                          "_parent": {
+                            "$ref": "C2CS000384"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 535,
+                          "top": 305,
+                          "width": 220,
+                          "height": 20,
+                          "text": "",
+                          "horizontalAlignment": 2,
+                          "visible": false
+                        },
+                        {
+                          "_type": "LabelView",
+                          "_id": "C2CS000388",
+                          "_parent": {
+                            "$ref": "C2CS000384"
+                          },
+                          "font": "Microsoft YaHei;12;0",
+                          "left": 535,
+                          "top": 305,
+                          "width": 220,
+                          "height": 20,
+                          "text": "",
+                          "horizontalAlignment": 2,
+                          "visible": false
+                        }
+                      ],
+                      "font": "Microsoft YaHei;12;0",
+                      "left": 530,
+                      "top": 300,
+                      "width": 230,
+                      "height": 32,
+                      "stereotypeLabel": {
+                        "$ref": "C2CS000385"
+                      },
+                      "nameLabel": {
+                        "$ref": "C2CS000386"
+                      },
+                      "namespaceLabel": {
+                        "$ref": "C2CS000387"
+                      },
+                      "propertyLabel": {
+                        "$ref": "C2CS000388"
+                      }
+                    }
+                  ],
+                  "nameCompartment": {
+                    "$ref": "C2CS000384"
+                  },
+                  "wordWrap": true
+                },
+                {
+                  "_type": "UMLTransitionView",
+                  "_id": "C2CS000390",
+                  "_parent": {
+                    "$ref": "C2CS000365"
+                  },
+                  "model": {
+                    "$ref": "C2CS000389"
+                  },
+                  "font": "Microsoft YaHei;12;0",
+                  "head": {
+                    "$ref": "C2CS000369"
+                  },
+                  "tail": {
+                    "$ref": "C2CS000367"
+                  },
+                  "points": "64:112.0;107.0:112.0;107.0:115.0;150:115.0",
+                  "lineStyle": 1,
+                  "subViews": [
+                    {
+                      "_type": "EdgeLabelView",
+                      "_id": "C2CS000391",
+                      "_parent": {
+                        "$ref": "C2CS000390"
+                      },
+                      "font": "Microsoft YaHei;12;0",
+                      "left": 107.0,
+                      "top": 90.5,
+                      "width": 20,
+                      "height": 20,
+                      "text": "",
+                      "horizontalAlignment": 2,
+                      "visible": false,
+                      "model": {
+                        "$ref": "C2CS000389"
+                      },
+                      "hostEdge": {
+                        "$ref": "C2CS000390"
+                      },
+                      "edgePosition": 1,
+                      "distance": 18,
+                      "alpha": 1.5707963267948966
+                    }
+                  ],
+                  "nameLabel": {
+                    "$ref": "C2CS000391"
+                  }
+                },
+                {
+                  "_type": "UMLTransitionView",
+                  "_id": "C2CS000394",
+                  "_parent": {
+                    "$ref": "C2CS000365"
+                  },
+                  "model": {
+                    "$ref": "C2CS000392"
+                  },
+                  "font": "Microsoft YaHei;12;0",
+                  "head": {
+                    "$ref": "C2CS000376"
+                  },
+                  "tail": {
+                    "$ref": "C2CS000369"
+                  },
+                  "points": "380:115.0;530:115.0",
+                  "lineStyle": 1,
+                  "subViews": [
+                    {
+                      "_type": "EdgeLabelView",
+                      "_id": "C2CS000395",
+                      "_parent": {
+                        "$ref": "C2CS000394"
+                      },
+                      "font": "Microsoft YaHei;12;0",
+                      "left": 416.0,
+                      "top": 92.0,
+                      "width": 90,
+                      "height": 20,
+                      "text": "登录校验通过",
+                      "horizontalAlignment": 2,
+                      "visible": true,
+                      "model": {
+                        "$ref": "C2CS000392"
+                      },
+                      "hostEdge": {
+                        "$ref": "C2CS000394"
+                      },
+                      "edgePosition": 1,
+                      "distance": 18,
+                      "alpha": 1.5707963267948966
+                    }
+                  ],
+                  "nameLabel": {
+                    "$ref": "C2CS000395"
+                  }
+                },
+                {
+                  "_type": "UMLTransitionView",
+                  "_id": "C2CS000398",
+                  "_parent": {
+                    "$ref": "C2CS000365"
+                  },
+                  "model": {
+                    "$ref": "C2CS000396"
+                  },
+                  "font": "Microsoft YaHei;12;0",
+                  "head": {
+                    "$ref": "C2CS000369"
+                  },
+                  "tail": {
+                    "$ref": "C2CS000369"
+                  },
+                  "points": "380:100;450:100;450:35;265.0:35;265.0:80",
+                  "lineStyle": 1,
+                  "subViews": [
+                    {
+                      "_type": "EdgeLabelView",
+                      "_id": "C2CS000399",
+                      "_parent": {
+                        "$ref": "C2CS000398"
+                      },
+                      "font": "Microsoft YaHei;12;0",
+                      "left": 296.5,
+                      "top": 67.0,
+                      "width": 64,
+                      "height": 20,
+                      "text": "登录失败",
+                      "horizontalAlignment": 2,
+                      "visible": true,
+                      "model": {
+                        "$ref": "C2CS000396"
+                      },
+                      "hostEdge": {
+                        "$ref": "C2CS000398"
+                      },
+                      "edgePosition": 1,
+                      "distance": 18,
+                      "alpha": 1.5707963267948966
+                    }
+                  ],
+                  "nameLabel": {
+                    "$ref": "C2CS000399"
+                  }
+                },
+                {
+                  "_type": "UMLTransitionView",
+                  "_id": "C2CS000402",
+                  "_parent": {
+                    "$ref": "C2CS000365"
+                  },
+                  "model": {
+                    "$ref": "C2CS000400"
+                  },
+                  "font": "Microsoft YaHei;12;0",
+                  "head": {
+                    "$ref": "C2CS000376"
+                  },
+                  "tail": {
+                    "$ref": "C2CS000376"
+                  },
+                  "points": "760:100;830:100;830:35;645.0:35;645.0:80",
+                  "lineStyle": 1,
+                  "subViews": [
+                    {
+                      "_type": "EdgeLabelView",
+                      "_id": "C2CS000403",
+                      "_parent": {
+                        "$ref": "C2CS000402"
+                      },
+                      "font": "Microsoft YaHei;12;0",
+                      "left": 676.5,
+                      "top": 67.0,
+                      "width": 64,
+                      "height": 20,
+                      "text": "心跳通过",
+                      "horizontalAlignment": 2,
+                      "visible": true,
+                      "model": {
+                        "$ref": "C2CS000400"
+                      },
+                      "hostEdge": {
+                        "$ref": "C2CS000402"
+                      },
+                      "edgePosition": 1,
+                      "distance": 18,
+                      "alpha": 1.5707963267948966
+                    }
+                  ],
+                  "nameLabel": {
+                    "$ref": "C2CS000403"
+                  }
+                },
+                {
+                  "_type": "UMLTransitionView",
+                  "_id": "C2CS000406",
+                  "_parent": {
+                    "$ref": "C2CS000365"
+                  },
+                  "model": {
+                    "$ref": "C2CS000404"
+                  },
+                  "font": "Microsoft YaHei;12;0",
+                  "head": {
+                    "$ref": "C2CS000383"
+                  },
+                  "tail": {
+                    "$ref": "C2CS000376"
+                  },
+                  "points": "645.0:150;645.0:300",
+                  "lineStyle": 1,
+                  "subViews": [
+                    {
+                      "_type": "EdgeLabelView",
+                      "_id": "C2CS000407",
+                      "_parent": {
+                        "$ref": "C2CS000406"
+                      },
+                      "font": "Microsoft YaHei;12;0",
+                      "left": 542.0,
+                      "top": 202.0,
+                      "width": 218,
+                      "height": 20,
+                      "text": "心跳返回 error [登录时间不一致]",
+                      "horizontalAlignment": 2,
+                      "visible": true,
+                      "model": {
+                        "$ref": "C2CS000404"
+                      },
+                      "hostEdge": {
+                        "$ref": "C2CS000406"
+                      },
+                      "edgePosition": 1,
+                      "distance": 18,
+                      "alpha": 1.5707963267948966
+                    }
+                  ],
+                  "nameLabel": {
+                    "$ref": "C2CS000407"
+                  }
+                },
+                {
+                  "_type": "UMLTransitionView",
+                  "_id": "C2CS000410",
+                  "_parent": {
+                    "$ref": "C2CS000365"
+                  },
+                  "model": {
+                    "$ref": "C2CS000408"
+                  },
+                  "font": "Microsoft YaHei;12;0",
+                  "head": {
+                    "$ref": "C2CS000369"
+                  },
+                  "tail": {
+                    "$ref": "C2CS000383"
+                  },
+                  "points": "530:335;100:335;100:115;150:115",
+                  "lineStyle": 1,
+                  "subViews": [
+                    {
+                      "_type": "EdgeLabelView",
+                      "_id": "C2CS000411",
+                      "_parent": {
+                        "$ref": "C2CS000410"
+                      },
+                      "font": "Microsoft YaHei;12;0",
+                      "left": 279.0,
+                      "top": 202.0,
+                      "width": 134,
+                      "height": 20,
+                      "text": "前端跳转 logout.do",
+                      "horizontalAlignment": 2,
+                      "visible": true,
+                      "model": {
+                        "$ref": "C2CS000408"
+                      },
+                      "hostEdge": {
+                        "$ref": "C2CS000410"
+                      },
+                      "edgePosition": 1,
+                      "distance": 18,
+                      "alpha": 1.5707963267948966
+                    }
+                  ],
+                  "nameLabel": {
+                    "$ref": "C2CS000411"
+                  }
+                },
+                {
+                  "_type": "UMLTransitionView",
+                  "_id": "C2CS000414",
+                  "_parent": {
+                    "$ref": "C2CS000365"
+                  },
+                  "model": {
+                    "$ref": "C2CS000412"
+                  },
+                  "font": "Microsoft YaHei;12;0",
+                  "head": {
+                    "$ref": "C2CS000369"
+                  },
+                  "tail": {
+                    "$ref": "C2CS000376"
+                  },
+                  "points": "645:150;645:235;265:235;265:150",
+                  "lineStyle": 1,
+                  "subViews": [
+                    {
+                      "_type": "EdgeLabelView",
+                      "_id": "C2CS000415",
+                      "_parent": {
+                        "$ref": "C2CS000414"
+                      },
+                      "font": "Microsoft YaHei;12;0",
+                      "left": 394.0,
+                      "top": 127.0,
+                      "width": 134,
+                      "height": 20,
+                      "text": "logout.do 清除会话",
+                      "horizontalAlignment": 2,
+                      "visible": true,
+                      "model": {
+                        "$ref": "C2CS000412"
+                      },
+                      "hostEdge": {
+                        "$ref": "C2CS000414"
+                      },
+                      "edgePosition": 1,
+                      "distance": 18,
+                      "alpha": 1.5707963267948966
+                    }
+                  ],
+                  "nameLabel": {
+                    "$ref": "C2CS000415"
+                  }
+                },
+                {
+                  "_type": "UMLNoteView",
+                  "_id": "C2CS000416",
+                  "_parent": {
+                    "$ref": "C2CS000365"
+                  },
+                  "font": "Microsoft YaHei;12;0",
+                  "left": 60,
+                  "top": 470,
+                  "width": 850,
+                  "height": 110,
+                  "text": "依据 UserController.getId / logout、ChatWebSocketHandler 和 SaveSession。登录成功写入 userInformation、uid 和最近登录时间。此处 error 指时间不匹配导致的提示，其他报文异常也可能返回 error；服务端 WebSocket 不直接使 HTTP 会话失效。",
+                  "wordWrap": true,
+                  "fillColor": "#FFFDE7"
+                }
+              ],
+              "defaultDiagram": true
+            }
+          ],
+          "regions": [
+            {
+              "_type": "UMLRegion",
+              "_id": "C2CS000364",
+              "_parent": {
+                "$ref": "C2CS000363"
+              },
+              "name": "状态区域",
+              "vertices": [
+                {
+                  "_type": "UMLPseudostate",
+                  "_id": "C2CS000366",
+                  "_parent": {
+                    "$ref": "C2CS000364"
+                  },
+                  "name": "初始",
+                  "kind": "initial"
+                },
+                {
+                  "_type": "UMLState",
+                  "_id": "C2CS000368",
+                  "_parent": {
+                    "$ref": "C2CS000364"
+                  },
+                  "name": "未登录",
+                  "regions": []
+                },
+                {
+                  "_type": "UMLState",
+                  "_id": "C2CS000375",
+                  "_parent": {
+                    "$ref": "C2CS000364"
+                  },
+                  "name": "已登录",
+                  "regions": []
+                },
+                {
+                  "_type": "UMLState",
+                  "_id": "C2CS000382",
+                  "_parent": {
+                    "$ref": "C2CS000364"
+                  },
+                  "name": "客户端检测到异地登录",
+                  "regions": []
+                }
+              ],
+              "transitions": [
+                {
+                  "_type": "UMLTransition",
+                  "_id": "C2CS000389",
+                  "_parent": {
+                    "$ref": "C2CS000364"
+                  },
+                  "source": {
+                    "$ref": "C2CS000366"
+                  },
+                  "target": {
+                    "$ref": "C2CS000368"
+                  },
+                  "guard": "",
+                  "triggers": []
+                },
+                {
+                  "_type": "UMLTransition",
+                  "_id": "C2CS000392",
+                  "_parent": {
+                    "$ref": "C2CS000364"
+                  },
+                  "source": {
+                    "$ref": "C2CS000368"
+                  },
+                  "target": {
+                    "$ref": "C2CS000375"
+                  },
+                  "guard": "",
+                  "triggers": [
+                    {
+                      "_type": "UMLEvent",
+                      "_id": "C2CS000393",
+                      "_parent": {
+                        "$ref": "C2CS000392"
+                      },
+                      "name": "登录校验通过"
+                    }
+                  ]
+                },
+                {
+                  "_type": "UMLTransition",
+                  "_id": "C2CS000396",
+                  "_parent": {
+                    "$ref": "C2CS000364"
+                  },
+                  "source": {
+                    "$ref": "C2CS000368"
+                  },
+                  "target": {
+                    "$ref": "C2CS000368"
+                  },
+                  "guard": "",
+                  "triggers": [
+                    {
+                      "_type": "UMLEvent",
+                      "_id": "C2CS000397",
+                      "_parent": {
+                        "$ref": "C2CS000396"
+                      },
+                      "name": "登录失败"
+                    }
+                  ]
+                },
+                {
+                  "_type": "UMLTransition",
+                  "_id": "C2CS000400",
+                  "_parent": {
+                    "$ref": "C2CS000364"
+                  },
+                  "source": {
+                    "$ref": "C2CS000375"
+                  },
+                  "target": {
+                    "$ref": "C2CS000375"
+                  },
+                  "guard": "",
+                  "triggers": [
+                    {
+                      "_type": "UMLEvent",
+                      "_id": "C2CS000401",
+                      "_parent": {
+                        "$ref": "C2CS000400"
+                      },
+                      "name": "心跳通过"
+                    }
+                  ]
+                },
+                {
+                  "_type": "UMLTransition",
+                  "_id": "C2CS000404",
+                  "_parent": {
+                    "$ref": "C2CS000364"
+                  },
+                  "source": {
+                    "$ref": "C2CS000375"
+                  },
+                  "target": {
+                    "$ref": "C2CS000382"
+                  },
+                  "guard": "登录时间不一致",
+                  "triggers": [
+                    {
+                      "_type": "UMLEvent",
+                      "_id": "C2CS000405",
+                      "_parent": {
+                        "$ref": "C2CS000404"
+                      },
+                      "name": "心跳返回 error"
+                    }
+                  ]
+                },
+                {
+                  "_type": "UMLTransition",
+                  "_id": "C2CS000408",
+                  "_parent": {
+                    "$ref": "C2CS000364"
+                  },
+                  "source": {
+                    "$ref": "C2CS000382"
+                  },
+                  "target": {
+                    "$ref": "C2CS000368"
+                  },
+                  "guard": "",
+                  "triggers": [
+                    {
+                      "_type": "UMLEvent",
+                      "_id": "C2CS000409",
+                      "_parent": {
+                        "$ref": "C2CS000408"
+                      },
+                      "name": "前端跳转 logout.do"
+                    }
+                  ]
+                },
+                {
+                  "_type": "UMLTransition",
+                  "_id": "C2CS000412",
+                  "_parent": {
+                    "$ref": "C2CS000364"
+                  },
+                  "source": {
+                    "$ref": "C2CS000375"
+                  },
+                  "target": {
+                    "$ref": "C2CS000368"
+                  },
+                  "guard": "",
+                  "triggers": [
+                    {
+                      "_type": "UMLEvent",
+                      "_id": "C2CS000413",
+                      "_parent": {
+                        "$ref": "C2CS000412"
+                      },
+                      "name": "logout.do 清除会话"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
